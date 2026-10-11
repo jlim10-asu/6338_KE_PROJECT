@@ -1,6 +1,7 @@
 import hashlib
 import re
 import sqlite3
+import threading
 import anthropic
 from neo4j import GraphDatabase
 from config import *
@@ -10,6 +11,7 @@ db.execute("CREATE TABLE IF NOT EXISTS llm_cache (key TEXT PRIMARY KEY, model TE
 driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
 client = anthropic.Anthropic()
 _embedder = None
+_lock = threading.Lock()  # one SQLite connection shared by s06 worker threads
 
 
 class LLMStop(RuntimeError):
@@ -21,7 +23,8 @@ class LLMStop(RuntimeError):
 def llm_json(schema_model, system, user, tag, effort=EXTRACT_EFFORT, use_cache=True):
     # Cache key = SHA-256(model ID + prompt version + tag + prompt text); re-runs are free and identical.
     key = hashlib.sha256(f"{LLM_MODEL}|{PROMPT_VERSION}|{tag}|{system}|{user}".encode()).hexdigest()
-    row = db.execute("SELECT response FROM llm_cache WHERE key=?", (key,)).fetchone()
+    with _lock:
+        row = db.execute("SELECT response FROM llm_cache WHERE key=?", (key,)).fetchone()
     if row and use_cache:
         return row[0], True
     resp = client.messages.create(
@@ -33,8 +36,9 @@ def llm_json(schema_model, system, user, tag, effort=EXTRACT_EFFORT, use_cache=T
         category = getattr(resp.stop_details, "category", None) if resp.stop_details else None
         raise LLMStop(resp.stop_reason, category)
     text = next(b.text for b in resp.content if b.type == "text")
-    db.execute("INSERT OR REPLACE INTO llm_cache VALUES (?,?,?,?,?)", (key, LLM_MODEL, PROMPT_VERSION, tag, text))
-    db.commit()
+    with _lock:
+        db.execute("INSERT OR REPLACE INTO llm_cache VALUES (?,?,?,?,?)", (key, LLM_MODEL, PROMPT_VERSION, tag, text))
+        db.commit()
     return text, False
 
 

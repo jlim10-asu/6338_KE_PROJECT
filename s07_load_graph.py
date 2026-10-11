@@ -1,5 +1,5 @@
 import pandas as pd
-from common import db, run_batches, norm
+from common import db, driver, run_batches, norm, NEO4J_DB
 
 
 def rows(df):
@@ -9,7 +9,7 @@ def rows(df):
 rec = pd.read_sql("SELECT * FROM records", db)
 rec["is_retracted"] = rec["is_retracted"].map(lambda v: str(v).strip().lower() in ("true", "1", "yes"))
 rec["cited_by_count"] = pd.to_numeric(rec["cited_by_count"], errors="coerce").astype("Int64")
-run_id = db.execute("SELECT run_id FROM ex_runs ORDER BY run_at DESC LIMIT 1").fetchone()[0]
+run_id, ex_mode = db.execute("SELECT run_id, mode FROM exaggeration_runs ORDER BY run_at DESC LIMIT 1").fetchone()
 
 # 1. Press, institution and paper layer
 run_batches("""
@@ -62,15 +62,21 @@ SET e.model_id = r.model_id, e.prompt_version = r.prompt_version, e.extracted_at
 """, abstract)
 
 # 4. Exaggeration layer: Statement -[GROUNDS_IN]-> ScientificClaim in the release's own paper
+# Cleared first so edges from an earlier run (or the other mode) do not linger; MERGE alone would keep them.
+driver.execute_query("MATCH ()-[g:GROUNDS_IN]->() DELETE g", database_=NEO4J_DB)
 run_batches("""
 UNWIND $rows AS r
 MATCH (s:Statement {statement_id: r.statement_id}), (c:ScientificClaim {claim_id: r.claim_id})
 MERGE (s)-[g:GROUNDS_IN]->(c)
-SET g.match_method = r.match_method, g.similarity = r.similarity, g.margin = r.margin,
-    g.statement_strength = r.statement_strength, g.claim_strength = r.claim_strength, g.strength_delta = r.strength_delta,
-    g.exaggeration_label = r.exaggeration_label, g.direction_conflict = r.direction_conflict = 1,
+SET g.mode = r.mode, g.match_method = r.match_method, g.similarity = r.similarity, g.margin = r.margin,
+    g.candidate_rank = r.candidate_rank, g.n_candidates = r.n_candidates, g.statement_strength = r.statement_strength, g.claim_strength = r.claim_strength,
+    g.statement_strength_extracted = r.statement_strength_extracted, g.claim_strength_extracted = r.claim_strength_extracted,
+    g.strength_delta = r.strength_delta, g.exaggeration_label = r.exaggeration_label,
+    g.direction_conflict = r.direction_conflict = 1, g.null_reframed = r.null_reframed = 1, g.explanation = r.explanation,
     g.retracted_source = r.retracted_source = 1, g.run_id = r.run_id, g.derived_at = datetime()
-""", rows(ex[ex.resolution_status == "resolved"].astype({"claim_strength": int, "strength_delta": int, "direction_conflict": "Int64"})))
+""", rows(ex[ex.resolution_status == "resolved"].astype(
+    {c: "Int64" for c in ("statement_strength", "claim_strength", "statement_strength_extracted", "claim_strength_extracted",
+                          "strength_delta", "candidate_rank", "n_candidates", "direction_conflict", "null_reframed", "retracted_source")})))
 
 # 5. Entity layer: canonical entities and NED links to the reference ontology
 ned = rows(pd.read_sql("SELECT * FROM ned", db))
@@ -115,4 +121,4 @@ SET a.claim_count = r.n_claims, a.weight = toFloat(size(r.dois)), a.n_papers = s
 """, assoc)
 
 print({"records": len(rec), "statements": len(press), "claims": len(abstract), "grounds_in": int((ex.resolution_status == "resolved").sum()),
-       "entities": len(set(canon.values())), "entity_edges": len(edges), "associated_with": len(assoc), "ex_run": run_id})
+       "entities": len(set(canon.values())), "entity_edges": len(edges), "associated_with": len(assoc), "ex_run": run_id, "ex_mode": ex_mode})
