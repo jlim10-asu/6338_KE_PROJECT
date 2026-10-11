@@ -1,11 +1,9 @@
 import json
-import re
 import numpy as np
 import pandas as pd
-from common import db, embed, CORPUS_CSV, DEV_LIMIT, CHUNK_MAX_CHARS, CHUNK_BREAK_SIM
+from common import db, embed, split_sentences, CORPUS_CSV, DEV_LIMIT, CHUNK_MAX_CHARS, CHUNK_BREAK_SIM
 
 REQUIRED = ["euid", "doi", "release_date", "title", "institution", "press_text", "abstract"]
-ABBREV = "".join(rf"(?<!\b{a}\.)" for a in ("Dr", "Mr", "Ms", "Mrs", "Prof", "St", "vs", "al", "Fig", "No"))
 OPTIONAL = ["ror", "paper_title", "journal", "publication_date", "cited_by_count", "is_retracted",
             "study_design", "author_names", "author_affiliations", "openalex_field",
             "domain", "abstract_source", "issn_l", "pmcid", "year"]
@@ -57,11 +55,13 @@ if DEV_LIMIT:
     df = df.sample(n=min(DEV_LIMIT, len(df)), random_state=42)
 df[REQUIRED + OPTIONAL].to_sql("records", db, if_exists="replace", index=False)
 
-chunks = []
+chunks, seen_doi = [], set()
 for r in df.itertuples():
-    chunks.append({"chunk_id": f"{r.doi}#abstract", "source_type": "abstract", "source_id": r.doi,
-                   "text": r.abstract.strip(), "look_ahead": "", "seq": 0})
-    sents = [s.strip() for s in re.split(ABBREV + r"(?<=[.!?])\s+(?=[A-Z\"'(\[])", r.press_text) if s.strip()]
+    if r.doi not in seen_doi:  # several releases can announce one paper: extract its abstract once
+        seen_doi.add(r.doi)
+        chunks.append({"chunk_id": f"{r.doi}#abstract", "source_type": "abstract", "source_id": r.doi,
+                       "text": r.abstract.strip(), "look_ahead": "", "seq": 0})
+    sents = split_sentences(r.press_text)
     if not sents:
         continue
     vecs = np.array(embed(sents))

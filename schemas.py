@@ -1,9 +1,26 @@
+import re
 from typing import Annotated, Literal
 from pydantic import BaseModel, Field, ValidationInfo, field_validator, model_validator
 
 Strength = Literal[0, 1, 2, 3]
 Direction = Literal["increase", "decrease", "no_effect", "unclear"]
 Unit = Annotated[float, Field(ge=0, le=1)]
+SENT_START = re.compile(r"(^|[.!?:;][\"”’)\]]*\s+[\"“‘(\[]?|\n\s*[\"“‘(\[]?)$")
+SENT_END = re.compile(r"[.!?][\"”’)\]]*\s*$")
+
+
+def is_sentence_span(span: str, text: str) -> bool:
+    """True if span occurs in text starting at a sentence start and ending at a sentence end (or the end of text).
+    A span that stops just before its final punctuation is accepted."""
+    i = text.find(span)
+    while i >= 0:
+        pre, post = text[:i], text[i + len(span):]
+        start = not pre.strip() or SENT_START.search(pre)
+        end = SENT_END.search(span) or not post.strip() or re.match(r"[\"”’)\]]*[.!?](\s|$)", post)
+        if start and end:
+            return True
+        i = text.find(span, i + 1)
+    return False
 
 
 class Finding(BaseModel):
@@ -16,6 +33,8 @@ class Finding(BaseModel):
         chunk = (info.context or {}).get("chunk_text")
         if chunk is not None and v not in chunk:
             raise ValueError("evidence_span is not a verbatim substring of TEXT")
+        if chunk is not None and not is_sentence_span(v, chunk):
+            raise ValueError("evidence_span is not complete sentences of TEXT (must start at a sentence start and end at a sentence end)")
         return v
 
     @model_validator(mode="after")

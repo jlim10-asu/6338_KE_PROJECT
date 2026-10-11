@@ -28,11 +28,15 @@ Pipeline that extracts exposure-outcome findings from medical press releases and
 Tests and evaluation:
 ```bash
 python tests/test_exaggeration.py      # matching, candidate selection, adjudication schema, labels (no database needed)
+python tests/test_schemas.py           # evidence_span sentence-boundary rule
 python eval/sample_gold.py             # annotation sheet for 30 press + 30 abstract chunks
 python eval/eval_extraction.py         # precision / recall / F1
 python eval/eval_repair_ned.py         # repair recovery, rejection review, NED accuracy
-python eval/eval_exaggeration.py       # side-by-side review sheet (50 statements, embed vs llm), then match and label accuracy per mode
+python eval/eval_resolver.py           # design 7.1 Resolver benchmark: R1 copenlu 100, R2 15 multi-finding papers (hand gold), R3 15 no-match
+python eval/eval_exaggeration.py       # optional: side-by-side review sheet (50 statements, embed vs llm)
 ```
+To start over (new prompt version or new sample size): `python reset_derived.py`, then s03 -> s08. It keeps the ontology and the LLM cache.
+
 Every step is re-runnable: LLM responses are cached by SHA-256 in data/pipeline.db and Neo4j writes use UNWIND + MERGE.
 
 Settings in `config.py`:

@@ -64,6 +64,28 @@ def run_cypher_file(path):
     return out
 
 
+ABBREV = "".join(rf"(?<!\b{a}\.)" for a in ("Dr", "Mr", "Ms", "Mrs", "Prof", "St", "vs", "al", "Fig", "No"))
+SENT_SPLIT = re.compile(ABBREV + r"(?<=[.!?])\s+(?=[A-Z\"'(\[])")
+
+
+def split_sentences(text):
+    return [s.strip() for s in SENT_SPLIT.split(text or "") if s.strip()]
+
+
+def sentence_context(text, span, before=0):
+    """The whole sentence(s) of text that contain span, plus `before` preceding sentences (resolves "It", "These")."""
+    i = (text or "").find(span)
+    if i < 0:
+        return span
+    sents, pos, bounds = split_sentences(text), 0, []
+    for s in sents:
+        j = text.find(s, pos)
+        bounds.append((j, j + len(s)))
+        pos = j + len(s)
+    hit = [k for k, (a, b) in enumerate(bounds) if a < i + len(span) and b > i]
+    return " ".join(sents[max(0, hit[0] - before):hit[-1] + 1]) if hit else span
+
+
 def lucene_escape(text):
     return re.sub(r'([+\-&|!(){}\[\]^"~*?:\\/])', r"\\\1", text)
 

@@ -17,7 +17,7 @@ NEO4J_DB = os.environ.get("NEO4J_DB", "neo4j")
 
 LLM_MODEL = "claude-haiku-5-5"
 EXTRACT_EFFORT = "low"
-PROMPT_VERSION = "v1"
+PROMPT_VERSION = "v3"  # bump whenever prompts change: invalidates cached LLM responses
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 DEV_LIMIT = 100

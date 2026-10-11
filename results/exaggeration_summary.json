@@ -1,29 +1,71 @@
 {
-  "run_id": "d8f812d2ac00",
-  "run_at": "2026-10-11T01:37:35.573750+00:00",
+  "run_id": "0f269b6b7bb6",
+  "run_at": "2026-10-11T06:18:04.764968+00:00",
+  "active_mode": "llm",
   "embed_model": "sentence-transformers/all-MiniLM-L6-v2",
-  "threshold": 0.6,
-  "margin": 0.05,
-  "statements": 761,
-  "resolved": 231,
-  "resolved_rate": 0.304,
-  "by_method": {
-    "semantic": 191,
-    "entity": 40
+  "embed": {
+    "threshold": 0.6,
+    "margin": 0.05,
+    "statements": 761,
+    "resolved": 231,
+    "resolved_rate": 0.304,
+    "by_method": {
+      "semantic": 191,
+      "entity": 40
+    },
+    "unresolved_by_reason": {
+      "below_threshold": 292,
+      "ambiguous": 191,
+      "no_finding": 47
+    },
+    "labels": {
+      "aligned": 131,
+      "overstated": 61,
+      "understated": 39
+    },
+    "mean_strength_delta": 0.208,
+    "rerated_vs_extraction": 0,
+    "null_reframed": 0,
+    "direction_conflicts": 29,
+    "releases_scored": 70,
+    "releases_with_overstatement": 35,
+    "retracted_source_matches": 0
   },
-  "unresolved_by_reason": {
-    "below_threshold": 292,
-    "ambiguous": 191,
-    "no_finding": 47
+  "llm": {
+    "model": "claude-haiku-5-5",
+    "effort": "low",
+    "top_k": 3,
+    "floor": 0.4,
+    "statements": 761,
+    "resolved": 347,
+    "resolved_rate": 0.456,
+    "by_method": {
+      "llm": 315,
+      "llm_entity": 32
+    },
+    "unresolved_by_reason": {
+      "llm_none": 278,
+      "no_candidates": 89,
+      "no_finding": 47
+    },
+    "labels": {
+      "aligned": 242,
+      "overstated": 80,
+      "understated": 25
+    },
+    "mean_strength_delta": 0.245,
+    "rerated_vs_extraction": 133,
+    "null_reframed": 5,
+    "direction_conflicts": 17,
+    "releases_scored": 84,
+    "releases_with_overstatement": 41,
+    "retracted_source_matches": 0
   },
-  "labels": {
-    "aligned": 131,
-    "overstated": 61,
-    "understated": 39
-  },
-  "mean_strength_delta": 0.208,
-  "direction_conflicts": 29,
-  "releases_scored": 70,
-  "releases_with_overstatement": 35,
-  "retracted_source_matches": 0
+  "comparison": {
+    "both_resolved": 160,
+    "same_claim": 121,
+    "same_label": 103,
+    "embed_only": 71,
+    "llm_only": 187
+  }
 }
