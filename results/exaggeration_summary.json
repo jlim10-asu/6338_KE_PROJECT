@@ -1,0 +1,29 @@
+{
+  "run_id": "d8f812d2ac00",
+  "run_at": "2026-10-11T01:37:35.573750+00:00",
+  "embed_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "threshold": 0.6,
+  "margin": 0.05,
+  "statements": 761,
+  "resolved": 231,
+  "resolved_rate": 0.304,
+  "by_method": {
+    "semantic": 191,
+    "entity": 40
+  },
+  "unresolved_by_reason": {
+    "below_threshold": 292,
+    "ambiguous": 191,
+    "no_finding": 47
+  },
+  "labels": {
+    "aligned": 131,
+    "overstated": 61,
+    "understated": 39
+  },
+  "mean_strength_delta": 0.208,
+  "direction_conflicts": 29,
+  "releases_scored": 70,
+  "releases_with_overstatement": 35,
+  "retracted_source_matches": 0
+}

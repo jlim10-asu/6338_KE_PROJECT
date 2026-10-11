@@ -9,9 +9,7 @@ def rows(df):
 rec = pd.read_sql("SELECT * FROM records", db)
 rec["is_retracted"] = rec["is_retracted"].map(lambda v: str(v).strip().lower() in ("true", "1", "yes"))
 rec["cited_by_count"] = pd.to_numeric(rec["cited_by_count"], errors="coerce").astype("Int64")
-trust = pd.read_sql("SELECT doi, trust, n_claims AS trust_n_claims, seeded AS trust_seeded FROM td_source_trust", db)
-rec = rec.merge(trust, on="doi", how="left")
-run_id = db.execute("SELECT run_id FROM td_runs ORDER BY run_at DESC LIMIT 1").fetchone()[0]
+run_id = db.execute("SELECT run_id FROM ex_runs ORDER BY run_at DESC LIMIT 1").fetchone()[0]
 
 # 1. Press, institution and paper layer
 run_batches("""
@@ -21,11 +19,10 @@ MERGE (s:SourceRelease {euid: r.euid}) SET s.title = r.title, s.release_date = d
 MERGE (p:Paper {doi: r.doi})
 SET p.title = r.paper_title, p.journal = r.journal, p.publication_date = r.publication_date, p.cited_by_count = r.cited_by_count,
     p.is_retracted = r.is_retracted, p.study_design = r.study_design, p.author_names = r.author_names,
-    p.author_affiliations = r.author_affiliations, p.abstract = r.abstract,
-    p.trust = r.trust, p.trust_n_claims = r.trust_n_claims, p.trust_seeded = r.trust_seeded = 1, p.td_run_id = $run
+    p.author_affiliations = r.author_affiliations, p.abstract = r.abstract
 MERGE (s)-[:ISSUED_BY]->(i)
 MERGE (s)-[a:ANNOUNCES]->(p) SET a.link_method = 'DOI'
-""", rows(rec), run=run_id)
+""", rows(rec))
 
 # 2. Lexical layer: press-release chunks
 run_batches("""
@@ -35,39 +32,47 @@ MERGE (k:Chunk {chunk_id: r.chunk_id}) SET k.text = r.text, k.look_ahead = r.loo
 MERGE (k)-[:CHUNK_OF]->(s)
 """, rows(pd.read_sql("SELECT * FROM chunks WHERE source_type = 'press'", db)))
 
-# 3. Statements and scientific claims with extraction provenance and truth-discovery scores
-f = pd.read_sql("SELECT * FROM findings", db)
-cs = pd.read_sql("SELECT finding_id, fact_key, credibility, is_consensus, weight, design_w, excluded_reason FROM td_claim_scores", db)
-ss = pd.read_sql("SELECT statement_id AS finding_id, fact_key, support, consensus_value, agrees_with_consensus, evidence_max_strength, strength_gap, own_paper_value FROM td_statement_scores", db)
-press = rows(f[f.source_type == "press"].merge(ss, on="finding_id", how="left"))
-abstract = rows(f[f.source_type == "abstract"].merge(cs, on="finding_id", how="left"))
+# 3. Statements and scientific claims with extraction provenance; resolution status from s06
+f = pd.read_sql("SELECT * FROM findings", db).drop_duplicates("finding_id")
+ex = pd.read_sql("SELECT * FROM exaggeration", db)
+press = rows(f[f.source_type == "press"].merge(
+    ex[["statement_id", "resolution_status", "unresolved_reason"]], left_on="finding_id", right_on="statement_id", how="left"))
+abstract = rows(f[f.source_type == "abstract"])
 run_batches("""
 UNWIND $rows AS r
 MATCH (rel:SourceRelease {euid: r.source_id}), (k:Chunk {chunk_id: r.chunk_id})
 MERGE (s:Statement {statement_id: r.finding_id})
 SET s.euid = r.source_id, s.text = r.text, s.claim_strength = r.claim_strength, s.direction = r.direction,
-    s.population = r.population, s.evidence_span = r.evidence_span, s.fact_key = r.fact_key,
-    s.td_support = r.support, s.td_consensus_value = r.consensus_value, s.td_agrees = r.agrees_with_consensus = 1,
-    s.td_evidence_max_strength = r.evidence_max_strength, s.td_strength_gap = r.strength_gap,
-    s.td_own_paper_value = r.own_paper_value, s.td_run_id = $run
+    s.population = r.population, s.evidence_span = r.evidence_span,
+    s.resolution_status = coalesce(r.resolution_status, 'unresolved'), s.unresolved_reason = r.unresolved_reason
 MERGE (s)-[:APPEARS_IN]->(rel)
 MERGE (s)-[e:EXTRACTED_FROM]->(k)
 SET e.model_id = r.model_id, e.prompt_version = r.prompt_version, e.extracted_at = datetime(r.extracted_at),
     e.confidence = r.confidence_score, e.repaired = r.repaired = 1
-""", press, run=run_id)
+""", press)
 run_batches("""
 UNWIND $rows AS r
 MATCH (p:Paper {doi: r.source_id})
 MERGE (c:ScientificClaim {claim_id: r.finding_id})
 SET c.doi = r.source_id, c.text = r.text, c.claim_strength = r.claim_strength, c.direction = r.direction,
     c.population = r.population, c.confidence_score = r.confidence_score, c.evidence_span = r.evidence_span,
-    c.fact_key = r.fact_key, c.td_credibility = r.credibility, c.td_is_consensus = r.is_consensus = 1,
-    c.td_weight = r.weight, c.td_design_weight = r.design_w, c.td_excluded_reason = r.excluded_reason, c.td_run_id = $run
+    c.retracted = coalesce(p.is_retracted, false)
 MERGE (p)-[e:REPORTS]->(c)
 SET e.model_id = r.model_id, e.prompt_version = r.prompt_version, e.extracted_at = datetime(r.extracted_at), e.repaired = r.repaired = 1
-""", abstract, run=run_id)
+""", abstract)
 
-# 4. Entity layer: canonical entities and NED links to the reference ontology
+# 4. Exaggeration layer: Statement -[GROUNDS_IN]-> ScientificClaim in the release's own paper
+run_batches("""
+UNWIND $rows AS r
+MATCH (s:Statement {statement_id: r.statement_id}), (c:ScientificClaim {claim_id: r.claim_id})
+MERGE (s)-[g:GROUNDS_IN]->(c)
+SET g.match_method = r.match_method, g.similarity = r.similarity, g.margin = r.margin,
+    g.statement_strength = r.statement_strength, g.claim_strength = r.claim_strength, g.strength_delta = r.strength_delta,
+    g.exaggeration_label = r.exaggeration_label, g.direction_conflict = r.direction_conflict = 1,
+    g.retracted_source = r.retracted_source = 1, g.run_id = r.run_id, g.derived_at = datetime()
+""", rows(ex[ex.resolution_status == "resolved"].astype({"claim_strength": int, "strength_delta": int, "direction_conflict": "Int64"})))
+
+# 5. Entity layer: canonical entities and NED links to the reference ontology
 ned = rows(pd.read_sql("SELECT * FROM ned", db))
 run_batches("""
 UNWIND $rows AS r
@@ -93,22 +98,21 @@ for label, key, src in (("Statement", "statement_id", "press"), ("ScientificClai
             e.model_id = r.model_id, e.prompt_version = r.prompt_version, e.extracted_at = datetime(r.extracted_at)
         """, [e for e in edges if e["source_type"] == src and e["predicate"] == pred])
 
-# 5. Truth-discovery fact layer: exposure -> outcome consensus on ASSOCIATED_WITH
-facts = pd.read_sql("SELECT * FROM td_facts", db)
-fact_rows = []
-for key, g in facts.groupby("fact_key"):
-    top = g.sort_values("confidence", ascending=False).iloc[0]
-    fact_rows.append({"exposure": top.exposure, "outcome": top.outcome, "fact_key": key, "consensus": top.value,
-                      "confidence": float(top.confidence), "margin": float(top.margin), "n_sources": int(top.n_sources_fact),
-                      "values": [f"{v}:{c:.3f}" for v, c in zip(g.value, g.confidence)]})
+# 6. Evidence layer: exposure -> outcome association counted over non-retracted claims (design's ASSOCIATED_WITH)
+abs_f = f[f.source_type == "abstract"].copy()
+abs_f["exp_c"] = abs_f.exposure.map(lambda x: canon.get(norm(x)))
+abs_f["out_c"] = abs_f.outcome.map(lambda x: canon.get(norm(x)))
+abs_f = abs_f.dropna(subset=["exp_c", "out_c"])
+abs_f = abs_f[(abs_f.exp_c != abs_f.out_c) & ~abs_f.source_id.map(dict(zip(rec.doi, rec.is_retracted))).fillna(False).astype(bool)]
+assoc = [{"exposure": e, "outcome": o, "n_claims": int(len(g)), "dois": sorted(g.source_id.unique())[:50]}
+         for (e, o), g in abs_f.groupby(["exp_c", "out_c"])]
 run_batches("""
 UNWIND $rows AS r
 MATCH (e:MedicalEntity {canonical_name: r.exposure}), (o:MedicalEntity {canonical_name: r.outcome})
 MERGE (e)-[a:ASSOCIATED_WITH]->(o)
-SET a.fact_key = r.fact_key, a.consensus_direction = r.consensus, a.confidence = r.confidence, a.margin = r.margin,
-    a.n_sources = r.n_sources, a.weight = toFloat(r.n_sources), a.value_confidences = r.values,
-    a.algorithm = 'TruthFinder-weighted', a.td_run_id = $run, a.derived_at = datetime()
-""", fact_rows, run=run_id)
+SET a.claim_count = r.n_claims, a.weight = toFloat(size(r.dois)), a.n_papers = size(r.dois), a.dois = r.dois,
+    a.rule = 'claim_count_v1', a.derived_at = datetime()
+""", assoc)
 
-print({"records": len(rec), "statements": len(press), "claims": len(abstract), "entities": len(set(canon.values())),
-       "entity_edges": len(edges), "associated_with": len(fact_rows), "td_run": run_id})
+print({"records": len(rec), "statements": len(press), "claims": len(abstract), "grounds_in": int((ex.resolution_status == "resolved").sum()),
+       "entities": len(set(canon.values())), "entity_edges": len(edges), "associated_with": len(assoc), "ex_run": run_id})

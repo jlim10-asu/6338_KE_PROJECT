@@ -26,21 +26,9 @@ CHUNK_MAX_CHARS = 1200
 CHUNK_BREAK_SIM = 0.45
 NED_CANDIDATES = 10
 
-# Truth discovery (TruthFinder defaults: rho 0.5, gamma 0.3, initial trust 0.9)
-TD_RHO = 0.5
-TD_GAMMA = 0.3
-TD_T0 = 0.9
-TD_MAX_ITER = 50
-TD_TOL = 1e-6
-TD_SEED_FROM_PREVIOUS = True
-TD_IMPLICATION = {("increase", "decrease"): -1.0, ("decrease", "increase"): -1.0,
-                  ("no_effect", "increase"): -0.5, ("increase", "no_effect"): -0.5,
-                  ("no_effect", "decrease"): -0.5, ("decrease", "no_effect"): -0.5}
-# Study-design weights: ordering follows the usual evidence hierarchy; values are tunable assumptions
-TD_DESIGN_WEIGHT = {"meta-analysis": 1.0, "systematic review": 1.0, "randomized controlled trial": 0.9, "rct": 0.9,
-                    "cohort": 0.7, "case-control": 0.6, "cross-sectional": 0.5, "case series": 0.3,
-                    "case report": 0.3, "animal": 0.3, "in vitro": 0.3}
-TD_DESIGN_DEFAULT = 0.5
+# Exaggeration scoring (statement -> claim in the release's own paper)
+RESOLVE_THRESHOLD = 0.60   # minimum cosine similarity for a semantic (non-entity) match
+RESOLVE_MARGIN = 0.05      # best match must beat the runner-up by this much, else "ambiguous"
 
 DATA.mkdir(exist_ok=True)
 RESULTS.mkdir(exist_ok=True)
