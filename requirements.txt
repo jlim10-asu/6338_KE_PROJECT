@@ -1,0 +1,7 @@
+anthropic>=1.13,<2
+neo4j>=5.28,<6
+rdflib>=7.0,<8
+pydantic>=2.7,<3
+pandas>=2.0
+numpy>=1.26
+sentence-transformers>=3.0

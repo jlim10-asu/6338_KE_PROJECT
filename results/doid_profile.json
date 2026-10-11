@@ -1,0 +1,8 @@
+{
+  "doid_version": "http://purl.obolibrary.org/obo/doid/releases/2026-09-30/doid.owl",
+  "triples": 310129,
+  "classes_loaded": 12335,
+  "obsolete_skipped": 2519,
+  "with_synonyms": 8507,
+  "subclass_edges": 17479
+}

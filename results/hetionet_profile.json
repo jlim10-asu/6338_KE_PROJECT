@@ -1,0 +1,14 @@
+{
+  "nodes": {
+    "Compound": 1552,
+    "Disease": 137,
+    "Symptom": 438,
+    "Side Effect": 5734
+  },
+  "edges": {
+    "TREATS": 755,
+    "PALLIATES": 390,
+    "PRESENTS": 3357,
+    "CAUSES": 138944
+  }
+}

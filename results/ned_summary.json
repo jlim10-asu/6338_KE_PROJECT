@@ -1,0 +1,9 @@
+{
+  "exact_lexicon": 55,
+  "llm_nil": 1072,
+  "llm_refused": 1,
+  "llm_select": 163,
+  "no_candidates": 124,
+  "distinct_canonical": 1319,
+  "distinct_mentions": 1415
+}
