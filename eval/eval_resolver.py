@@ -3,6 +3,12 @@
 R1  copenlu train split (100 press/abstract conclusion pairs with gold strengths). Two rating methods are scored against the same gold:
     independent = the s04 extraction prompt on each sentence alone (how strengths were set before adjudication)
     adjudicated = the s06 adjudication prompt with both sentences side by side
+    Reported per method: all pairs (an unrated pair counts as wrong), rated pairs only, and coverage. Also a majority-class
+    baseline, strength accuracy on the rows both methods rated, the gold labels of the pairs the adjudicator rejected, and the
+    reference results from models trained on the same dataset (Wright & Augenstein, 2021), stored as fixed values.
+    --split test runs R1 on the 563-pair copenlu test split (the split the reference results use) and stops after R1.
+    --forced tells the adjudicator the pair is a known match (no 0 option), so every pair is rated, as the reference models do;
+    it stops after R1. Run both flags, then eval/compare_published.py, for the table with the reference column.
 R2  15 press statements from papers with >= 3 extracted claims, one per paper. First run writes data/gold/resolver_r2_multifinding.csv
     (restated sentence, exposure -> outcome pair, and full source sentence for the statement and every claim):
     fill gold_claim with the number of the paper claim that reports the same finding (several allowed, e.g. "2,5"), or 0 if none.
@@ -10,6 +16,7 @@ R2  15 press statements from papers with >= 3 extracted claims, one per paper. F
 R3  15 press statements shown only claims from other papers (the 3 most similar, excluding the same exposure-outcome pair),
     so the correct answer is always unresolved. No labeling needed.
 """
+import argparse
 import json
 import sys
 from concurrent.futures import ThreadPoolExecutor
@@ -24,18 +31,49 @@ from exaggeration import match_statement, label
 from prompts import ADJUDICATE_SYSTEM, ADJUDICATE_USER, CANDIDATE, EXTRACT_SYSTEM, EXTRACT_USER
 from schemas import Adjudication, ExtractionResult
 
+ap = argparse.ArgumentParser(description="Resolver benchmark R1-R3")
+ap.add_argument("--split", choices=("train", "test"), default="train", help="copenlu split for R1; test runs R1 only")
+ap.add_argument("--forced", action="store_true", help="R1 only: the adjudicator must rate every pair (no no-match option)")
+args = ap.parse_args()
+SPLIT, FORCED = args.split, args.forced
+SUFFIX = ("" if SPLIT == "train" else f"_{SPLIT}") + ("_forced" if FORCED else "")  # default run keeps the original file names
+
 N_MULTI, N_NOMATCH, MIN_CLAIMS = 15, 15, 3
-COPENLU = DATA / "raw" / "copenlu_train.jsonl"
+COPENLU = DATA / "raw" / f"copenlu_{SPLIT}.jsonl"
 GOLD_LABEL = {"same": "aligned", "exaggerates": "overstated", "downplays": "understated"}
+# Reference macro-F1 (percent, as printed) of models trained on copenlu, on its test pairs. Fixed values, not reproduced here.
+# pair_level ~ adjudication (both sentences together; the paper's T1). sentence_level ~ independent rating (the paper's T2).
+REFERENCE_RESULTS = {
+    "source": "Wright & Augenstein (2021), EMNLP; arXiv:2108.13493, Tables 7 and 8",
+    "test_pairs": "553 in Section 4.1, 563 elsewhere in the paper; the dataset's test split has 563 rows",
+    "pair_level_models": {"supervised": 29.05, "PET": 39.12, "MT-PET": 47.35},
+    # Per model: label F1, then claim-strength F1 for the press and abstract sentences (Table 8 columns F1, Press F1, Abstract F1)
+    "sentence_level_models": {
+        "200_strength_examples": {"supervised": [49.03, 54.78, 59.41], "PET": [56.57, 63.56, 62.76], "MT-PET": [57.44, 64.72, 63.27]},
+        "4500_strength_examples": {"supervised": [58.66, 63.26, 67.26], "PET": [60.45, 64.20, 64.92], "MT-PET": [61.11, 63.93, 64.69]}},
+    "sentence_level_columns": ["label_macro_f1", "press_strength_macro_f1", "abstract_strength_macro_f1"],
+}
+# Forced variant of the s06 adjudication prompt: the pair is known to match, so the no-match option is removed.
+FORCED_SYSTEM = ADJUDICATE_SYSTEM.replace(
+    "Return match 0 when none does, because a wrong match produces a false exaggeration label while 0 only leaves the statement unscored.",
+    "In this evaluation the candidate is known to report the same finding, so always return its number as match and never 0.").replace(
+    "4. Rate the press statement even when match is 0, and set claim_strength and claim_direction to null in that case.",
+    "4. Always rate both the press statement and the candidate.")
+FORCED_USER = ADJUDICATE_USER.replace(
+    "Choose the candidate that reports the same finding as the press statement, or 0 if none does, then rate both original wordings on the same scale.",
+    "The candidate is known to report the same finding as the press statement: set match to 1, then rate both original wordings on the same scale.")
+assert FORCED_SYSTEM.count("never 0") == 1 and "Always rate both" in FORCED_SYSTEM and FORCED_USER != ADJUDICATE_USER, "prompts.py changed"
 out = {}
 
 
-def adjudicate(text, span, cands):
-    """Same prompt and cache tag as s06. cands: list of (restated text, original wording). Returns (Adjudication or None, failure)."""
-    user = ADJUDICATE_USER.format(text=text, span=span, candidates="\n".join(
+def adjudicate(text, span, cands, forced=False):
+    """Same prompt and cache tag as s06 (forced: the R1 variant without a no-match option, own cache tag).
+    cands: list of (restated text, original wording). Returns (Adjudication or None, failure)."""
+    system, template, tag = (FORCED_SYSTEM, FORCED_USER, "adjudicate_forced") if forced else (ADJUDICATE_SYSTEM, ADJUDICATE_USER, "adjudicate")
+    user = template.format(text=text, span=span, candidates="\n".join(
         CANDIDATE.format(n=i + 1, text=t, span=s) for i, (t, s) in enumerate(cands)))
     try:
-        raw, _ = llm_json(Adjudication, ADJUDICATE_SYSTEM, user, tag=f"adjudicate|{ADJ_EFFORT}", effort=ADJ_EFFORT)
+        raw, _ = llm_json(Adjudication, system, user, tag=f"{tag}|{ADJ_EFFORT}", effort=ADJ_EFFORT)
         return Adjudication.model_validate_json(raw, context={"n": len(cands)}), None
     except LLMStop as e:
         return None, f"llm_{e.reason}"
@@ -64,16 +102,63 @@ def scores(gold, pred):
             "unrated": pred.count("none"), "confusion_gold_x_pred": pd.crosstab(pd.Series(gold, name="gold"), pd.Series(pred, name="pred")).to_dict(orient="index")}
 
 
+METHODS = (("adj", "adjudicated"), ("ind", "independent"))
+SIDES = (("press", "press_release_strength"), ("abstract", "abstract_strength"))
+
+
+def strength_f1(gold, pred):
+    """Macro-F1 over the four claim-strength classes (0-3); an unrated sentence counts as wrong."""
+    gold, pred = [int(g) for g in gold], [int(p) if pd.notna(p) else None for p in pred]
+    f1 = []
+    for c in range(4):
+        tp = sum(g == c and p == c for g, p in zip(gold, pred))
+        prec, rec = tp / max(sum(p == c for p in pred), 1), tp / max(sum(g == c for g in gold), 1)
+        f1.append(2 * prec * rec / (prec + rec) if prec + rec else 0.0)
+    return round(float(np.mean(f1)), 3)
+
+
+def strength_accuracy(cop):
+    """Strength accuracy per side on the rows both methods rated, plus each method's coverage. Dividing by all rows would count
+    an unrated sentence as a wrong rating: the adjudicator leaves claim strength empty on every pair it rejects."""
+    res = {}
+    for side, gold in SIDES:
+        both = cop[f"adj_{side}"].notna() & cop[f"ind_{side}"].notna()
+        res[side] = {"shared_rows": int(both.sum()),
+                     **{name: round(float((cop.loc[both, f"{m}_{side}"] == cop.loc[both, gold]).mean()), 3) if both.any() else None
+                        for m, name in METHODS},
+                     "coverage": {name: int(cop[f"{m}_{side}"].notna().sum()) for m, name in METHODS}}
+    return res
+
+
+def r1_metrics(cop, split):
+    """R1 summary from the per-pair rows. No LLM calls, so it can be recomputed from resolver_r1_rows.csv."""
+    gold, rejected = cop.gold_label, cop.adj_rejected_pair.astype(bool)
+    majority = gold.mode()[0]
+    res = {"split": split, "forced": FORCED, "n": len(cop), "target_label_accuracy": 0.70, "gold_distribution": gold.value_counts().to_dict(),
+           "majority_baseline": {"label": majority, **scores(gold, [majority] * len(cop))}}
+    for m, name in METHODS:
+        rated = cop[f"{m}_label"].notna()
+        res[name] = {**scores(gold, cop[f"{m}_label"]),  # all pairs: an unrated pair counts as wrong
+                     "rated_only": {"n": int(rated.sum()), **scores(gold[rated], cop.loc[rated, f"{m}_label"])},
+                     "strength_macro_f1": {side: strength_f1(cop[g], cop[f"{m}_{side}"]) for side, g in SIDES}}
+    res["adjudicated"].update(rejected_true_pair=int(rejected.sum()), gold_of_rejected=gold[rejected].value_counts().to_dict(),
+                              gold_of_accepted=gold[~rejected].value_counts().to_dict())
+    res["strength_accuracy_shared_rows"] = strength_accuracy(cop)
+    res["reference_results"] = REFERENCE_RESULTS
+    return res
+
+
 # R1: copenlu, strength rating against gold labels
 if not COPENLU.exists():
     from huggingface_hub import hf_hub_download
-    COPENLU.write_text(Path(hf_hub_download("copenlu/scientific-exaggeration-detection", "train.jsonl", repo_type="dataset")).read_text())
+    COPENLU.write_text(Path(hf_hub_download("copenlu/scientific-exaggeration-detection", f"{SPLIT}.jsonl", repo_type="dataset")).read_text())
 cop = pd.read_json(COPENLU, lines=True)
 cop["gold_label"] = cop.exaggeration_label.map(GOLD_LABEL)
 
 
 def r1(row):
-    a, why = adjudicate(row.press_release_conclusion, row.press_release_conclusion, [(row.abstract_conclusion, row.abstract_conclusion)])
+    a, why = adjudicate(row.press_release_conclusion, row.press_release_conclusion, [(row.abstract_conclusion, row.abstract_conclusion)],
+                        forced=FORCED)
     ps, as_ = rate_alone(row.press_release_conclusion, "press"), rate_alone(row.abstract_conclusion, "abstract")
     return {"adj_press": a.statement_strength if a else None, "adj_abstract": a.claim_strength if a and a.match else None,
             "adj_rejected_pair": bool(a and a.match == 0), "adj_failure": why, "ind_press": ps, "ind_abstract": as_}
@@ -84,15 +169,12 @@ with ThreadPoolExecutor(ADJ_WORKERS) as pool:
 for m in ("adj", "ind"):
     ok = cop[f"{m}_press"].notna() & cop[f"{m}_abstract"].notna()
     cop[f"{m}_label"] = [label(p, a)[1] if k else None for p, a, k in zip(cop[f"{m}_press"], cop[f"{m}_abstract"], ok)]
-cop.to_csv(RESULTS / "resolver_r1_rows.csv", index=False)
-out["R1_copenlu"] = {"n": len(cop), "target_label_accuracy": 0.70,
-                     "gold_distribution": cop.gold_label.value_counts().to_dict(),
-                     "adjudicated": {**scores(cop.gold_label, cop.adj_label), "rejected_true_pair": int(cop.adj_rejected_pair.sum()),
-                                     "press_strength_accuracy": round(float((cop.adj_press == cop.press_release_strength).mean()), 3),
-                                     "abstract_strength_accuracy": round(float((cop.adj_abstract == cop.abstract_strength).mean()), 3)},
-                     "independent": {**scores(cop.gold_label, cop.ind_label),
-                                     "press_strength_accuracy": round(float((cop.ind_press == cop.press_release_strength).mean()), 3),
-                                     "abstract_strength_accuracy": round(float((cop.ind_abstract == cop.abstract_strength).mean()), 3)}}
+cop.to_csv(RESULTS / f"resolver_r1_rows{SUFFIX}.csv", index=False)
+out["R1_copenlu"] = r1_metrics(cop, SPLIT)
+if SUFFIX:  # R2 and R3 use the project corpus, not copenlu, so a test-split or forced run stops here
+    json.dump(out, open(RESULTS / f"eval_resolver{SUFFIX}.json", "w"), indent=2, default=str)
+    print(json.dumps(out, indent=2, default=str))
+    sys.exit()
 
 # Corpus data for R2 and R3
 f = pd.read_sql("SELECT finding_id, chunk_id, source_type, source_id, text, evidence_span, exposure, outcome FROM findings", db).drop_duplicates("finding_id")
