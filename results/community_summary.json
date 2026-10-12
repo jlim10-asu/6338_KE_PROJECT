@@ -1,0 +1,156 @@
+{
+  "run_at": "2026-10-12T21:25:13.621657+00:00",
+  "algorithm": "gds.leiden.write",
+  "min_size": 2,
+  "seed": 42,
+  "cross_paper_only": true,
+  "projection": {
+    "claims_with_shared_entity": 92,
+    "claim_pairs": 758
+  },
+  "leiden": {
+    "communityCount": 12,
+    "modularity": 0.5090329362786391,
+    "ranLevels": 2,
+    "didConverge": true,
+    "nodePropertiesWritten": 92
+  },
+  "communities_written": 12,
+  "claims_total": 404,
+  "claims_in_community": 92,
+  "claims_unassigned": 312,
+  "size_min_max_mean": [
+    2,
+    25,
+    7.67
+  ],
+  "multi_paper_communities": 12,
+  "communities_below_min_size": 0,
+  "top_communities": [
+    {
+      "community_id": 0,
+      "claims": 25,
+      "papers": 10,
+      "top_entities": [
+        "older age",
+        "COVID-19",
+        "underlying comorbidities",
+        "trisb92",
+        "intranasal trisb92 administration",
+        "trisb92 nasal spray",
+        "igg antibody response to spike glycoprotein non-rbd epitopes",
+        "timing of covid-19 issue discussion"
+      ]
+    },
+    {
+      "community_id": 15,
+      "claims": 24,
+      "papers": 6,
+      "top_entities": [
+        "Metformin",
+        "Diastolic dysfunction",
+        "passive myocardial stiffness",
+        "exercise capacity",
+        "titin compliance",
+        "titin n2b element phosphorylation",
+        "titin pevk phosphorylation",
+        "titin-based passive stiffness"
+      ]
+    },
+    {
+      "community_id": 18,
+      "claims": 9,
+      "papers": 3,
+      "top_entities": [
+        "prostate cancer",
+        "pten deletion",
+        "multiplatform single cell analysis",
+        "management of obesity, hypertension, and diabetes",
+        "smoking",
+        "smoking combined with obesity"
+      ]
+    },
+    {
+      "community_id": 10,
+      "claims": 8,
+      "papers": 2,
+      "top_entities": [
+        "type 2 diabetes mellitus",
+        "beta cells with high h3k27me3 levels",
+        "lipid levels",
+        "glycerolipid metabolism",
+        "sphingolipid levels",
+        "lipid signature",
+        "lipid metabolism disorder",
+        "endogenous lipogenesis"
+      ]
+    },
+    {
+      "community_id": 8,
+      "claims": 6,
+      "papers": 2,
+      "top_entities": [
+        "methadone treatment interruption",
+        "all-cause mortality",
+        "methadone treatment initiation",
+        "unmarried marital status",
+        "low income",
+        "low education"
+      ]
+    },
+    {
+      "community_id": 5,
+      "claims": 4,
+      "papers": 2,
+      "top_entities": [
+        "growth hormone receptor deletion",
+        "Apoptosis",
+        "growth hormone induction of h2-bl",
+        "Ibuprofen"
+      ]
+    },
+    {
+      "community_id": 3,
+      "claims": 4,
+      "papers": 4,
+      "top_entities": [
+        "convalescent plasma therapy",
+        "survival",
+        "intra-cavity induced neural stem cell therapy",
+        "BN2 diffuse large B-cell lymphoma",
+        "alk2 inhibitor ldn-193189 or ldn-214117"
+      ]
+    },
+    {
+      "community_id": 11,
+      "claims": 3,
+      "papers": 3,
+      "top_entities": [
+        "tobacco cessation",
+        "overall survival",
+        "total mesometrial resection with therapeutic lymph node dissection",
+        "physical activity"
+      ]
+    },
+    {
+      "community_id": 6,
+      "claims": 3,
+      "papers": 2,
+      "top_entities": [
+        "body mass index",
+        "disease of mental health",
+        "myocardial infarction"
+      ]
+    },
+    {
+      "community_id": 14,
+      "claims": 2,
+      "papers": 2,
+      "top_entities": [
+        "patient safety climate",
+        "Methicillin-resistant Staphylococcus aureus infection",
+        "acetate priming"
+      ]
+    }
+  ]
+}

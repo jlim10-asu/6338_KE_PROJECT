@@ -1,0 +1,208 @@
+{
+  "R1_copenlu": {
+    "split": "train",
+    "forced": true,
+    "n": 100,
+    "target_label_accuracy": 0.7,
+    "gold_distribution": {
+      "aligned": 61,
+      "overstated": 22,
+      "understated": 17
+    },
+    "majority_baseline": {
+      "label": "aligned",
+      "label_accuracy": 0.61,
+      "macro_f1": 0.253,
+      "unrated": 0,
+      "confusion_gold_x_pred": {
+        "aligned": {
+          "aligned": 61
+        },
+        "overstated": {
+          "aligned": 22
+        },
+        "understated": {
+          "aligned": 17
+        }
+      }
+    },
+    "adjudicated": {
+      "label_accuracy": 0.73,
+      "macro_f1": 0.711,
+      "unrated": 0,
+      "confusion_gold_x_pred": {
+        "aligned": {
+          "aligned": 44,
+          "overstated": 12,
+          "understated": 5
+        },
+        "overstated": {
+          "aligned": 6,
+          "overstated": 16,
+          "understated": 0
+        },
+        "understated": {
+          "aligned": 1,
+          "overstated": 3,
+          "understated": 13
+        }
+      },
+      "rated_only": {
+        "n": 100,
+        "label_accuracy": 0.73,
+        "macro_f1": 0.711,
+        "unrated": 0,
+        "confusion_gold_x_pred": {
+          "aligned": {
+            "aligned": 44,
+            "overstated": 12,
+            "understated": 5
+          },
+          "overstated": {
+            "aligned": 6,
+            "overstated": 16,
+            "understated": 0
+          },
+          "understated": {
+            "aligned": 1,
+            "overstated": 3,
+            "understated": 13
+          }
+        }
+      },
+      "strength_macro_f1": {
+        "press": 0.7,
+        "abstract": 0.718
+      },
+      "rejected_true_pair": 0,
+      "gold_of_rejected": {},
+      "gold_of_accepted": {
+        "aligned": 61,
+        "overstated": 22,
+        "understated": 17
+      }
+    },
+    "independent": {
+      "label_accuracy": 0.51,
+      "macro_f1": 0.554,
+      "unrated": 28,
+      "confusion_gold_x_pred": {
+        "aligned": {
+          "aligned": 32,
+          "none": 20,
+          "overstated": 5,
+          "understated": 4
+        },
+        "overstated": {
+          "aligned": 4,
+          "none": 5,
+          "overstated": 13,
+          "understated": 0
+        },
+        "understated": {
+          "aligned": 3,
+          "none": 3,
+          "overstated": 5,
+          "understated": 6
+        }
+      },
+      "rated_only": {
+        "n": 72,
+        "label_accuracy": 0.708,
+        "macro_f1": 0.65,
+        "unrated": 0,
+        "confusion_gold_x_pred": {
+          "aligned": {
+            "aligned": 32,
+            "overstated": 5,
+            "understated": 4
+          },
+          "overstated": {
+            "aligned": 4,
+            "overstated": 13,
+            "understated": 0
+          },
+          "understated": {
+            "aligned": 3,
+            "overstated": 5,
+            "understated": 6
+          }
+        }
+      },
+      "strength_macro_f1": {
+        "press": 0.709,
+        "abstract": 0.599
+      }
+    },
+    "strength_accuracy_shared_rows": {
+      "press": {
+        "shared_rows": 78,
+        "adjudicated": 0.808,
+        "independent": 0.833,
+        "coverage": {
+          "adjudicated": 100,
+          "independent": 78
+        }
+      },
+      "abstract": {
+        "shared_rows": 86,
+        "adjudicated": 0.756,
+        "independent": 0.698,
+        "coverage": {
+          "adjudicated": 100,
+          "independent": 86
+        }
+      }
+    },
+    "reference_results": {
+      "source": "Wright & Augenstein (2021), EMNLP; arXiv:2108.13493, Tables 7 and 8",
+      "test_pairs": "553 in Section 4.1, 563 elsewhere in the paper; the dataset's test split has 563 rows",
+      "pair_level_models": {
+        "supervised": 29.05,
+        "PET": 39.12,
+        "MT-PET": 47.35
+      },
+      "sentence_level_models": {
+        "200_strength_examples": {
+          "supervised": [
+            49.03,
+            54.78,
+            59.41
+          ],
+          "PET": [
+            56.57,
+            63.56,
+            62.76
+          ],
+          "MT-PET": [
+            57.44,
+            64.72,
+            63.27
+          ]
+        },
+        "4500_strength_examples": {
+          "supervised": [
+            58.66,
+            63.26,
+            67.26
+          ],
+          "PET": [
+            60.45,
+            64.2,
+            64.92
+          ],
+          "MT-PET": [
+            61.11,
+            63.93,
+            64.69
+          ]
+        }
+      },
+      "sentence_level_columns": [
+        "label_macro_f1",
+        "press_strength_macro_f1",
+        "abstract_strength_macro_f1"
+      ]
+    }
+  }
+}

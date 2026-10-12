@@ -1,0 +1,373 @@
+[
+  {
+    "query": "MATCH (n) UNWIND labels(n) AS label RETURN label, count(*) AS n ORDER BY n DESC",
+    "rows": [
+      {
+        "label": "OntologyTerm",
+        "n": 20060
+      },
+      {
+        "label": "MedicalEntity",
+        "n": 1319
+      },
+      {
+        "label": "Chunk",
+        "n": 1270
+      },
+      {
+        "label": "Statement",
+        "n": 761
+      },
+      {
+        "label": "ScientificClaim",
+        "n": 404
+      },
+      {
+        "label": "SourceRelease",
+        "n": 100
+      },
+      {
+        "label": "Paper",
+        "n": 100
+      },
+      {
+        "label": "Institution",
+        "n": 88
+      },
+      {
+        "label": "Community",
+        "n": 64
+      }
+    ]
+  },
+  {
+    "query": "MATCH ()-[r]->() RETURN type(r) AS type, count(*) AS n ORDER BY n DESC",
+    "rows": [
+      {
+        "type": "CAUSES",
+        "n": 138944
+      },
+      {
+        "type": "SUBCLASSOF",
+        "n": 17479
+      },
+      {
+        "type": "PRESENTS",
+        "n": 3357
+      },
+      {
+        "type": "CHUNK_OF",
+        "n": 1270
+      },
+      {
+        "type": "HAS_EXPOSURE",
+        "n": 1165
+      },
+      {
+        "type": "HAS_OUTCOME",
+        "n": 1165
+      },
+      {
+        "type": "APPEARS_IN",
+        "n": 761
+      },
+      {
+        "type": "EXTRACTED_FROM",
+        "n": 761
+      },
+      {
+        "type": "TREATS",
+        "n": 755
+      },
+      {
+        "type": "REPORTS",
+        "n": 404
+      },
+      {
+        "type": "PALLIATES",
+        "n": 390
+      },
+      {
+        "type": "ASSOCIATED_WITH",
+        "n": 366
+      },
+      {
+        "type": "GROUNDS_IN",
+        "n": 347
+      },
+      {
+        "type": "IN_COMMUNITY",
+        "n": 322
+      },
+      {
+        "type": "DISAMBIGUATED_TO",
+        "n": 122
+      },
+      {
+        "type": "ISSUED_BY",
+        "n": 100
+      },
+      {
+        "type": "ANNOUNCES",
+        "n": 100
+      }
+    ]
+  },
+  {
+    "query": "MATCH ()-[e:EXTRACTED_FROM|REPORTS|HAS_EXPOSURE|HAS_OUTCOME]->()\nRETURN type(e) AS type, avg(CASE WHEN e.model_id IS NOT",
+    "rows": [
+      {
+        "type": "EXTRACTED_FROM",
+        "provenance_complete": 1.0
+      },
+      {
+        "type": "REPORTS",
+        "provenance_complete": 1.0
+      },
+      {
+        "type": "HAS_EXPOSURE",
+        "provenance_complete": 1.0
+      },
+      {
+        "type": "HAS_OUTCOME",
+        "provenance_complete": 1.0
+      }
+    ]
+  },
+  {
+    "query": "MATCH (m:MedicalEntity) RETURN m.entity_type = 'unlinked' AS unlinked, count(*) AS entities",
+    "rows": [
+      {
+        "unlinked": false,
+        "entities": 122
+      },
+      {
+        "unlinked": true,
+        "entities": 1197
+      }
+    ]
+  },
+  {
+    "query": "MATCH (s:Statement) WHERE NOT EXISTS { (s)-[:APPEARS_IN]->() } WITH count(s) AS n RETURN 'statement_without_release' AS ",
+    "rows": [
+      {
+        "check": "statement_without_release",
+        "n": 0
+      },
+      {
+        "check": "claim_without_paper",
+        "n": 0
+      }
+    ]
+  },
+  {
+    "query": "MATCH (s:Statement)-[:GROUNDS_IN]->(c:ScientificClaim)<-[:REPORTS]-(p:Paper)\nWHERE NOT EXISTS { (s)-[:APPEARS_IN]->(:Sou",
+    "rows": [
+      {
+        "check": "grounds_in_wrong_paper",
+        "n": 0
+      }
+    ]
+  },
+  {
+    "query": "MATCH (s:Statement) RETURN s.resolution_status AS status, coalesce(s.unresolved_reason, '-') AS reason, count(*) AS n OR",
+    "rows": [
+      {
+        "status": "resolved",
+        "reason": "-",
+        "n": 347
+      },
+      {
+        "status": "unresolved",
+        "reason": "llm_none",
+        "n": 278
+      },
+      {
+        "status": "unresolved",
+        "reason": "no_candidates",
+        "n": 89
+      },
+      {
+        "status": "unresolved",
+        "reason": "no_finding",
+        "n": 47
+      }
+    ]
+  },
+  {
+    "query": "MATCH (:Statement)-[g:GROUNDS_IN]->(:ScientificClaim)\nRETURN g.exaggeration_label AS label, g.match_method AS method, co",
+    "rows": [
+      {
+        "label": "aligned",
+        "method": "llm",
+        "n": 215
+      },
+      {
+        "label": "aligned",
+        "method": "llm_entity",
+        "n": 27
+      },
+      {
+        "label": "overstated",
+        "method": "llm",
+        "n": 77
+      },
+      {
+        "label": "overstated",
+        "method": "llm_entity",
+        "n": 3
+      },
+      {
+        "label": "understated",
+        "method": "llm",
+        "n": 23
+      },
+      {
+        "label": "understated",
+        "method": "llm_entity",
+        "n": 2
+      }
+    ]
+  },
+  {
+    "query": "MATCH (:Statement)-[g:GROUNDS_IN]->(:ScientificClaim)\nRETURN g.mode AS mode, count(*) AS grounds_in,\n       sum(CASE WHE",
+    "rows": [
+      {
+        "mode": "llm",
+        "grounds_in": 347,
+        "rerated": 133,
+        "null_reframed": 5
+      }
+    ]
+  },
+  {
+    "query": "MATCH (s:Statement)-[g:GROUNDS_IN {exaggeration_label: 'overstated'}]->(c:ScientificClaim)\nRETURN s.euid AS release, s.e",
+    "rows": [
+      {
+        "release": "508163",
+        "press_wording": "demonstrating for the first time the successful use of a completely biodegradable magnesium-alloy tracheal stent that avoids some of these risks",
+        "paper_wording": "while safely degrading in vivo without affecting growth of the rabbit airway",
+        "press_strength": 3,
+        "paper_strength": 0,
+        "method": "llm",
+        "explanation": "The press statement says the stent avoids some risks of conventional stents; candidate 2 reports the stent safely degrading without affecting airway growth, which is the closest safety-related finding, while candidate 1 reports tolerability without toxicity. Neither states the specific comparison to conventional stents, so the match is weak but candidate 2 is closest in the 'avoids risks' sense; the press wording 'avoids some of these risks' is a direct-causal-style claim versus the abstract's descriptive 'safely degrading' and 'without affecting', which are null-type findings about harm."
+      },
+      {
+        "release": "993124",
+        "press_wording": "reveals that cardiac magnetic resonance imaging (MRI), is a safe and valuable tool to help evaluate these complex patients",
+        "paper_wording": "Initial management with CMR or invasive-based care pathways resulted in no detectable difference in clinical and safety event rates",
+        "press_strength": 3,
+        "paper_strength": 0,
+        "method": "llm",
+        "explanation": "The press statement calls CMR a safe and valuable tool for evaluating these patients; candidate 1 reports no difference in clinical and safety event rates between CMR and invasive pathways, which is the safety finding behind the claim, while candidates 2 and 3 concern discharge and angiography yield rather than safety of the tool. The press wording 'is a safe and valuable tool' is a direct assertion (rated 3), while candidate 1's 'no detectable difference' is a null result (0), so the null is reframed as a safety assurance."
+      },
+      {
+        "release": "809466",
+        "press_wording": "While there may also be an impact on overall survival, it was not statistically significant",
+        "paper_wording": "association of physical activity with OS was not statistically significant",
+        "press_strength": 2,
+        "paper_strength": 0,
+        "method": "llm_entity",
+        "explanation": "Candidate 1 reports the same physical activity and overall survival result in metastatic colorectal cancer, stated as not statistically significant; the press statement says there may be an impact but it was not significant, so it is a null result presented as a possible effect. The press wording 'may also be an impact' is conditional causal (2), while candidate 1's 'association ... was not statistically significant' is a null result (0)."
+      },
+      {
+        "release": "651897",
+        "press_wording": "This survival benefit with convalescent plasma was even greater in patients who were admitted to the intensive care unit (60% reduced risk of death)",
+        "paper_wording": "mortality was significantly lower in convalescent plasma recipients compared with nonrecipients (HR for propensity score-matched comparison, 0.40; 95% CI, 0.20-0.80)",
+        "press_strength": 3,
+        "paper_strength": 1,
+        "method": "llm",
+        "explanation": "The press statement's ICU subgroup 60% reduced risk of death matches candidate 1, which reports lower mortality in ICU-admitted hematologic cancer patients (HR 0.40 is a different estimate but the same finding in the same subgroup, and the press 60% corresponds to HR 0.40); candidate 1 uses 'significantly lower' with no causal verb, so it is correlational, while the press wording 'reduced the risk of death by 60%' is direct causal."
+      },
+      {
+        "release": "651897",
+        "press_wording": "those who needed mechanical ventilation (68% reduced mortality)",
+        "paper_wording": "Among the 227 patients who required mechanical ventilatory support, mortality was significantly lower in convalescent plasma recipients compared with nonrecipients",
+        "press_strength": 3,
+        "paper_strength": 1,
+        "method": "llm",
+        "explanation": "The press statement reports the 68% mortality reduction in ventilated patients, which matches candidate 1 (mortality lower with convalescent plasma among those requiring mechanical ventilation), though candidate 2 gives the same 0.40 hazard ratio but in ICU patients; candidate 1 is the closer population. Press wording '68% reduced mortality' is a direct causal-style claim ('reduced'), while candidate 1 says 'significantly lower' in recipients versus nonrecipients, which is a comparison-based association, rated correlational."
+      },
+      {
+        "release": "924258",
+        "press_wording": "we were able to observe the same effect when we administered acetate only after the onset of sepsis. This led in the same way to an improved immune response and infection clearance.",
+        "paper_wording": "Acetate treatment improved the sepsis course even when applied several hours after onset of the infection",
+        "press_strength": 3,
+        "paper_strength": 1,
+        "method": "llm",
+        "explanation": "Candidate 1 reports acetate given hours after sepsis onset improving the sepsis course, the same late-treatment exposure and improved outcome as the statement; 'improved' is correlational-to-causal-neutral wording, rated 1 with no causal verb. The press statement's 'led to' is direct causal wording, rated 3, while the abstract's 'improved' is rated 1 here since it names no mechanism."
+      },
+      {
+        "release": "651897",
+        "press_wording": "Our study showed a 48% reduced risk of death for COVID patients who had blood cancer and had received convalescent plasma compared to similar patients who did not receive this treatment",
+        "paper_wording": "mortality was significantly lower in convalescent plasma recipients compared with nonrecipients (HR for propensity score-matched comparison, 0.40; 95% CI, 0.20-0.80)",
+        "press_strength": 3,
+        "paper_strength": 1,
+        "method": "llm",
+        "explanation": "The press statement reports a 48% reduced risk of death with convalescent plasma in COVID-19 patients with blood cancer; candidate 2 reports the same mortality result (HR 0.40, ICU population) in the same exposure and outcome, while candidate 3 is a 30-day mortality result in a broader population with a different HR (0.60) and candidate 1 is a hedged 'potential benefit' finding. The press wording 'reduced the risk' is direct causal (3), while candidate 2's 'was significantly lower' is correlational comparison wording (1)."
+      },
+      {
+        "release": "745912",
+        "press_wording": "reduced left ventricular stiffness, thereby improving the animals\u2019 capacity for exercise",
+        "paper_wording": "metformin-treated TAC/DOCA mice also demonstrate preserved exercise capacity",
+        "press_strength": 3,
+        "paper_strength": 1,
+        "method": "llm_entity",
+        "explanation": "The press statement pairs metformin with improved exercise capacity; candidate 1 reports preserved exercise capacity in metformin-treated TAC/DOCA mice, the same exposure and outcome. Its wording 'demonstrate preserved' is a descriptive observation, rated correlational, while the press original 'reduced stiffness, thereby improving capacity' asserts a direct causal mechanism, rated direct causal."
+      },
+      {
+        "release": "987732",
+        "press_wording": "while curbing the total number of meds and opioids taken",
+        "paper_wording": "Decreases in MEDD were observed at the first three follow-ups",
+        "press_strength": 3,
+        "paper_strength": 1,
+        "method": "llm",
+        "explanation": "The press statement says medicinal cannabis curbs the total number of medications and opioids, which matches the medication/opioid reduction in candidate 2 (decreased MEDD), though candidate 2 is specific to opioid dose rather than total meds; no candidate reports total medication count, but candidate 2 is the closest on opioid reduction. The press wording 'curbing' is direct causal (3), while candidate 2's 'Decreases in MEDD were observed' is a descriptive observed change, rated correlational (1)."
+      },
+      {
+        "release": "985623",
+        "press_wording": "High levels of the body\u2019s own cannabinoid substances protect against developing addiction in individuals previously exposed to childhood maltreatment",
+        "paper_wording": "CM-exposed adults who did not develop SUD, operationally defined as resilient to developing SUD, had higher peripheral levels of the endocannabinoid anandamide at baseline and during stress exposure, compared to controls",
+        "press_strength": 3,
+        "paper_strength": 1,
+        "method": "llm",
+        "explanation": "Candidate 1 reports the same finding: higher endocannabinoid (anandamide) levels in childhood-maltreatment-exposed adults who did not develop SUD, which the press statement links to protection against addiction. The press statement uses 'protect against' (direct causal, 3), while candidate 1 says 'had higher peripheral levels' with no causal or protective verb, which I rate as correlational (1)."
+      }
+    ]
+  },
+  {
+    "query": "MATCH (s:Statement)-[g:GROUNDS_IN {null_reframed: true}]->(c:ScientificClaim)\nRETURN s.euid AS release, s.evidence_span ",
+    "rows": [
+      {
+        "release": "1049005",
+        "press_wording": "Results showed anakinra was safe",
+        "paper_wording": "No serious adverse events were related to anakinra.",
+        "explanation": "The press statement says anakinra was safe, which matches candidate 3's finding that no serious adverse events were related to anakinra, the safety result rather than the efficacy result in candidates 1 and 2. The press wording 'was safe' is a safety assurance with no causal or correlational claim, rated 0; candidate 3 states no relation, also rated 0, so the safety claim is reframed from a null result."
+      },
+      {
+        "release": "993124",
+        "press_wording": "reveals that cardiac magnetic resonance imaging (MRI), is a safe and valuable tool to help evaluate these complex patients",
+        "paper_wording": "Initial management with CMR or invasive-based care pathways resulted in no detectable difference in clinical and safety event rates",
+        "explanation": "The press statement calls CMR a safe and valuable tool for evaluating these patients; candidate 1 reports no difference in clinical and safety event rates between CMR and invasive pathways, which is the safety finding behind the claim, while candidates 2 and 3 concern discharge and angiography yield rather than safety of the tool. The press wording 'is a safe and valuable tool' is a direct assertion (rated 3), while candidate 1's 'no detectable difference' is a null result (0), so the null is reframed as a safety assurance."
+      },
+      {
+        "release": "508163",
+        "press_wording": "demonstrating for the first time the successful use of a completely biodegradable magnesium-alloy tracheal stent that avoids some of these risks",
+        "paper_wording": "while safely degrading in vivo without affecting growth of the rabbit airway",
+        "explanation": "The press statement says the stent avoids some risks of conventional stents; candidate 2 reports the stent safely degrading without affecting airway growth, which is the closest safety-related finding, while candidate 1 reports tolerability without toxicity. Neither states the specific comparison to conventional stents, so the match is weak but candidate 2 is closest in the 'avoids risks' sense; the press wording 'avoids some of these risks' is a direct-causal-style claim versus the abstract's descriptive 'safely degrading' and 'without affecting', which are null-type findings about harm."
+      },
+      {
+        "release": "508163",
+        "press_wording": "have low degradation rates, displaying normal healing and no adverse problems",
+        "paper_wording": "The metallic matrix and degradation products were well tolerated by the airway tissue without exhibiting any noticeable local or systemic toxicity.",
+        "explanation": "Candidate 1 reports the tissue tolerance and absence of toxicity, which matches the press statement's 'normal healing and no adverse problems'; candidate 2 concerns degradation and growth, not healing or adverse effects. The press wording 'have low degradation rates, displaying normal healing and no adverse problems' is a descriptive finding with no causal verb, and candidate 1's 'were well tolerated... without exhibiting any noticeable toxicity' is likewise a descriptive absence-of-harm result, so both are rated as no relationship (0) with no effect direction treated as no_effect."
+      },
+      {
+        "release": "809466",
+        "press_wording": "that difference was not statistically significant, meaning it could have resulted from chance",
+        "paper_wording": "association of physical activity with OS was not statistically significant",
+        "explanation": "The press statement reports a 15 percent survival improvement for 18+ versus under 3 MET-hours, which the original wording calls not statistically significant; candidate 1 reports the same null overall survival association with physical activity, so it matches. Candidate 1's wording 'was not statistically significant' is a null result (strength 0), while the press wording 'could have resulted from chance' is also a null, but the press release presents a 15 percent improvement as a finding, framing the null as a benefit."
+      }
+    ]
+  }
+]

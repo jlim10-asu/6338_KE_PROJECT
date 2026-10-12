@@ -3,7 +3,7 @@
 Pipeline that extracts exposure-outcome findings from medical press releases and paper abstracts with Claude Haiku 5.5, disambiguates entities against the Human Disease Ontology (and optionally Hetionet), matches each press statement to a claim in its own paper's abstract and labels it overstated / aligned / understated by claim strength, and loads nodes and edges into Neo4j.
 
 ## Requirements
-- Python 3.10+, Neo4j 5.26 (APOC not required), Anthropic API key
+- Python 3.10+, Neo4j 5.26 with the Graph Data Science (GDS) plugin for s09 (APOC not required), Anthropic API key
 - `pip install -r requirements.txt`
 - `export ANTHROPIC_API_KEY=...  NEO4J_PASSWORD=...`
 
@@ -24,6 +24,7 @@ Pipeline that extracts exposure-outcome findings from medical press releases and
 | 6 | `python s06_exaggeration.py` | statement -> claim matching + exaggeration labels. Embedding baseline -> `exaggeration_embed`; LLM adjudication (Claude picks the matching claim from the top 3 and rates both wordings side by side) -> `exaggeration_llm`; the `EX_MODE` table is copied to `exaggeration` |
 | 7 | `python s07_load_graph.py` | load nodes and edges with provenance, `GROUNDS_IN` exaggeration edges (cleared and reloaded each run), `ASSOCIATED_WITH` claim counts |
 | 8 | `python s08_verify_load.py` | counts, provenance completeness, orphans, GROUNDS_IN integrity, label distribution, re-rated strengths, reframed nulls |
+| 9 | `python s09_communities.py` | Leiden (GDS) over ScientificClaim nodes linked by shared MedicalEntity; writes `communityId` only for communities of 2+ claims (`COMM_MIN_SIZE`), then creates `Community` nodes and `IN_COMMUNITY` edges -> `results/community_summary.json`. Re-run s08 afterwards for the community checks |
 
 Tests and evaluation:
 ```bash
@@ -35,7 +36,7 @@ python eval/eval_repair_ned.py         # repair recovery, rejection review, NED 
 python eval/eval_resolver.py           # design 7.1 Resolver benchmark: R1 copenlu 100, R2 15 multi-finding papers (hand gold), R3 15 no-match
 python eval/eval_exaggeration.py       # optional: side-by-side review sheet (50 statements, embed vs llm)
 ```
-To start over (new prompt version or new sample size): `python reset_derived.py`, then s03 -> s08. It keeps the ontology and the LLM cache.
+To start over (new prompt version or new sample size): `python reset_derived.py`, then s03 -> s09, then s08. It keeps the ontology and the LLM cache.
 
 Every step is re-runnable: LLM responses are cached by SHA-256 in data/pipeline.db and Neo4j writes use UNWIND + MERGE.
 
