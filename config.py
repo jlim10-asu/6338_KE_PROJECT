@@ -12,7 +12,7 @@ HETIONET_EDGES = DATA / "raw" / "hetionet-v1.0-edges.sif.gz"
 
 NEO4J_URI = os.environ.get("NEO4J_URI", "bolt://localhost:7687")
 NEO4J_USER = os.environ.get("NEO4J_USER", "neo4j")
-NEO4J_PASSWORD = os.environ.get("NEO4J_PASSWORD", "password")
+NEO4J_PASSWORD = os.environ.get("NEO4J_PASSWORD", "12345qwert")
 NEO4J_DB = os.environ.get("NEO4J_DB", "neo4j")
 
 LLM_MODEL = "claude-haiku-5-5"
