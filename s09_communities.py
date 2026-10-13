@@ -8,7 +8,7 @@ Community.summary is left empty here; it is filled by the summary step (planned)
 import json
 from datetime import datetime, timezone
 from common import driver, NEO4J_DB, RESULTS
-from config import COMM_GRAPH, COMM_MIN_SIZE, COMM_SEED, COMM_CROSS_PAPER_ONLY
+from config import COMM_GRAPH, COMM_MIN_SIZE, COMM_SEED, COMM_CROSS_PAPER_ONLY, COMM_EXCLUDE_ENTITIES
 
 
 def q(query, **params):
@@ -27,12 +27,13 @@ proj = q("""
 MATCH (a:ScientificClaim)-[:HAS_EXPOSURE|HAS_OUTCOME]->(m:MedicalEntity)<-[:HAS_EXPOSURE|HAS_OUTCOME]-(b:ScientificClaim)
 WHERE elementId(a) < elementId(b)
   AND (NOT $cross_paper_only OR NOT EXISTS { (a)<-[:REPORTS]-(:Paper)-[:REPORTS]->(b) })
+  AND NOT toLower(m.canonical_name) IN $exclude
 WITH a, b, count(DISTINCT m) AS shared
 WITH gds.graph.project($g, a, b,
        {relationshipProperties: {shared: toFloat(shared)}},
        {undirectedRelationshipTypes: ['*']}) AS g
 RETURN g.nodeCount AS nodes, g.relationshipCount AS rels
-""", g=COMM_GRAPH, cross_paper_only=COMM_CROSS_PAPER_ONLY)[0]
+""", g=COMM_GRAPH, cross_paper_only=COMM_CROSS_PAPER_ONLY, exclude=[e.lower() for e in COMM_EXCLUDE_ENTITIES])[0]
 
 # 2. Leiden: writes communityId only for communities of size >= COMM_MIN_SIZE (fixed seed, single thread = reproducible)
 leiden = q("""
@@ -73,7 +74,7 @@ q("CALL gds.graph.drop($g, false) YIELD graphName RETURN graphName", g=COMM_GRAP
 sizes = [c["claims"] for c in comms]
 summary = {
     "run_at": run_at, "algorithm": "gds.leiden.write", "min_size": COMM_MIN_SIZE, "seed": COMM_SEED,
-    "cross_paper_only": COMM_CROSS_PAPER_ONLY,
+    "cross_paper_only": COMM_CROSS_PAPER_ONLY, "excluded_entities": COMM_EXCLUDE_ENTITIES,
     "projection": {"claims_with_shared_entity": proj["nodes"], "claim_pairs": proj["rels"]},
     "leiden": {k: leiden[k] for k in ("communityCount", "modularity", "ranLevels", "didConverge", "nodePropertiesWritten")},
     "communities_written": len(comms),

@@ -1,34 +1,42 @@
 {
-  "run_at": "2026-10-12T21:25:13.621657+00:00",
+  "run_at": "2026-10-13T20:13:52.330275+00:00",
   "algorithm": "gds.leiden.write",
   "min_size": 2,
   "seed": 42,
   "cross_paper_only": true,
+  "excluded_entities": [
+    "mortality",
+    "all-cause mortality",
+    "survival",
+    "overall survival",
+    "Adverse reaction",
+    "Apoptosis"
+  ],
   "projection": {
-    "claims_with_shared_entity": 92,
-    "claim_pairs": 758
+    "claims_with_shared_entity": 70,
+    "claim_pairs": 676
   },
   "leiden": {
-    "communityCount": 12,
-    "modularity": 0.5090329362786391,
+    "communityCount": 8,
+    "modularity": 0.41437624733027556,
     "ranLevels": 2,
     "didConverge": true,
-    "nodePropertiesWritten": 92
+    "nodePropertiesWritten": 70
   },
-  "communities_written": 12,
+  "communities_written": 8,
   "claims_total": 404,
-  "claims_in_community": 92,
-  "claims_unassigned": 312,
+  "claims_in_community": 70,
+  "claims_unassigned": 334,
   "size_min_max_mean": [
     2,
     25,
-    7.67
+    8.75
   ],
-  "multi_paper_communities": 12,
+  "multi_paper_communities": 8,
   "communities_below_min_size": 0,
   "top_communities": [
     {
-      "community_id": 0,
+      "community_id": 1,
       "claims": 25,
       "papers": 10,
       "top_entities": [
@@ -43,9 +51,9 @@
       ]
     },
     {
-      "community_id": 15,
-      "claims": 24,
-      "papers": 6,
+      "community_id": 13,
+      "claims": 12,
+      "papers": 2,
       "top_entities": [
         "Metformin",
         "Diastolic dysfunction",
@@ -58,7 +66,7 @@
       ]
     },
     {
-      "community_id": 18,
+      "community_id": 0,
       "claims": 9,
       "papers": 3,
       "top_entities": [
@@ -71,7 +79,22 @@
       ]
     },
     {
-      "community_id": 10,
+      "community_id": 8,
+      "claims": 9,
+      "papers": 2,
+      "top_entities": [
+        "anakinra",
+        "Neurobehavioral Manifestations",
+        "safety",
+        "serious adverse events",
+        "multi-domain responder index",
+        "respiratory function",
+        "vasopressor need",
+        "hemophagocytosis score"
+      ]
+    },
+    {
+      "community_id": 5,
       "claims": 8,
       "papers": 2,
       "top_entities": [
@@ -86,54 +109,7 @@
       ]
     },
     {
-      "community_id": 8,
-      "claims": 6,
-      "papers": 2,
-      "top_entities": [
-        "methadone treatment interruption",
-        "all-cause mortality",
-        "methadone treatment initiation",
-        "unmarried marital status",
-        "low income",
-        "low education"
-      ]
-    },
-    {
-      "community_id": 5,
-      "claims": 4,
-      "papers": 2,
-      "top_entities": [
-        "growth hormone receptor deletion",
-        "Apoptosis",
-        "growth hormone induction of h2-bl",
-        "Ibuprofen"
-      ]
-    },
-    {
-      "community_id": 3,
-      "claims": 4,
-      "papers": 4,
-      "top_entities": [
-        "convalescent plasma therapy",
-        "survival",
-        "intra-cavity induced neural stem cell therapy",
-        "BN2 diffuse large B-cell lymphoma",
-        "alk2 inhibitor ldn-193189 or ldn-214117"
-      ]
-    },
-    {
-      "community_id": 11,
-      "claims": 3,
-      "papers": 3,
-      "top_entities": [
-        "tobacco cessation",
-        "overall survival",
-        "total mesometrial resection with therapeutic lymph node dissection",
-        "physical activity"
-      ]
-    },
-    {
-      "community_id": 6,
+      "community_id": 4,
       "claims": 3,
       "papers": 2,
       "top_entities": [
@@ -143,13 +119,23 @@
       ]
     },
     {
-      "community_id": 14,
+      "community_id": 7,
       "claims": 2,
       "papers": 2,
       "top_entities": [
         "patient safety climate",
         "Methicillin-resistant Staphylococcus aureus infection",
         "acetate priming"
+      ]
+    },
+    {
+      "community_id": 6,
+      "claims": 2,
+      "papers": 2,
+      "top_entities": [
+        "prefrontal cortex",
+        "fractional anisotropy",
+        "plasma amyloid-\u03b2 42/40 positivity"
       ]
     }
   ]
