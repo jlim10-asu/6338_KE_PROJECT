@@ -1,4 +1,5 @@
-PROMPT_NOTE = "v3: evidence_span must be whole sentences (v2: XML-structured, rules carry their reasons, 4 diverse examples)"
+PROMPT_NOTE = ("v4: whole-document extraction from numbered sentences; findings cite sentence IDs and code builds evidence_span "
+               "(EXTRACT_DOC_*). v3 chunk prompts (EXTRACT_SYSTEM, EXTRACT_USER, REPAIR_USER) are kept for eval_resolver.py R1.")
 
 EXTRACT_SYSTEM = """You extract research findings from medical press releases and journal abstracts. Your output populates a knowledge graph that compares how strongly a press release states a finding with how strongly the source paper states it. For that comparison to work, the wording-based fields must describe the text as written, not what the study design would justify.
 
@@ -235,3 +236,96 @@ CANDIDATE = """<candidate number="{n}">
 <restated>{text}</restated>
 <original_wording>{span}</original_wording>
 </candidate>"""
+
+
+# ---------------- v4: whole-document extraction from numbered sentences (s04) ----------------
+EXTRACT_DOC_SYSTEM = """You extract research findings from medical press releases and journal abstracts. Your output populates a knowledge graph that compares how strongly a press release states a finding with how strongly the source paper states it. For that comparison to work, the wording-based fields must describe the text as written, not what the study design would justify.
+
+<input_format>
+<text> holds the whole document, one numbered sentence per line:
+- Press release: "[P2.S3] sentence" (paragraph 2, sentence 3).
+- Abstract: "[S7 | RESULTS] sentence", where the section is BACKGROUND, METHODS, RESULTS, CONCLUSIONS, OTHER or UNLABELED.
+- "[ctx] sentence" lines are context from the preceding part of a long release; they carry no ID and cannot be cited.
+</input_format>
+
+<definitions>
+A finding is a result of the study being reported that relates an exposure to an outcome.
+- exposure: the intervention, drug, behavior, or risk factor (e.g., "coffee consumption", "metformin", "night-shift work").
+- outcome: the disease, symptom, measurement, or health state it affects (e.g., "type 2 diabetes", "systolic blood pressure").
+- direction: the effect of the exposure on the outcome: increase, decrease, no_effect (the study reports no association or no difference), or unclear.
+- claim_strength: how strongly the wording asserts the relationship (labels from Wright & Augenstein, 2021):
+  0 = no relationship (a null result, e.g., "was not associated with")
+  1 = correlational ("associated with", "linked to", "higher risk among", "less likely than")
+  2 = conditional causal ("may reduce", "could lead to", "might protect against", "can be")
+  3 = direct causal ("reduces", "causes", "prevents", "protects against", "leads to")
+</definitions>
+
+<rules>
+1. Read the whole document before extracting, so a sentence whose subject is named earlier ("It", "These mice", "During that time") is understood.
+2. Extract results of the study being reported, including results stated in researcher quotes. Skip background on prior work, study aims, methods, funding, and contact details, because they are not this study's findings. In abstracts, cite only RESULTS, CONCLUSIONS or UNLABELED sentences; BACKGROUND and METHODS sentences are context.
+3. A finding needs a stated relationship between a real exposure and an outcome. Skip these, because they are not exposure-outcome findings: a test's or tool's accuracy (sensitivity, prediction), comparisons between calendar periods, lists of rates that never state a relationship, checks that a model or method works, and implications the study did not measure ("may cause confusion").
+4. Create one finding per exposure-outcome pair per statement. Split compound statements ("coffee and tea lowered the risk of stroke and dementia") into one finding per pair. If the same pair is restated with a different claim strength, as when a conclusion or a quote goes further than the results, extract each statement; if it is restated with the same strength, extract it once.
+5. Rate claim_strength from the wording alone, not the effect size or p-value. A press release saying an observational study "prevents" a disease is rated 3; that gap between wording and evidence is what the system measures.
+6. Write exposure and outcome as short noun phrases using the standard medical name: expand abbreviations ("T2D" becomes "type 2 diabetes") and keep doses, percentages, time windows, and populations out of the entity. Standard names let entity linking match them to the Disease Ontology.
+7. Set evidence_ids to the ID(s) of the sentence(s) that state the finding, copied exactly as shown (e.g., "P2.S3" or "S7"). Add the preceding sentence's ID when the finding's subject is named only there. Code rebuilds the evidence text from these IDs and rejects IDs that are not shown or not citable.
+8. Write text as one standalone sentence that keeps the original hedge or causal verb, so the restatement carries the same claim strength as the evidence.
+9. Set population to who was studied when the document states it (e.g., "adults over 65", "mice"); otherwise null.
+10. Set confidence_score to your confidence that the finding is extracted correctly: about 0.9 for an explicit, unambiguous result; 0.5 to 0.7 when the exposure, outcome, or direction had to be inferred; below 0.5 when unsure the sentence reports a finding at all.
+11. When the document reports no finding, return an empty findings list.
+</rules>
+
+<examples>
+<example>
+<source_type>abstract</source_type>
+<text>
+[S1 | BACKGROUND] Coffee has been linked to lower diabetes risk in earlier cohorts.
+[S2 | METHODS] We followed 41,000 adults for 12 years.
+[S3 | RESULTS] Participants who drank three or more cups of coffee daily had a 20% lower risk of type 2 diabetes (HR 0.80, 95% CI 0.72-0.89).
+[S4 | RESULTS] Coffee intake was not associated with stroke.
+[S5 | CONCLUSIONS] Coffee consumption may protect against type 2 diabetes.
+</text>
+<output>{"findings": [{"text": "Drinking three or more cups of coffee daily is associated with a lower risk of type 2 diabetes in adults.", "exposure": "coffee consumption", "outcome": "type 2 diabetes", "population": "adults", "direction": "decrease", "claim_strength": 1, "evidence_ids": ["S3"], "confidence_score": 0.9}, {"text": "Coffee consumption was not associated with stroke in adults.", "exposure": "coffee consumption", "outcome": "stroke", "population": "adults", "direction": "no_effect", "claim_strength": 0, "evidence_ids": ["S4"], "confidence_score": 0.9}, {"text": "Coffee consumption may protect against type 2 diabetes.", "exposure": "coffee consumption", "outcome": "type 2 diabetes", "population": "adults", "direction": "decrease", "claim_strength": 2, "evidence_ids": ["S5"], "confidence_score": 0.9}]}</output>
+</example>
+<example>
+<source_type>press</source_type>
+<text>
+[P1.S1] Eating blueberries may slow cognitive decline in older adults, according to new research.
+[P1.S2] The study followed 900 people for six years.
+[P2.S1] "Our results show that blueberries slow cognitive decline," said lead author Dr. Jane Smith.
+[P3.S1] The study was funded by the National Institutes of Health.
+</text>
+<output>{"findings": [{"text": "Eating blueberries may slow cognitive decline in older adults.", "exposure": "blueberry consumption", "outcome": "cognitive decline", "population": "older adults", "direction": "decrease", "claim_strength": 2, "evidence_ids": ["P1.S1"], "confidence_score": 0.9}, {"text": "Blueberries slow cognitive decline in older adults, according to the lead author.", "exposure": "blueberry consumption", "outcome": "cognitive decline", "population": "older adults", "direction": "decrease", "claim_strength": 3, "evidence_ids": ["P2.S1"], "confidence_score": 0.85}]}</output>
+</example>
+<example>
+<source_type>press</source_type>
+<text>
+[P1.S1] Researchers gave mice a high-fat diet for 12 weeks.
+[P1.S2] During that time, the mice's hearts showed markers of stress.
+[P2.S1] Their new blood test detected heart disease with 85% sensitivity.
+</text>
+<output>{"findings": [{"text": "A high-fat diet was followed by markers of heart stress in mice.", "exposure": "high-fat diet", "outcome": "cardiac stress markers", "population": "mice", "direction": "increase", "claim_strength": 1, "evidence_ids": ["P1.S1", "P1.S2"], "confidence_score": 0.7}]}</output>
+</example>
+</examples>"""
+
+EXTRACT_DOC_USER = """<source_type>{source_type}</source_type>
+<text>
+{text}
+</text>
+Extract the findings reported in <text>."""
+
+REPAIR_DOC_USER = """<source_type>{source_type}</source_type>
+<text>
+{text}
+</text>
+<failed_findings>
+{failed}
+</failed_findings>
+<validation_errors>
+{errors}
+</validation_errors>
+The findings in <failed_findings> were extracted from <text> and failed automated validation for the reasons in <validation_errors>. Return corrected versions of only these findings:
+- "not in the numbered text": copy the sentence IDs exactly as they appear in <text>.
+- "cannot be evidence": cite the RESULTS, CONCLUSIONS, UNLABELED or numbered press sentence that states the finding, or drop the finding if only a context, background or methods sentence states it.
+- "must be non-empty" or "must be different entities": identify both the exposure and the outcome from <text>, or drop the finding if <text> names only one.
+- A value outside its allowed range: use a value inside the range.
+Drop any finding that <text> does not support, and return an empty findings list if none can be corrected."""

@@ -1,9 +1,10 @@
 """Clear everything derived from extraction before a re-run with new prompts or a new sample (e.g. the 500-record run).
-Keeps the LLM cache, the ontology (OntologyTerm nodes from s01/s02), and the schema. Then run s03 -> s09."""
+Keeps the LLM cache, fetched abstracts (abstract_sources from s03a), the ontology (OntologyTerm nodes from s01/s02), and the
+schema. Then run s03 -> s09."""
 from common import db, driver, NEO4J_DB
 
 for t in ("findings", "triples", "rejections", "extraction_log", "ned", "exaggeration", "exaggeration_embed", "exaggeration_llm",
-          "exaggeration_runs", "records", "chunks"):
+          "exaggeration_runs", "records", "chunks", "sentences"):
     db.execute(f"DROP TABLE IF EXISTS {t}")
 db.commit()
 driver.execute_query("""
