@@ -17,13 +17,17 @@ NEO4J_DB = os.environ.get("NEO4J_DB", "")
 
 LLM_MODEL = "claude-haiku-5-5"
 EXTRACT_EFFORT = "low"
-PROMPT_VERSION = "v1"
+PROMPT_VERSION = "v4"  # bump whenever prompts change: invalidates cached LLM responses
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 DEV_LIMIT = 100
 BATCH_SIZE = 1000
-CHUNK_MAX_CHARS = 1200
-CHUNK_BREAK_SIM = 0.45
+# Ingestion (s03a fetch, s03 units and sentences)
+PRESS_WINDOW_WORDS = 2000   # a release up to this many words is one extraction unit; longer ones split into paragraph windows
+ABSTRACT_SOURCE_PRIORITY = ["pmc", "pubmed", "crossref", "corpus"]   # first candidate without a blocking quality flag is used
+ABSTRACT_MIN_WORDS = 80     # shorter abstracts are flagged too_short (blocking)
+ABSTRACT_MAX_WORDS = 600    # longer abstracts are flagged too_long (recorded only)
+ABSTRACT_SKIP_FLAGGED = True  # no extraction unit for an abstract whose every candidate has a blocking flag
 NED_CANDIDATES = 10
 
 # Exaggeration scoring (statement -> claim in the release's own paper)
@@ -41,6 +45,7 @@ COMM_MIN_SIZE = 2          # communities smaller than this get no communityId, s
 COMM_SEED = 42             # Leiden randomSeed (with concurrency 1) for reproducible communities
 COMM_CROSS_PAPER_ONLY = True  # True: ignore links between claims of the same paper, so communities reflect cross-paper topics
 COMM_EXCLUDE_ENTITIES = ["mortality", "all-cause mortality", "survival", "overall survival", "Adverse reaction", "Apoptosis"]
+
 
 DATA.mkdir(exist_ok=True)
 RESULTS.mkdir(exist_ok=True)
