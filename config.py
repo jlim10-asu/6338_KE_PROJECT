@@ -15,12 +15,13 @@ NEO4J_USER = os.environ.get("NEO4J_USER", "neo4j")
 NEO4J_PASSWORD = os.environ.get("NEO4J_PASSWORD", "12345qwert")
 NEO4J_DB = os.environ.get("NEO4J_DB", "neo4j")
 
-LLM_MODEL = "claude-haiku-5-5"
-EXTRACT_EFFORT = "low"
-PROMPT_VERSION = "v4"  # bump whenever prompts change: invalidates cached LLM responses
+LLM_MODEL = "claude-sonnet-5-5"
+EXTRACT_EFFORT = "high"
+ADJ_EFFORT = "high"
+PROMPT_VERSION = "v4-high"  # bump whenever prompts change: invalidates cached LLM responses
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
-DEV_LIMIT = 100
+DEV_LIMIT = 20
 BATCH_SIZE = 1000
 # Ingestion (s03a fetch, s03 units and sentences)
 PRESS_WINDOW_WORDS = 2000   # a release up to this many words is one extraction unit; longer ones split into paragraph windows

@@ -4,7 +4,7 @@ Two claims are linked when they share a MedicalEntity via HAS_EXPOSURE or HAS_OU
 entities they share. Leiden (GDS) writes communityId only for communities with at least COMM_MIN_SIZE claims, so no
 one-claim community exists. Community nodes are then created with plain Cypher (GDS only writes the property).
 Re-runnable: the previous run's property, Community nodes, and in-memory projection are cleared first.
-Community.summary is left empty here; it is filled by the summary step (planned)."""
+Community.title / summary / key_findings are left empty here; s10_community_summaries.py fills them."""
 import json
 from datetime import datetime, timezone
 from common import driver, NEO4J_DB, RESULTS

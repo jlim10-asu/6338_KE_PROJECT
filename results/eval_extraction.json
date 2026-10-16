@@ -1,0 +1,155 @@
+{
+  "chunks_labeled": 60,
+  "chunks_scored": 10,
+  "chunks_excluded": 50,
+  "chunks_pending": 0,
+  "chunks_by_type": {
+    "abstract": 7,
+    "press": 3
+  },
+  "gold_findings": 51,
+  "predicted_findings": 51,
+  "prompt_versions": [
+    "v4-high"
+  ],
+  "threshold": 0.6,
+  "lenient": {
+    "all": {
+      "tp": 41,
+      "fp": 10,
+      "fn": 10,
+      "precision": 0.804,
+      "recall": 0.804,
+      "f1": 0.804
+    },
+    "press": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "abstract": {
+      "tp": 39,
+      "fp": 10,
+      "fn": 10,
+      "precision": 0.796,
+      "recall": 0.796,
+      "f1": 0.796
+    }
+  },
+  "strict": {
+    "all": {
+      "tp": 22,
+      "fp": 29,
+      "fn": 29,
+      "precision": 0.431,
+      "recall": 0.431,
+      "f1": 0.431
+    },
+    "press": {
+      "tp": 1,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5
+    },
+    "abstract": {
+      "tp": 21,
+      "fp": 28,
+      "fn": 28,
+      "precision": 0.429,
+      "recall": 0.429,
+      "f1": 0.429
+    }
+  },
+  "matched_fields": {
+    "direction": {
+      "rate": 0.927,
+      "n": 41
+    },
+    "strength_exact": {
+      "rate": 0.976,
+      "n": 41
+    },
+    "strength_within_1": {
+      "rate": 1.0,
+      "n": 41
+    },
+    "evidence_agree": {
+      "rate": 0.683,
+      "n": 41
+    }
+  },
+  "none_chunks": {
+    "correct": 2,
+    "with_false_positives": 0
+  },
+  "target_f1": 0.7,
+  "meets_target": true,
+  "excluded": {
+    "not_in_run": {
+      "chunks": 50,
+      "gold_findings": 87,
+      "chunk_ids": [
+        "10.1001/jama.2021.23580#abstract",
+        "10.1001/jamaoncol.2021.1799#abstract",
+        "10.1016/j.ekir.2020.01.008#abstract",
+        "10.1016/j.ijrobp.2019.02.031#abstract",
+        "10.1016/s1473-3099(18)30101-4#abstract",
+        "10.1038/s41380-023-02033-y#abstract",
+        "10.1038/s42003-020-01400-7#abstract",
+        "10.1073/pnas.2107665118#abstract",
+        "10.1089/jwh.2017.6792#abstract",
+        "10.1111/add.14699#abstract",
+        "10.1111/apha.13290#abstract",
+        "10.1111/jgs.17980#abstract",
+        "10.1111/sms.14138#abstract",
+        "10.1161/circulationaha.121.055525#abstract",
+        "10.1161/jaha.118.011490#abstract",
+        "10.1200/jco.19.01019#abstract",
+        "10.1371/journal.pgen.1008034#abstract",
+        "10.1371/journal.pmed.1004118#abstract",
+        "10.1371/journal.pone.0237042#abstract",
+        "10.18632/oncotarget.27756#abstract",
+        "10.3233/nre-228002#abstract",
+        "10.34133/hds.0116#abstract",
+        "10.7717/peerj.18963#abstract",
+        "1000761#p1",
+        "1072877#p10",
+        "1072877#p4",
+        "1073488#p7",
+        "1076351#p5",
+        "467413#p5",
+        "473511#p10",
+        "482572#p5",
+        "483934#p17",
+        "527081#p4",
+        "649837#p4",
+        "699871#p20",
+        "699871#p3",
+        "699871#p7",
+        "702444#p0",
+        "707413#p19",
+        "741183#p2",
+        "741183#p8",
+        "778891#p1",
+        "928392#p4",
+        "937395#p10",
+        "984226#p15",
+        "984226#p17",
+        "985298#p7",
+        "985623#p18",
+        "989967#p2",
+        "993124#p4"
+      ]
+    }
+  },
+  "abstract_text_changed": [
+    "10.1002/ohn.567#abstract",
+    "10.1111/add.15004#abstract"
+  ],
+  "label_warnings": []
+}

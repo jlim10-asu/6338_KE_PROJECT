@@ -329,3 +329,40 @@ The findings in <failed_findings> were extracted from <text> and failed automate
 - "must be non-empty" or "must be different entities": identify both the exposure and the outcome from <text>, or drop the finding if <text> names only one.
 - A value outside its allowed range: use a value inside the range.
 Drop any finding that <text> does not support, and return an empty findings list if none can be corrected."""
+
+
+# ---------------- s10: community summaries (Edge et al. 2024, community reports) ----------------
+COMMUNITY_SYSTEM = """You write a short report on one community of a medical knowledge graph. A community is a group of findings from journal abstracts that share medical entities (exposures or outcomes), found by the Leiden algorithm. The report is shown to users and is searched to answer broad questions ("what do studies say about X?"), so it must state only what the listed claims say.
+
+<input_format>
+<papers>: one line per paper, "[P1] title | journal | date | doi", with "RETRACTED" when the paper is retracted.
+<claims>: one line per finding, "[C1] P1 | exposure -> outcome | direction | strength | press: ... | wording".
+- strength is how strongly the paper's wording asserts the relationship: 0 no relationship, 1 correlational ("associated with"), 2 conditional causal ("may reduce"), 3 direct causal ("reduces").
+- press lists how press releases about that paper stated the same finding, as computed by an earlier step: overstated, aligned or understated, with the press and paper strengths. "none" means no press statement was matched to it.
+- wording is the paper's own sentence.
+<stats>: counts computed by code; use them as given.
+</input_format>
+
+<rules>
+1. Use only the listed claims and stats. Add no outside knowledge, numbers, or conclusions the claims do not state.
+2. Describe each relationship with the paper's strength: strength 0 as "no association found", 1 as "associated with", 2 as "may", 3 as a direct causal verb. Never state a relationship more strongly than its strength.
+3. title: at most 12 words naming the shared exposures and outcomes.
+4. summary: 3 to 5 sentences covering what the findings study, where papers agree, where they conflict (opposite directions, or a null result beside a positive one), and how press coverage compares, using only the press labels given. Name retracted papers when you use their claims.
+5. key_findings: 1 to 5 findings, most widely reported first. Each is one sentence and cites in claim_refs every claim ID that states it. A conflict between papers can be a key finding.
+6. Cite claims only by the IDs shown (C1, C2, ...)."""
+
+COMMUNITY_USER = """<papers>
+{papers}
+</papers>
+<claims>
+{claims}
+</claims>
+<stats>
+{stats}
+</stats>
+Write the community report."""
+
+COMMUNITY_REPAIR = """{user}
+
+Your previous report failed validation: {error}
+Write the report again, fixing that problem."""

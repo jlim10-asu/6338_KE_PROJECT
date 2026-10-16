@@ -1,0 +1,35 @@
+{
+  "records": 20,
+  "records_before_filter": 500,
+  "press": {
+    "releases": 20,
+    "units": 20,
+    "windowed_releases": 0,
+    "empty_after_cleaning": 0,
+    "boilerplate_share_removed": 0.101,
+    "mean_sentences_per_unit": 24.7,
+    "window_words": 2000
+  },
+  "abstracts": {
+    "units": 19,
+    "skipped_flagged": 1,
+    "source": {
+      "pmc": 16,
+      "pubmed": 3,
+      "corpus": 1
+    },
+    "flags": {
+      "too_short": 1
+    },
+    "no_section_headers": 7,
+    "no_results_section": 0,
+    "priority": [
+      "pmc",
+      "pubmed",
+      "crossref",
+      "corpus"
+    ],
+    "fetched_sources_available": 96
+  },
+  "sentences": 696
+}

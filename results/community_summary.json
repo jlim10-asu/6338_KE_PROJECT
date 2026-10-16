@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-13T20:13:52.330275+00:00",
+  "run_at": "2026-10-15T21:45:17.425295+00:00",
   "algorithm": "gds.leiden.write",
   "min_size": 2,
   "seed": 42,
@@ -13,129 +13,41 @@
     "Apoptosis"
   ],
   "projection": {
-    "claims_with_shared_entity": 70,
-    "claim_pairs": 676
+    "claims_with_shared_entity": 11,
+    "claim_pairs": 36
   },
   "leiden": {
-    "communityCount": 8,
-    "modularity": 0.41437624733027556,
+    "communityCount": 1,
+    "modularity": 0.0,
     "ranLevels": 2,
     "didConverge": true,
-    "nodePropertiesWritten": 70
+    "nodePropertiesWritten": 11
   },
-  "communities_written": 8,
-  "claims_total": 404,
-  "claims_in_community": 70,
-  "claims_unassigned": 334,
+  "communities_written": 1,
+  "claims_total": 82,
+  "claims_in_community": 11,
+  "claims_unassigned": 71,
   "size_min_max_mean": [
-    2,
-    25,
-    8.75
+    11,
+    11,
+    11.0
   ],
-  "multi_paper_communities": 8,
+  "multi_paper_communities": 1,
   "communities_below_min_size": 0,
   "top_communities": [
     {
       "community_id": 1,
-      "claims": 25,
-      "papers": 10,
-      "top_entities": [
-        "older age",
-        "COVID-19",
-        "underlying comorbidities",
-        "trisb92",
-        "intranasal trisb92 administration",
-        "trisb92 nasal spray",
-        "igg antibody response to spike glycoprotein non-rbd epitopes",
-        "timing of covid-19 issue discussion"
-      ]
-    },
-    {
-      "community_id": 13,
-      "claims": 12,
+      "claims": 11,
       "papers": 2,
       "top_entities": [
         "Metformin",
-        "Diastolic dysfunction",
-        "passive myocardial stiffness",
+        "left ventricular diastolic function",
+        "passive stiffness of left ventricular wall muscle",
         "exercise capacity",
+        "diastolic function",
         "titin compliance",
         "titin n2b element phosphorylation",
-        "titin pevk phosphorylation",
-        "titin-based passive stiffness"
-      ]
-    },
-    {
-      "community_id": 0,
-      "claims": 9,
-      "papers": 3,
-      "top_entities": [
-        "prostate cancer",
-        "pten deletion",
-        "multiplatform single cell analysis",
-        "management of obesity, hypertension, and diabetes",
-        "smoking",
-        "smoking combined with obesity"
-      ]
-    },
-    {
-      "community_id": 8,
-      "claims": 9,
-      "papers": 2,
-      "top_entities": [
-        "anakinra",
-        "Neurobehavioral Manifestations",
-        "safety",
-        "serious adverse events",
-        "multi-domain responder index",
-        "respiratory function",
-        "vasopressor need",
-        "hemophagocytosis score"
-      ]
-    },
-    {
-      "community_id": 5,
-      "claims": 8,
-      "papers": 2,
-      "top_entities": [
-        "type 2 diabetes mellitus",
-        "beta cells with high h3k27me3 levels",
-        "lipid levels",
-        "glycerolipid metabolism",
-        "sphingolipid levels",
-        "lipid signature",
-        "lipid metabolism disorder",
-        "endogenous lipogenesis"
-      ]
-    },
-    {
-      "community_id": 4,
-      "claims": 3,
-      "papers": 2,
-      "top_entities": [
-        "body mass index",
-        "disease of mental health",
-        "myocardial infarction"
-      ]
-    },
-    {
-      "community_id": 7,
-      "claims": 2,
-      "papers": 2,
-      "top_entities": [
-        "patient safety climate",
-        "Methicillin-resistant Staphylococcus aureus infection",
-        "acetate priming"
-      ]
-    },
-    {
-      "community_id": 6,
-      "claims": 2,
-      "papers": 2,
-      "top_entities": [
-        "prefrontal cortex",
-        "fractional anisotropy",
-        "plasma amyloid-\u03b2 42/40 positivity"
+        "titin pevk phosphorylation"
       ]
     }
   ]

@@ -27,6 +27,7 @@ Pipeline that extracts exposure-outcome findings from medical press releases and
 | 7 | `python s07_load_graph.py` | load nodes and edges with provenance, `GROUNDS_IN` exaggeration edges (cleared and reloaded each run), `ASSOCIATED_WITH` claim counts |
 | 8 | `python s08_verify_load.py` | counts, provenance completeness, orphans, GROUNDS_IN integrity, label distribution, re-rated strengths, reframed nulls |
 | 9 | `python s09_communities.py` | Leiden (GDS) over ScientificClaim nodes linked by shared MedicalEntity; writes `communityId` only for communities of 2+ claims (`COMM_MIN_SIZE`), then creates `Community` nodes and `IN_COMMUNITY` edges -> `results/community_summary.json`. Re-run s08 afterwards for the community checks |
+| 10 | `python s10_community_summaries.py` | one LLM call per `Community`: code builds the input (papers, claims with exposure -> outcome, direction, strength, wording, and GROUNDS_IN press labels; counts computed by code), the LLM writes `title`, `summary` and 1-5 `key_findings` citing claims as C1, C2, ... (unknown IDs fail validation; one repair). Writes them to the node -> `results/community_reports.json`, `results/community_review.csv` (fill `faithful`, `covers_main_topic`). `--dry-run` writes the prompts only. Re-run after every s09 run. Settings: `SUM_MAX_CLAIMS` (40, round-robin across papers), `SUM_EFFORT` (medium) |
 
 Tests and evaluation:
 ```bash

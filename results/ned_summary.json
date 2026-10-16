@@ -1,9 +1,8 @@
 {
-  "exact_lexicon": 55,
-  "llm_nil": 1072,
-  "llm_refused": 1,
-  "llm_select": 163,
-  "no_candidates": 124,
-  "distinct_canonical": 1319,
-  "distinct_mentions": 1415
+  "exact_lexicon": 6,
+  "llm_nil": 193,
+  "llm_select": 18,
+  "no_candidates": 11,
+  "distinct_canonical": 220,
+  "distinct_mentions": 228
 }
