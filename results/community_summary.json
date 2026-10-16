@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-10-15T21:45:17.425295+00:00",
+  "run_at": "2026-10-16T21:13:51.281248+00:00",
   "algorithm": "gds.leiden.write",
   "min_size": 2,
   "seed": 42,
@@ -13,41 +13,176 @@
     "Apoptosis"
   ],
   "projection": {
-    "claims_with_shared_entity": 11,
-    "claim_pairs": 36
+    "claims_with_shared_entity": 485,
+    "claim_pairs": 3700
   },
   "leiden": {
-    "communityCount": 1,
-    "modularity": 0.0,
-    "ranLevels": 2,
+    "communityCount": 62,
+    "modularity": 0.7740897279523298,
+    "ranLevels": 3,
     "didConverge": true,
-    "nodePropertiesWritten": 11
+    "nodePropertiesWritten": 485
   },
-  "communities_written": 1,
-  "claims_total": 82,
-  "claims_in_community": 11,
-  "claims_unassigned": 71,
+  "communities_written": 62,
+  "claims_total": 1953,
+  "claims_in_community": 485,
+  "claims_unassigned": 1468,
   "size_min_max_mean": [
-    11,
-    11,
-    11.0
+    2,
+    57,
+    7.82
   ],
-  "multi_paper_communities": 1,
+  "multi_paper_communities": 62,
   "communities_below_min_size": 0,
   "top_communities": [
     {
-      "community_id": 1,
-      "claims": 11,
-      "papers": 2,
+      "community_id": 30,
+      "claims": 57,
+      "papers": 18,
       "top_entities": [
+        "soluble hace2",
+        "COVID-19",
+        "neurofilament light chain",
+        "glial fibrillary acidic protein",
+        "ubiquitin carboxy-terminal hydrolase l1",
+        "viral replication",
+        "interferon-associated gene expression",
+        "proinflammatory gene expression"
+      ]
+    },
+    {
+      "community_id": 29,
+      "claims": 44,
+      "papers": 18,
+      "top_entities": [
+        "paternal postnatal depression",
+        "depressive disorder",
+        "paternal involvement",
+        "covid-19 vaccination",
+        "myocarditis or pericarditis",
+        "couple conflict",
+        "older age",
+        "psychological distress"
+      ]
+    },
+    {
+      "community_id": 57,
+      "claims": 33,
+      "papers": 17,
+      "top_entities": [
+        "female sex",
+        "nonacceptance of statin therapy",
+        "statin therapy acceptance",
+        "dietary supplement use",
+        "Fatigue",
+        "osteoporosis",
+        "life stressors",
+        "baseline disability"
+      ]
+    },
+    {
+      "community_id": 17,
+      "claims": 26,
+      "papers": 10,
+      "top_entities": [
+        "bariatric surgery",
+        "Body Weight",
+        "obesity-associated cancer",
+        "cancer-related mortality",
+        "body mass index",
+        "age at menarche",
+        "hemoglobin a1c",
+        "medical therapy"
+      ]
+    },
+    {
+      "community_id": 4,
+      "claims": 26,
+      "papers": 12,
+      "top_entities": [
+        "direct-acting antiviral therapy",
+        "quality of life",
+        "sensorimotor training",
+        "Pain",
+        "Depressive symptom",
+        "alsfrs-r score",
+        "non-motor symptoms",
+        "emotional processing intervention"
+      ]
+    },
+    {
+      "community_id": 10,
+      "claims": 26,
+      "papers": 9,
+      "top_entities": [
+        "blindness",
+        "cognitive function",
+        "Vision decreased",
+        "anti-cd20 monoclonal antibody therapy",
+        "sars-cov-2 antibody response",
+        "bnt162b2 mrna booster vaccination",
+        "age",
+        "anti-nucleocapsid igg level"
+      ]
+    },
+    {
+      "community_id": 14,
+      "claims": 25,
+      "papers": 10,
+      "top_entities": [
+        "atezolizumab plus nab-paclitaxel",
+        "progression-free survival",
+        "physical activity",
+        "breast cancer recurrence",
+        "mortality",
+        "forced expiratory volume in 1 second",
+        "forced vital capacity",
+        "lung function decline"
+      ]
+    },
+    {
+      "community_id": 13,
+      "claims": 24,
+      "papers": 8,
+      "top_entities": [
+        "type 2 diabetes mellitus",
+        "\u03b2hi cell abundance",
+        "hematopoietic cell transplantation",
+        "inflammatory bowel disease",
+        "peptic ulcer disease",
+        "irritable bowel syndrome",
+        "gastritis-duodenitis",
+        "gastroesophageal reflux disease"
+      ]
+    },
+    {
+      "community_id": 15,
+      "claims": 14,
+      "papers": 4,
+      "top_entities": [
+        "mir-19a/19b",
+        "cardiac function",
         "Metformin",
-        "left ventricular diastolic function",
+        "diastolic function",
         "passive stiffness of left ventricular wall muscle",
         "exercise capacity",
-        "diastolic function",
         "titin compliance",
-        "titin n2b element phosphorylation",
-        "titin pevk phosphorylation"
+        "titin pevk element phosphorylation"
+      ]
+    },
+    {
+      "community_id": 18,
+      "claims": 12,
+      "papers": 5,
+      "top_entities": [
+        "metabolic bariatric surgery",
+        "cardiovascular system disease",
+        "medical therapy for type 2 diabetes",
+        "Blood pressure systolic increased",
+        "systolic blood pressure",
+        "low cardiorespiratory fitness",
+        "combined high systolic blood pressure and low cardiorespiratory fitness",
+        "combined high systolic blood pressure and high cardiorespiratory fitness"
       ]
     }
   ]

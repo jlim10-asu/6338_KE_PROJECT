@@ -1,0 +1,65 @@
+{
+  "run_at": "2026-10-16T21:53:07.195174+00:00",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "dimensions": 384,
+  "indexes": {
+    "entity_embedding": {
+      "label": "MedicalEntity",
+      "key": "canonical_name",
+      "embedded": 3831,
+      "skipped_no_text": 0,
+      "self_hit_rate": 1.0
+    },
+    "claim_embedding": {
+      "label": "ScientificClaim",
+      "key": "claim_id",
+      "embedded": 1953,
+      "skipped_no_text": 0,
+      "self_hit_rate": 1.0
+    },
+    "statement_embedding": {
+      "label": "Statement",
+      "key": "statement_id",
+      "embedded": 1960,
+      "skipped_no_text": 0,
+      "self_hit_rate": 0.95
+    },
+    "community_embedding": {
+      "label": "Community",
+      "key": "community_id",
+      "embedded": 62,
+      "skipped_no_text": 0,
+      "self_hit_rate": 0.95
+    }
+  },
+  "example": {
+    "query": "heart attack",
+    "entity_embedding": [
+      {
+        "name": "heart damage",
+        "type": "unlinked",
+        "score": 0.878
+      },
+      {
+        "name": "heart disease",
+        "type": "Disease",
+        "score": 0.847
+      },
+      {
+        "name": "heart attack risk",
+        "type": "unlinked",
+        "score": 0.832
+      },
+      {
+        "name": "adverse cardiac events",
+        "type": "unlinked",
+        "score": 0.793
+      },
+      {
+        "name": "myocarditis",
+        "type": "Disease",
+        "score": 0.789
+      }
+    ]
+  }
+}

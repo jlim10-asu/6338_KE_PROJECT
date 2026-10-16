@@ -1,71 +1,71 @@
 {
-  "run_id": "fa42bd09dcfe",
-  "run_at": "2026-10-15T21:41:34.438201+00:00",
+  "run_id": "40626cb307f0",
+  "run_at": "2026-10-16T21:02:29.345381+00:00",
   "active_mode": "llm",
   "embed_model": "sentence-transformers/all-MiniLM-L6-v2",
   "embed": {
     "threshold": 0.6,
     "margin": 0.05,
-    "statements": 115,
-    "resolved": 41,
-    "resolved_rate": 0.357,
+    "statements": 1960,
+    "resolved": 820,
+    "resolved_rate": 0.418,
     "by_method": {
-      "semantic": 27,
-      "entity": 14
+      "semantic": 639,
+      "entity": 181
     },
     "unresolved_by_reason": {
-      "ambiguous": 30,
-      "below_threshold": 26,
-      "no_finding": 18
+      "ambiguous": 526,
+      "below_threshold": 395,
+      "no_finding": 219
     },
     "labels": {
-      "aligned": 28,
-      "overstated": 8,
-      "understated": 5
+      "aligned": 559,
+      "overstated": 138,
+      "understated": 123
     },
-    "mean_strength_delta": 0.195,
+    "mean_strength_delta": 0.013,
     "rerated_vs_extraction": 0,
     "null_reframed": 0,
-    "direction_conflicts": 3,
-    "releases_scored": 11,
-    "releases_with_overstatement": 5,
+    "direction_conflicts": 101,
+    "releases_scored": 285,
+    "releases_with_overstatement": 89,
     "retracted_source_matches": 0
   },
   "llm": {
-    "model": "claude-sonnet-5-5",
-    "effort": "low",
+    "model": "claude-haiku-5-5",
+    "effort": "high",
     "top_k": 3,
     "floor": 0.4,
-    "statements": 115,
-    "resolved": 80,
-    "resolved_rate": 0.696,
+    "statements": 1960,
+    "resolved": 1161,
+    "resolved_rate": 0.592,
     "by_method": {
-      "llm": 66,
-      "llm_entity": 14
+      "llm": 995,
+      "llm_entity": 166
     },
     "unresolved_by_reason": {
-      "no_finding": 18,
-      "no_candidates": 9,
-      "llm_none": 8
+      "llm_none": 512,
+      "no_finding": 219,
+      "no_candidates": 68
     },
     "labels": {
-      "aligned": 58,
-      "overstated": 14,
-      "understated": 8
+      "aligned": 814,
+      "overstated": 225,
+      "understated": 122
     },
-    "mean_strength_delta": 0.087,
-    "rerated_vs_extraction": 8,
-    "null_reframed": 0,
-    "direction_conflicts": 7,
-    "releases_scored": 14,
-    "releases_with_overstatement": 5,
+    "mean_strength_delta": 0.138,
+    "rerated_vs_extraction": 245,
+    "null_reframed": 9,
+    "direction_conflicts": 33,
+    "releases_scored": 325,
+    "releases_with_overstatement": 137,
     "retracted_source_matches": 0
   },
   "comparison": {
-    "both_resolved": 40,
-    "same_claim": 37,
-    "same_label": 38,
-    "embed_only": 1,
-    "llm_only": 40
+    "both_resolved": 660,
+    "same_claim": 562,
+    "same_label": 544,
+    "embed_only": 160,
+    "llm_only": 501
   }
 }

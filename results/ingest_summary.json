@@ -1,35 +1,41 @@
 {
-  "records": 20,
+  "records": 498,
   "records_before_filter": 500,
   "press": {
-    "releases": 20,
-    "units": 20,
+    "releases": 498,
+    "units": 498,
     "windowed_releases": 0,
     "empty_after_cleaning": 0,
-    "boilerplate_share_removed": 0.101,
-    "mean_sentences_per_unit": 24.7,
+    "boilerplate_share_removed": 0.114,
+    "mean_sentences_per_unit": 23.7,
     "window_words": 2000
   },
   "abstracts": {
-    "units": 19,
-    "skipped_flagged": 1,
+    "units": 468,
+    "skipped_flagged": 29,
     "source": {
-      "pmc": 16,
-      "pubmed": 3,
-      "corpus": 1
+      "pmc": 341,
+      "pubmed": 121,
+      "corpus": 25,
+      "crossref": 10
     },
     "flags": {
-      "too_short": 1
+      "too_short": 19,
+      "sources_disagree": 10,
+      "truncated_end": 9,
+      "too_long": 6,
+      "truncated_start": 4,
+      "front_matter": 6
     },
-    "no_section_headers": 7,
-    "no_results_section": 0,
+    "no_section_headers": 239,
+    "no_results_section": 11,
     "priority": [
       "pmc",
       "pubmed",
       "crossref",
       "corpus"
     ],
-    "fetched_sources_available": 96
+    "fetched_sources_available": 474
   },
-  "sentences": 696
+  "sentences": 16843
 }

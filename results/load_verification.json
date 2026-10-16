@@ -8,35 +8,35 @@
       },
       {
         "label": "MedicalEntity",
-        "n": 220
+        "n": 3831
       },
       {
         "label": "Statement",
-        "n": 115
+        "n": 1960
       },
       {
         "label": "ScientificClaim",
-        "n": 82
-      },
-      {
-        "label": "Chunk",
-        "n": 20
+        "n": 1953
       },
       {
         "label": "SourceRelease",
-        "n": 20
+        "n": 498
+      },
+      {
+        "label": "Chunk",
+        "n": 498
       },
       {
         "label": "Paper",
-        "n": 20
+        "n": 497
       },
       {
         "label": "Institution",
-        "n": 18
+        "n": 356
       },
       {
         "label": "Community",
-        "n": 1
+        "n": 62
       }
     ]
   },
@@ -52,64 +52,64 @@
         "n": 17479
       },
       {
+        "type": "HAS_EXPOSURE",
+        "n": 3913
+      },
+      {
+        "type": "HAS_OUTCOME",
+        "n": 3913
+      },
+      {
         "type": "PRESENTS",
         "n": 3357
+      },
+      {
+        "type": "APPEARS_IN",
+        "n": 1960
+      },
+      {
+        "type": "EXTRACTED_FROM",
+        "n": 1960
+      },
+      {
+        "type": "REPORTS",
+        "n": 1953
+      },
+      {
+        "type": "ASSOCIATED_WITH",
+        "n": 1827
+      },
+      {
+        "type": "GROUNDS_IN",
+        "n": 1161
       },
       {
         "type": "TREATS",
         "n": 755
       },
       {
+        "type": "ISSUED_BY",
+        "n": 498
+      },
+      {
+        "type": "ANNOUNCES",
+        "n": 498
+      },
+      {
+        "type": "CHUNK_OF",
+        "n": 498
+      },
+      {
+        "type": "IN_COMMUNITY",
+        "n": 485
+      },
+      {
         "type": "PALLIATES",
         "n": 390
       },
       {
-        "type": "HAS_EXPOSURE",
-        "n": 197
-      },
-      {
-        "type": "HAS_OUTCOME",
-        "n": 197
-      },
-      {
-        "type": "APPEARS_IN",
-        "n": 115
-      },
-      {
-        "type": "EXTRACTED_FROM",
-        "n": 115
-      },
-      {
-        "type": "REPORTS",
-        "n": 82
-      },
-      {
-        "type": "GROUNDS_IN",
-        "n": 80
-      },
-      {
-        "type": "ASSOCIATED_WITH",
-        "n": 78
-      },
-      {
-        "type": "CHUNK_OF",
-        "n": 20
-      },
-      {
-        "type": "ISSUED_BY",
-        "n": 20
-      },
-      {
-        "type": "ANNOUNCES",
-        "n": 20
-      },
-      {
         "type": "DISAMBIGUATED_TO",
-        "n": 16
-      },
-      {
-        "type": "IN_COMMUNITY",
-        "n": 11
+        "n": 286
       }
     ]
   },
@@ -121,15 +121,15 @@
         "provenance_complete": 1.0
       },
       {
-        "type": "REPORTS",
-        "provenance_complete": 1.0
-      },
-      {
         "type": "HAS_EXPOSURE",
         "provenance_complete": 1.0
       },
       {
         "type": "HAS_OUTCOME",
+        "provenance_complete": 1.0
+      },
+      {
+        "type": "REPORTS",
         "provenance_complete": 1.0
       }
     ]
@@ -139,11 +139,11 @@
     "rows": [
       {
         "unlinked": true,
-        "entities": 204
+        "entities": 3545
       },
       {
         "unlinked": false,
-        "entities": 16
+        "entities": 286
       }
     ]
   },
@@ -175,22 +175,22 @@
       {
         "status": "resolved",
         "reason": "-",
-        "n": 80
-      },
-      {
-        "status": "unresolved",
-        "reason": "no_finding",
-        "n": 18
-      },
-      {
-        "status": "unresolved",
-        "reason": "no_candidates",
-        "n": 9
+        "n": 1161
       },
       {
         "status": "unresolved",
         "reason": "llm_none",
-        "n": 8
+        "n": 512
+      },
+      {
+        "status": "unresolved",
+        "reason": "no_finding",
+        "n": 219
+      },
+      {
+        "status": "unresolved",
+        "reason": "no_candidates",
+        "n": 68
       }
     ]
   },
@@ -200,32 +200,32 @@
       {
         "label": "aligned",
         "method": "llm",
-        "n": 50
+        "n": 686
       },
       {
         "label": "aligned",
         "method": "llm_entity",
-        "n": 8
+        "n": 128
       },
       {
         "label": "overstated",
         "method": "llm",
+        "n": 198
+      },
+      {
+        "label": "overstated",
+        "method": "llm_entity",
+        "n": 27
+      },
+      {
+        "label": "understated",
+        "method": "llm",
+        "n": 111
+      },
+      {
+        "label": "understated",
+        "method": "llm_entity",
         "n": 11
-      },
-      {
-        "label": "overstated",
-        "method": "llm_entity",
-        "n": 3
-      },
-      {
-        "label": "understated",
-        "method": "llm",
-        "n": 5
-      },
-      {
-        "label": "understated",
-        "method": "llm_entity",
-        "n": 3
       }
     ]
   },
@@ -234,9 +234,9 @@
     "rows": [
       {
         "mode": "llm",
-        "grounds_in": 80,
-        "rerated": 8,
-        "null_reframed": 0
+        "grounds_in": 1161,
+        "rerated": 245,
+        "null_reframed": 9
       }
     ]
   },
@@ -244,100 +244,155 @@
     "query": "MATCH (s:Statement)-[g:GROUNDS_IN {exaggeration_label: 'overstated'}]->(c:ScientificClaim)\nRETURN s.euid AS release, s.e",
     "rows": [
       {
-        "release": "745912",
-        "press_wording": "But Granzier and colleagues found that metformin treatment increased the number of phosphate groups in the N2B element of mouse titin, causing the protein, and the heart muscle as a whole, to become more compliant.",
-        "paper_wording": "Metformin-treated mice have unaltered PEVK phosphorylation but increased phosphorylation of PKA sites in the N2B element, a change which has previously been shown to lower titin\u2019s stiffness.",
+        "release": "1031976",
+        "press_wording": "Arlington, Va. \u2014 January 25, 2024 \u2014 A new study published today in the American Journal of Infection Control (AJIC) demonstrates that viral particles spread to many restroom surfaces during toilet flushing, regardless of whether the toilet lid is up or down.",
+        "paper_wording": "Viral contamination of restroom surfaces did not depend on toilet lid position (up or down).",
         "press_strength": 3,
-        "paper_strength": 1,
+        "paper_strength": 0,
         "method": "llm",
-        "explanation": "Candidate 1 reports the same finding: metformin increased phosphorylation of N2B titin. The press wording 'causing the protein ... to become more compliant' is direct causal, while the abstract only says 'increased phosphorylation', which is a descriptive observation (correlational), with the stiffness link noted as previously shown."
+        "explanation": "The press statement reports that viral particles spread to restroom surfaces during flushing regardless of lid position; candidate 1 reports that contamination did not depend on lid position, which is the same lid-position finding, while candidate 2 concerns cleaning products and bowl water. The press wording 'demonstrates that viral particles spread' is direct causal-style assertion (3) of a result the abstract states as a null, while candidate 1 uses 'did not depend' (0, no_effect)."
       },
       {
-        "release": "745912",
-        "press_wording": "The researchers gave metformin to mice with HFpEF-like symptoms and found that the drug reduced left ventricular stiffness, thereby improving the animals\u2019 capacity for exercise.",
-        "paper_wording": "Concomitant with this improvement in diastolic function, metformin-treated TAC/DOCA mice also demonstrate preserved exercise capacity.",
+        "release": "744455",
+        "press_wording": "Additionally, most of the mild mutations produced only a slight reduction of the extracellular secretory trimer.",
+        "paper_wording": "Trimer formation and secretion patterns tended to be similar to the wild type in most of the mutations that did not show proteinuria at a young age.",
+        "press_strength": 3,
+        "paper_strength": 0,
+        "method": "llm",
+        "explanation": "Candidate 1 is the closest match: most mild mutations (those without early proteinuria) showed trimer secretion similar to wild type, which corresponds to the press statement's 'only a slight reduction'. The press wording 'produced only a slight reduction' is direct causal (3) with a decrease direction, while the abstract's 'tended to be similar to the wild type' is a null result (0) with no_effect direction."
+      },
+      {
+        "release": "925852",
+        "press_wording": "In a study published last month in The Journal of Allergy and Clinical Immunology: In Practice, researchers from Tokyo Medical and Dental University (TMDU) have revealed that, as well as improving symptoms, HCT normalizes the gut microbiota of patients with IBD associated with XIAP deficiency.",
+        "paper_wording": "IBD improved remarkably after HCT.",
         "press_strength": 3,
         "paper_strength": 1,
         "method": "llm_entity",
-        "explanation": "Candidate 1 reports the same metformin and exercise capacity result in HFpEF mice; candidate 2 is about titin stiffness and candidate 3 is sham mice. The press wording 'reduced stiffness, thereby improving' is direct causal, while 'demonstrate preserved exercise capacity' concurrent with improvement is a descriptive finding without causal language, so correlational."
+        "explanation": "Candidate 1 reports the same finding, HCT improving IBD symptoms in XIAP deficiency, while candidate 2 covers gut inflammation and candidate 3 covers specific colonoscopic and index measures. The statement's 'improving symptoms' and 'normalizes' are direct causal wording (3), while candidate 1's 'IBD improved remarkably after HCT' is only temporal, with no causal verb, so it is rated 1."
       },
       {
-        "release": "811971",
-        "press_wording": "\"Identifying a higher risk at the beginning and immediately after the end of treatment highlights that retaining patients in treatment for longer periods will save lives.",
-        "paper_wording": "Risk of drug related poisoning and all\u2010cause mortality deaths appears to be greatest during the first 4 weeks of treatment initiation/re\u2010initiation and after treatment cessation.",
+        "release": "832675",
+        "press_wording": "Painless magnetic stimulation of nerves that regulate muscles in the anus and rectum appears to improve their function and dramatically reduce episodes of fecal incontinence, a debilitating problem affecting about 10% of the population, investigators report.",
+        "paper_wording": "FI episodes decreased significantly (\u0394 \u00b195% CI, 4.2\u00b12.8 (1 Hz); 2\u00b11.7 (5 Hz); 3.4\u00b12.5 (15 Hz); p<0.02) in all three groups when compared to baseline.",
         "press_strength": 3,
         "paper_strength": 1,
-        "method": "llm",
-        "explanation": "The press statement draws on the higher-risk-at-start-and-end-of-treatment finding; candidates 1 and 3 share the same original wording, and candidate 1 (all-cause mortality, which corresponds to 'save lives') is closest. The press says 'will save lives' (direct causal), while the abstract says 'appears to be greatest' (descriptive, correlational)."
-      },
-      {
-        "release": "973753",
-        "press_wording": "A history of metformin use reduced the risk of delirium in patients with DM (OR, 0.50 [95% CI, 0.32 to 0.79]) after controlling for confounding factors.",
-        "paper_wording": "Metformin use may lower the risk of delirium and mortality in DM patients.",
-        "press_strength": 3,
-        "paper_strength": 2,
         "method": "llm_entity",
-        "explanation": "Candidate 1 is the metformin and delirium finding in diabetic patients; candidate 2 is mortality, a different outcome. The press wording 'reduced the risk' is direct causal (3), while the abstract's 'may lower the risk' is conditional causal (2)."
+        "explanation": "Candidate 3 reports the same finding: TNT reducing fecal incontinence episodes, with the press statement's 'dramatically reduce episodes of fecal incontinence' matching its 'FI episodes decreased significantly'. The press wording 'appears to... dramatically reduce' is conditional-to-direct causal (2-3), while candidate 3 reports a measured decrease against baseline with no causal verb (1 at most, arguably a within-group change), so the press statement is stronger."
       },
       {
-        "release": "973753",
-        "press_wording": "A history of metformin use decreased the risk of 3-year mortality after adjustment for confounding factors (HR, 0.69 [95% CI, 0.48 to 0.98]).",
-        "paper_wording": "Metformin use may lower the risk of delirium and mortality in DM patients.",
+        "release": "895271",
+        "press_wording": "\"What we discovered was that higher long-term egg consumption (greater than 38 grams per day) increased the risk of diabetes among Chinese adults by approximately 25 per cent.",
+        "paper_wording": "Compared with the first quartile of egg consumption (0-9\u00b70 g/d), the adjusted OR of diabetes for the second (9\u00b71-20\u00b76 g/d), third (20\u00b77-37\u00b75 g/d) and fourth (\u226537\u00b76 g/d) quartiles were 1\u00b729 (95 % CI 1\u00b703, 1\u00b762), 1\u00b737 (95 % CI 1\u00b709, 1\u00b772) and 1\u00b725 (95 % CI 1\u00b704, 1\u00b764), respectively (Pfor trend = 0\u00b7029). The results suggested that higher egg consumption was positively associated with the risk of diabetes in Chinese adults.",
         "press_strength": 3,
-        "paper_strength": 2,
+        "paper_strength": 1,
         "method": "llm_entity",
-        "explanation": "Candidate 1 is the metformin and mortality finding; candidate 2 is delirium, a different outcome. The press wording 'decreased the risk' is direct causal, while the abstract's 'may lower' is conditional causal."
+        "explanation": "Candidate 1 reports the same egg consumption and diabetes result, with the fourth quartile (\u226537.6 g/d) OR of 1.25 matching the press figure of about 25 per cent. The press statement says egg consumption 'increased the risk' of diabetes, which is direct causal wording (3), while the abstract says 'positively associated' and 'suggested', which is correlational (1)."
       },
       {
-        "release": "998347",
-        "press_wording": "Additionally, those who started smoking by age 19 also had less grey matter in their left prefrontal cortex at 14, indicating a potential causal influence.",
-        "paper_wording": "Here, using large longitudinal adolescence imaging genetic cohorts, we identify associations between left ventromedial prefrontal cortex (vmPFC) gray matter volume (GMV) and subsequent self-reported smoking initiation, and between right vmPFC GMV and the maintenance of smoking behaviour.",
-        "press_strength": 2,
+        "release": "807871",
+        "press_wording": "You also reduce the risk of dying from or with dementia.",
+        "paper_wording": "Change in estimated cardiorespiratory fitness is an independent risk factor for incidence dementia and dementia mortality.",
+        "press_strength": 3,
         "paper_strength": 1,
         "method": "llm",
-        "explanation": "Candidate 1 reports the same finding: smaller left prefrontal gray matter at 14 linked to later smoking initiation. The press wording 'indicating a potential causal influence' is conditional causal (2), while the abstract's 'identify associations between' is correlational (1)."
+        "explanation": "The statement's finding is fitness reducing dementia death risk, which matches candidate 3's change in fitness as an independent risk factor for dementia mortality, though candidate 3 is an association rather than a reduction. Candidate 1 is hedged 'may be a target' (conditional causal) and candidate 2 covers incidence only; candidate 3 is correlational wording ('risk factor'), so it is rated 1, while the press 'reduces' is direct causal, rated 3."
       },
       {
-        "release": "998347",
-        "press_wording": "Data at age 23 showed that grey matter volume in the right prefrontal cortex shrank at a faster pace in those who continued to smoke, suggesting an influence of smoking itself on prefrontal function.",
-        "paper_wording": "Here, using large longitudinal adolescence imaging genetic cohorts, we identify associations between left ventromedial prefrontal cortex (vmPFC) gray matter volume (GMV) and subsequent self-reported smoking initiation, and between right vmPFC GMV and the maintenance of smoking behaviour.",
-        "press_strength": 2,
+        "release": "778151",
+        "press_wording": "\"These differences cannot be explained by temporal, terminological, or social factors, which is why we attribute them primarily to language,\" says Haim.",
+        "paper_wording": "Using a virtual agent-based testing methodology, a set of 3 studies in 11 countries found that the presentation of the SPR varies depending on where people search for suicide-related information. Language is a key factor explaining these differences.",
+        "press_strength": 3,
         "paper_strength": 1,
         "method": "llm",
-        "explanation": "Candidate 3 is the closest: right prefrontal grey matter and continued (maintained) smoking. The press statement says GMV shrank faster in continuing smokers, 'suggesting an influence of smoking itself', which is conditional causal wording, while the abstract says 'identify associations between', which is correlational."
+        "explanation": "Candidate 1 reports that language is a key factor explaining the cross-country differences, which is the same finding the press quote attributes primarily to language; candidate 2 only reports that the presentation varies by country, without the language attribution. The press wording 'we attribute them primarily to language' is a direct attribution, rated 3 under the causal scale, while candidate 1's 'Language is a key factor explaining these differences' is a correlational-to-causal explanatory claim, rated 1 because it names a factor without asserting a direct causal mechanism."
       },
       {
-        "release": "998347",
-        "press_wording": "Importantly, loss of grey matter in the right prefrontal cortex appears to speed up only after someone has started smoking.",
-        "paper_wording": "Here, using large longitudinal adolescence imaging genetic cohorts, we identify associations between left ventromedial prefrontal cortex (vmPFC) gray matter volume (GMV) and subsequent self-reported smoking initiation, and between right vmPFC GMV and the maintenance of smoking behaviour.",
+        "release": "1038128",
+        "press_wording": "Boston, MA\u2014Topiramate\u2014an antiseizure medication prescribed to treat epilepsy as well as migraines and bipolar disorder\u2014does not appear to increase the risk of autism spectrum disorder (ASD) among children exposed to it prenatally, according to a new study led by Harvard T.H. However, after adjusting for confounding variables, the researchers concluded that prenatal exposure to topiramate and lamotrigine was no longer associated with additional risk of developing ASD, while prenatal exposure to valproate remained associated with additional risk.",
+        "paper_wording": "Propensity score\u2013adjusted hazard ratios in a comparison with no exposure to antiseizure medication were 0.96 (95% confidence interval [CI], 0.56 to 1.65) for exposure to topiramate, 2.67 (95% CI, 1.69 to 4.20) for exposure to valproate, and 1.00 (95% CI, 0.69 to 1.46) for exposure to lamotrigine.",
         "press_strength": 2,
-        "paper_strength": 1,
-        "method": "llm",
-        "explanation": "The press statement says right prefrontal grey matter loss speeds up only after smoking starts, which matches the right vmPFC GMV and smoking maintenance/behaviour finding. Candidate 3 is closest on region and smoking, while candidate 1 concerns covariation with sensation seeking. The press wording 'appears to speed up' is hedged causal (2); the abstract's 'identify associations' is correlational (1)."
+        "paper_strength": 0,
+        "method": "llm_entity",
+        "explanation": "The press statement concerns topiramate and ASD risk, which candidate 1 reports as a null association (HR 0.96, CI spanning 1) with no hedging. Candidate 1's wording is only numerical hazard ratios with no explicit assertion of association, so it is rated 0 as a no-difference result; the press statement's 'does not appear to increase' is a hedged null, rated 2 on the scale, not a benefit or safety assurance reframing of a result it reports as safe, so null_reframed is false."
       },
       {
-        "release": "998347",
-        "press_wording": "Once a nicotine habit takes hold, grey matter in the right frontal lobe shrinks, which may weaken control over smoking by affecting \u201chedonic motivation\u201d: the way pleasure is sought and managed.",
-        "paper_wording": "In contrast, smoking behaviour associated longitudinal covariation of right vmPFC GMV and sensation seeking (especially hedonic experience) highlights a potential reward-based mechanism for sustaining addictive behaviour.",
-        "press_strength": 2,
+        "release": "636328",
+        "press_wording": "\"These findings demonstrate that opioid use by a parent or parents doubles the risk for suicidal behavior by their children,\" said David A.",
+        "paper_wording": "Parental use of opioids was associated with a doubling of the risk of a suicide attempt by their offspring (odds ratio [OR], 1.99; 95% CI, 1.71-2.33).",
+        "press_strength": 3,
         "paper_strength": 1,
         "method": "llm",
-        "explanation": "The press statement says smoking, once established, is followed by right frontal grey matter shrinkage that may weaken control via hedonic motivation; candidate 1 reports smoking behaviour with longitudinal covariation of right vmPFC GMV and sensation seeking (hedonic experience), which is the closest match. The press wording 'shrinks' and 'may weaken' is conditional causal (2), while the abstract's 'associated' is correlational (1)."
+        "explanation": "Candidate 1 reports the same finding: parental opioid use and offspring suicide attempt risk doubling, with OR 1.99. The press statement says 'demonstrate that... doubles the risk', which is a direct causal framing of a finding the abstract states only as 'was associated with', so it is rated 3 against the abstract's 1."
       },
       {
-        "release": "998347",
-        "press_wording": "The team argue that less grey matter in the left forebrain could lower cognitive function and lead to \u201cdisinhibition\u201d: impulsive, rule-breaking behaviour arising from a limited ability to consider consequences. This may increase the chances of smoking at a young age.",
-        "paper_wording": "Here, using large longitudinal adolescence imaging genetic cohorts, we identify associations between left ventromedial prefrontal cortex (vmPFC) gray matter volume (GMV) and subsequent self-reported smoking initiation, and between right vmPFC GMV and the maintenance of smoking behaviour.",
-        "press_strength": 2,
+        "release": "969847",
+        "press_wording": "\u201cOur study analyzes data to identify who might be at high risk for myocarditis/pericarditis after COVID-19 vaccination and validates the rare adverse reaction in adults under 40,\u201d explained lead investigator Chenyu Sun, MD, MSc, AMITA Health Saint Joseph Hospital Chicago, Chicago, IL, USA.",
+        "paper_wording": "COVID-19 vaccination correlated with an increased risk of myocarditis or pericarditis (RR=2.04; 95% CI=1.33, 3.14).",
+        "press_strength": 3,
         "paper_strength": 1,
-        "method": "llm",
-        "explanation": "Candidate 1 is the left vmPFC grey matter and smoking initiation finding; candidates 2 and 3 concern the right vmPFC and maintenance of smoking. The press wording 'could lower... may increase' is conditional causal, while the abstract's 'identify associations between' is correlational."
+        "method": "llm_entity",
+        "explanation": "The press statement says the study validates myocarditis/pericarditis as a rare adverse reaction to COVID-19 vaccination in adults under 40, which matches candidate 1's vaccination-to-myocarditis/pericarditis association; candidate 2 is a comparison with COVID-19 illness and candidate 3 is about second versus first dose. The press wording 'validates the rare adverse reaction' is an assertion of an effect, which I rate as direct causal (3) on the scale, while candidate 1's 'correlated with an increased risk' is correlational (1)."
       }
     ]
   },
   {
     "query": "MATCH (s:Statement)-[g:GROUNDS_IN {null_reframed: true}]->(c:ScientificClaim)\nRETURN s.euid AS release, s.evidence_span ",
-    "rows": []
+    "rows": [
+      {
+        "release": "894825",
+        "press_wording": "There was also evidence from a study of 16 to 26-year old women that compared the nonavalent and quadrivalent vaccines that they provide a similar level of protection against cervical, vaginal, and vulval pre-cancerous lesions.",
+        "paper_wording": "There was little to no difference in the incidence of the combined outcome of high\u2010grade cervical epithelial neoplasia, adenocarcinoma in situ, or cervical cancer between the HPV vaccines (quadrivalent 325/6882, nonavalent 326/6871; OR 1.00, 95% CI 0.85 to 1.16; 13,753 participants; high\u2010certainty evidence).",
+        "explanation": "The press statement reports similar protection from nonavalent versus quadrivalent vaccines against cervical, vaginal, and vulval pre-cancerous lesions in women 16 to 26; candidate 2 is the nonavalent versus quadrivalent comparison in women, though its outcome is the combined cervical neoplasia/cancer endpoint, which is a narrower set than the press statement's pre-cancerous lesions across three sites, so it is the closest match. Candidates 1 and 3 concern males and control comparisons. The statement's 'provide a similar level of protection' is a null-difference result paraphrased as protection, and candidate 2's 'little to no difference' is likewise null wording, rated 0 with no_effect."
+      },
+      {
+        "release": "987156",
+        "press_wording": "In preclinical studies, MPI 8 demonstrated remarkable effectiveness in preventing blood clots in mice without increasing bleeding risk.",
+        "paper_wording": "The lead MPI candidates demonstrates antithrombotic activity in mouse models of thrombosis, does not give rise to bleeding, and is well tolerated in mice even at very high doses.",
+        "explanation": "Candidate 1 reports the same MPI bleeding finding in mice: it says the lead MPI candidates 'does not give rise to bleeding', which matches the press statement's 'did not increase bleeding risk in mice'. The press statement's 'remarkable effectiveness in preventing blood clots' is a stronger claim than candidate 1's 'demonstrates antithrombotic activity', but the matched bleeding result is a null finding, so the press wording is rated 0 and the candidate's 'does not give rise to bleeding' is also rated 0."
+      },
+      {
+        "release": "1049005",
+        "press_wording": "Crucially, no serious adverse events related to the use of anakinra were reported, underscoring its safety profile.",
+        "paper_wording": "No serious adverse events were related to anakinra.",
+        "explanation": "Candidate 1 reports the same finding: no serious adverse events related to anakinra. Both wordings are null statements about adverse events, so both rate 0, but the press statement adds 'underscoring its safety profile', presenting the absence of events as a safety assurance."
+      },
+      {
+        "release": "508163",
+        "press_wording": "The stent was shown to keep the airway open over time and have low degradation rates, displaying normal healing and no adverse problems.",
+        "paper_wording": "The metallic matrix and degradation products were well tolerated by the airway tissue without exhibiting any noticeable local or systemic toxicity.",
+        "explanation": "The press statement's 'no adverse problems, with normal healing' corresponds most closely to candidate 1's no toxicity finding, though candidate 2's 'safely degrading... without affecting growth' is also a safety-no-effect statement; candidate 1 is the closer match on the no-adverse-effect outcome. Candidate 1 says 'without exhibiting any noticeable toxicity' (null, strength 0), while the press statement says 'showed no adverse problems' and 'normal healing' with 'was shown to keep the airway open' (not a null wording in the same sense, but the original wording it rates is 'shown to keep the airway open... displaying normal healing and no adverse problems', which asserts a positive effect, rated as correlational/no direct causal verb, strength 1)."
+      },
+      {
+        "release": "984416",
+        "press_wording": "A new University of California study shows long-term success when health care providers make electronic referrals (e-referrals) for their patients to California\u2019s tobacco quitline.",
+        "paper_wording": "In a sample randomly selected for follow-up, e-referred patients were as likely as general quitline callers to attempt quitting (68.5% vs. 71.4%; p = .23), quit for 30 days (28.3% vs. 26.9%; p = .52), and quit for 6 months (13.6% vs. 13.9%; p = .88).",
+        "explanation": "The press statement reports long-term success of electronic referrals to the quitline, which corresponds to the 6-month quit outcome in candidate 1 (13.6% vs 13.9%, no difference), while candidate 2 covers only the attempt-to-quit outcome. The press wording 'shows long-term success' implies a benefit, but the matched abstract wording is a null comparison ('as likely as'), so the statement is rated 1 with direction increase, and the matched claim is rated 0 with no_effect and flagged as reframed."
+      },
+      {
+        "release": "977738",
+        "press_wording": "The analysis found that non-lung transplant recipients from positive donors have 30-day graft and patient survival rates like those using donors negative for SARS-CoV-2.",
+        "paper_wording": "Transplantation of SARS-CoV-2 NAT+ donor organs appears safe for short-term outcomes of death and graft loss and ameliorates the organ shortage.",
+        "explanation": "The press statement reports 30-day graft and patient survival being similar for non-lung recipients of SARS-CoV-2-positive donors, which best matches candidate 3's short-term death and graft loss safety finding, though candidate 3 is restricted to 'appears safe' wording and its scope is broader than non-lung organs. Candidate 3's 'appears safe' is conditional causal wording (2), while the press statement's 'like those using negative donors' is a no-difference comparison rated 0, so I assign it 0 with no_effect and flag the reframing of no difference as safety."
+      },
+      {
+        "release": "954244",
+        "press_wording": "No adverse effects were seen after four weeks of intermediate-dose therapy with PP2S.",
+        "paper_wording": "PPs demonstrated antitubercular activities in macrophage and tuberculosis mouse models, showing no detectable toxicity in all assays tested.",
+        "explanation": "The press statement reports no adverse effects after four weeks of intermediate-dose PP2S; candidate 1 reports no detectable toxicity for PP derivatives in assays, which is a general and not the same exposure/duration/outcome framing, so it is the closest but not the same specific finding, and candidate 2 and 3 are different outcomes. Treating candidate 1 as the nearest match, its 'showing no detectable toxicity' is a null safety result, rated 0, and the press 'No adverse effects were seen' is also a null result rated 0, with the press statement presenting the absence of toxicity as a safety assurance."
+      },
+      {
+        "release": "970101",
+        "press_wording": "A new study led by Ochsner infectious diseases clinical pharmacist Kevin Lin, PharmD, was recently published in PLoS One, suggesting that oral cephalosporins are as safe and effective as the standard of care fluoroquinolones (FQs) for the treatment of acute kidney infections.",
+        "paper_wording": "Of the 343 patients included in the study, treatment failure occurred in 54/338 (16.0%) patients and was similar between oral CPs and FQs (35/229 [15.3%] vs. 19/109 [17.4%]).",
+        "explanation": "Candidate 1 reports the same oral cephalosporin versus fluoroquinolone treatment failure comparison that the press statement describes, while candidates 2 and 3 compare generations of cephalosporins to each other. Candidate 1 says treatment failure 'was similar,' a null result rated 0, and the press release turns this into 'as safe and effective' and 'as effective,' which is a reframing of no difference as a benefit, so its strength is rated 1 for correlational wording."
+      },
+      {
+        "release": "970101",
+        "press_wording": "A new study led by Ochsner infectious diseases clinical pharmacist Kevin Lin, PharmD, was recently published in PLoS One, suggesting that oral cephalosporins are as safe and effective as the standard of care fluoroquinolones (FQs) for the treatment of acute kidney infections.",
+        "paper_wording": "Of the 343 patients included in the study, treatment failure occurred in 54/338 (16.0%) patients and was similar between oral CPs and FQs (35/229 [15.3%] vs. 19/109 [17.4%]).",
+        "explanation": "Candidate 1 reports the same comparison, oral cephalosporins versus fluoroquinolones on treatment failure, which the press statement's 'as safe and effective' claim reflects. Its wording 'was similar between' is a null result (0, no_effect), while the press release's 'as safe and effective' presents that similarity as an assurance, so the reframing flag is set. Candidates 2 and 3 compare cephalosporin generations, a different comparison."
+      }
+    ]
   },
   {
     "query": "MATCH (k:Community)<-[:IN_COMMUNITY]-(c:ScientificClaim)\nWITH k, count(c) AS n WHERE n < 2 RETURN 'community_below_min_s",
@@ -351,11 +406,11 @@
     "query": "MATCH (k:Community) RETURN count(k) AS communities, sum(k.size) AS claims, min(k.size) AS min_size, max(k.size) AS max_s",
     "rows": [
       {
-        "communities": 1,
-        "claims": 11,
-        "min_size": 11,
-        "max_size": 11,
-        "multi_paper": 1
+        "communities": 62,
+        "claims": 485,
+        "min_size": 2,
+        "max_size": 57,
+        "multi_paper": 62
       }
     ]
   }

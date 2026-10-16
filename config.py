@@ -15,13 +15,16 @@ NEO4J_USER = os.environ.get("NEO4J_USER", "neo4j")
 NEO4J_PASSWORD = os.environ.get("NEO4J_PASSWORD", "12345qwert")
 NEO4J_DB = os.environ.get("NEO4J_DB", "neo4j")
 
-LLM_MODEL = "claude-sonnet-5-5"
+
+# claude-haiku-5-5
+# claude-sonnet-5-5
+LLM_MODEL = "claude-haiku-5-5"
 EXTRACT_EFFORT = "high"
-ADJ_EFFORT = "high"
-PROMPT_VERSION = "v4-high"  # bump whenever prompts change: invalidates cached LLM responses
+ADJ_EFFORT = "high" # llm: low | medium | high
+PROMPT_VERSION = "v5-high"  # bump whenever prompts change: invalidates cached LLM responses
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
-DEV_LIMIT = 20
+DEV_LIMIT = 500
 BATCH_SIZE = 1000
 # Ingestion (s03a fetch, s03 units and sentences)
 PRESS_WINDOW_WORDS = 2000   # a release up to this many words is one extraction unit; longer ones split into paragraph windows
@@ -37,7 +40,6 @@ RESOLVE_THRESHOLD = 0.60   # embed: minimum cosine similarity for a semantic (no
 RESOLVE_MARGIN = 0.05      # embed: best match must beat the runner-up by this much, else "ambiguous"
 ADJ_TOP_K = 3              # llm: candidates shown per statement (entity matches first)
 ADJ_FLOOR = 0.40           # llm: minimum cosine for a non-entity candidate
-ADJ_EFFORT = "low"         # llm: low | medium | high
 ADJ_WORKERS = 8            # llm: parallel API calls
 
 # Community detection (s09): Leiden over ScientificClaim nodes linked by shared MedicalEntity
