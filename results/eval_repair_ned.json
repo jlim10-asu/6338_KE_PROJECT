@@ -1,31 +1,25 @@
 {
   "repair": {
-    "chunks": 39,
-    "findings_accepted": 199,
-    "failed_first_pass": 4,
-    "recovery_rate": 0.25,
-    "recovered": 1,
-    "failed": 4,
-    "matched_part": {
-      "failed": 4,
-      "recovered": 1,
-      "new_findings_from_repair": 1
-    },
+    "chunks": 966,
+    "findings_accepted": 3931,
+    "failed_first_pass": 0,
+    "recovery_rate": null,
+    "recovered": 0,
+    "failed": 0,
+    "matched_part": {},
     "approximate_part": {
       "chunks": 0,
       "failed": 0,
       "recovered": 0
     },
-    "s04_reported_rate": 0.5,
-    "refused_chunks": 0,
-    "rejection_reasons": {
-      "cites_non_citable_sentence": 4
-    },
+    "s04_reported_rate": null,
+    "refused_chunks": 5,
+    "rejection_reasons": {},
     "target": 0.25,
-    "meets_target": true
+    "meets_target": false
   },
   "rejection_review": {
-    "rows": 3,
+    "rows": 0,
     "labeled": 0,
     "correctly_rejected_rate": null,
     "target": 0.9

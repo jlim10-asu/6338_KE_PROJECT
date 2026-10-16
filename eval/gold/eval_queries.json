@@ -1,0 +1,446 @@
+{
+ "version": 1,
+ "drafted_by": "LLM (Claude), from source text in eval/qa_candidates.json",
+ "verification": "LLM self-check against verbatim source sentences (see each question's review); not yet human-verified",
+ "gold_ids_match": "all = a complete answer cites every listed ID; any = citing at least one listed ID is enough",
+ "questions": [
+  {
+   "id": "Q01",
+   "question": "The Flinders University press release says regular snoring could be an early warning sign of dangerous hypertension. Does the study support that?",
+   "path_type": "local",
+   "template_id": "statement_check",
+   "gold_answer": "Partly. The study found that people who spent more time snoring had about 1.9 times the odds of uncontrolled hypertension (OR 1.87), independent of sleep apnea. It measured an association with hypertension prevalence and did not test whether snoring precedes or predicts hypertension, so 'early warning sign' goes beyond what the paper reports.",
+   "gold_claims": [
+    "More time spent snoring was associated with about 1.9-fold higher odds of uncontrolled hypertension (OR 1.87), independent of sleep apnea.",
+    "The paper measured an association with hypertension prevalence; it did not test whether snoring precedes or predicts hypertension.",
+    "The press release's 'early warning sign' framing goes beyond the paper's associational finding."
+   ],
+   "gold_ids": [
+    "doi:10.1038/s41746-024-01026-7",
+    "release:1048746"
+   ],
+   "evidence": [
+    {
+     "source": "doi:10.1038/s41746-024-01026-7",
+     "quote": "A higher proportion of time spent snoring (75th vs. 5th; 12% vs. 0.04%) was associated with a ~1.9-fold increase (OR [95%CI]; 1.87 [1.63, 2.15]) in uncontrolled hypertension independent of sleep apnea."
+    },
+    {
+     "source": "doi:10.1038/s41746-024-01026-7",
+     "quote": "This study assessed snoring prevalence objectively over multiple months using in-home monitoring technology, and its association with hypertension prevalence."
+    },
+    {
+     "source": "doi:10.1038/s41746-024-01026-7",
+     "quote": "Multi-night objective snoring assessments and repeat daytime blood pressure recordings in a large global consumer sample, indicate that snoring is common and positively associated with hypertension."
+    },
+    {
+     "source": "release:1048746",
+     "quote": "That loud snoring keeping you up at night could be more than a noisy annoyance - it could be an early warning sign of dangerous hypertension."
+    }
+   ],
+   "notes": "",
+   "gold_ids_match": "all",
+   "review": {
+    "by": "LLM self-check (Claude Opus 5.5) against verbatim source text",
+    "decision": "edit",
+    "notes": "Claim 3 compared wording strength, but the press says 'could be' (hedged), so a strength verdict is arguable. Replaced with the checkable point: the paper measured association with prevalence and did not test prediction."
+   },
+   "human_verified": false
+  },
+  {
+   "id": "Q02",
+   "question": "What did the paper 10.1038/s41598-019-39809-8 find about when brain changes in Alzheimer's disease begin, and how did the press release report it?",
+   "path_type": "local",
+   "template_id": "claim_check",
+   "gold_answer": "The paper's lifespan MRI models show the Alzheimer's model diverging from normal aging before age 40 for the hippocampus, followed by the lateral ventricles and the amygdala around age 40. The press release's lead says both the amygdala and hippocampus show early atrophy 'at age 40'; its later paragraph matches the paper (hippocampus before 40, amygdala around 40).",
+   "gold_claims": [
+    "The Alzheimer's model diverges from the normal aging trajectory before age 40 for the hippocampus.",
+    "The lateral ventricles and the amygdala diverge around age 40.",
+    "The press release's lead places early atrophy of both the amygdala and hippocampus at age 40."
+   ],
+   "gold_ids": [
+    "doi:10.1038/s41598-019-39809-8",
+    "release:473585"
+   ],
+   "evidence": [
+    {
+     "source": "doi:10.1038/s41598-019-39809-8",
+     "quote": "Our study provides evidences of early divergence of the AD models from the normal aging trajectory before 40 years for the hippocampus, followed by the lateral ventricles and the amygdala around 40 years."
+    },
+    {
+     "source": "release:473585",
+     "quote": "Their models, published in the March 8, 2019 edition of Scientific Reports, reveal an early atrophy of the amygdala and hippocampus at age 40 in patients with Alzheimer's disease."
+    },
+    {
+     "source": "release:473585",
+     "quote": "Their results show an early divergence between the pathological models and the normal trajectory of ageing of the hippocampus before age 40, and of the amygdala around age 40."
+    }
+   ],
+   "notes": "",
+   "gold_ids_match": "all",
+   "review": {
+    "by": "LLM self-check (Claude Opus 5.5) against verbatim source text",
+    "decision": "accept",
+    "notes": "All three claims match the abstract and the press release verbatim; the press release's later paragraph matching the paper is also correct."
+   },
+   "human_verified": false
+  },
+  {
+   "id": "Q03",
+   "question": "Check the statements in press release 489839 against its paper.",
+   "path_type": "local",
+   "template_id": "release_check",
+   "gold_answer": "The paper reports that all unmarried groups (cohabiting, divorced/separated, widowed, never married) had significantly higher odds of dementia than married people, with larger differences among men for the divorced/separated and widowed, and that economic resources explained only part of the gap. The release's figure that divorcees are 'about twice as likely' to develop dementia, and its claim that the divorced had the highest risk, do not appear in the abstract.",
+   "gold_claims": [
+    "All unmarried groups had significantly higher odds of developing dementia than married people (an association).",
+    "For divorced/separated and widowed people, the difference relative to married people was greater among men than women.",
+    "The release's 'about twice as likely' figure for divorcees does not appear in the abstract."
+   ],
+   "gold_ids": [
+    "doi:10.1093/geronb/gbz087",
+    "release:489839"
+   ],
+   "evidence": [
+    {
+     "source": "doi:10.1093/geronb/gbz087",
+     "quote": "All unmarried groups, including the cohabiting, divorced/separated, widowed, and never married, had significantly higher odds of developing dementia over the study period than their married counterparts; economic resources and, to a lesser degree, health-related factors accounted for only part of the marital status variation in dementia."
+    },
+    {
+     "source": "doi:10.1093/geronb/gbz087",
+     "quote": "For divorced/separated and widowed respondents, the differences in the odds of dementia relative to married respondents were greater among men than among women."
+    },
+    {
+     "source": "release:489839",
+     "quote": "On the other hand, divorcees are about twice as likely as married people to develop dementia, the study indicated, with divorced men showing a greater disadvantage than divorced women."
+    }
+   ],
+   "notes": "",
+   "gold_ids_match": "all",
+   "review": {
+    "by": "LLM self-check (Claude Opus 5.5) against verbatim source text",
+    "decision": "accept",
+    "notes": "Claims match the abstract; the abstract gives no figures, so 'about twice as likely' and 'divorced had the highest risk' are correctly marked as absent."
+   },
+   "human_verified": false
+  },
+  {
+   "id": "Q04",
+   "question": "Do other studies agree that bariatric surgery leads to weight loss?",
+   "path_type": "cross_paper",
+   "template_id": "cross_paper",
+   "gold_answer": "Yes, at least two papers report weight reduction with bariatric surgery, both as associations from non-randomized comparisons. In adults with obesity, the surgery group had 24.8 kg (19.2%) greater weight loss at 10 years than nonsurgical care. In severely obese adolescents with type 2 diabetes, BMI fell 29% from baseline after surgery but rose 3.7% with medical therapy.",
+   "gold_claims": [
+    "In adults with obesity, bariatric surgery was followed by 24.8 kg (19.2%) greater weight loss at 10 years than nonsurgical care.",
+    "In severely obese adolescents with type 2 diabetes, BMI decreased 29% from baseline after surgery and increased 3.7% with medical therapy.",
+    "Both papers report associations from non-randomized comparisons and agree in direction."
+   ],
+   "gold_ids": [
+    "doi:10.1001/jama.2022.9009",
+    "doi:10.1001/jamapediatrics.2017.5763"
+   ],
+   "evidence": [
+    {
+     "source": "doi:10.1001/jama.2022.9009",
+     "quote": "The mean between-group difference in body weight at 10 years was 24.8 kg (95% CI, 24.6-25.1 kg) or a 19.2% (95% CI, 19.1%-19.4%) greater weight loss in the bariatric surgery group."
+    },
+    {
+     "source": "doi:10.1001/jamapediatrics.2017.5763",
+     "quote": "Compared with baseline, the body mass index decreased by 29% (95% CI, 24%-34%) in Teen-LABS and increased by 3.7% (95% CI, 0.8%-6.7%) in TODAY."
+    },
+    {
+     "source": "doi:10.1001/jamapediatrics.2017.5763",
+     "quote": "Compared with medical therapy, surgical treatment of severely obese adolescents with type 2 diabetes was associated with better glycemic control, reduced weight, and improvement of other comorbidities."
+    }
+   ],
+   "notes": "",
+   "gold_ids_match": "all",
+   "review": {
+    "by": "LLM self-check (Claude Opus 5.5) against verbatim source text",
+    "decision": "edit",
+    "notes": "'Two papers' -> 'at least two' (other bariatric papers may mention weight without a shared Body Weight link); removed '2 years' from the BMI claim because that sentence gives no time frame. Seed release removed from gold_ids: the system may start from either paper."
+   },
+   "human_verified": false
+  },
+  {
+   "id": "Q05",
+   "question": "Do other studies agree that physical activity improves survival in cancer patients?",
+   "path_type": "cross_paper",
+   "template_id": "cross_paper",
+   "gold_answer": "Only partly. In high-risk breast cancer, meeting activity guidelines before and after diagnosis was associated with lower recurrence and mortality (mortality HR 0.51). In metastatic colorectal cancer, the association of physical activity with overall survival was not statistically significant (HR 0.85, 95% CI 0.71-1.02), although more activity was associated with longer progression-free survival (HR 0.83).",
+   "gold_claims": [
+    "In high-risk breast cancer, meeting activity guidelines before and 1 year after diagnosis was associated with lower mortality (HR 0.51).",
+    "In metastatic colorectal cancer, the association of physical activity with overall survival was not statistically significant.",
+    "In metastatic colorectal cancer, greater physical activity was associated with longer progression-free survival (HR 0.83)."
+   ],
+   "gold_ids": [
+    "doi:10.1093/jnci/djaa046",
+    "doi:10.1200/jco.19.01019"
+   ],
+   "evidence": [
+    {
+     "source": "doi:10.1093/jnci/djaa046",
+     "quote": "In joint-exposure analyses, patients meeting the guidelines before and 1 year after diagnosis experienced statistically significant reductions in hazards of recurrence (hazard ratio [HR] = 0.59, 95% confidence interval [CI] = 0.42 to 0.82) and mortality (HR = 0.51, 95% CI = 0.34–0.77); associations were stronger at 2-year follow-up for recurrence (HR = 0.45, 95% CI = 0.31 to 0.65) and mortality (HR = 0.32, 95% CI = 0.19 to 0.52)."
+    },
+    {
+     "source": "doi:10.1200/jco.19.01019",
+     "quote": "Among patients with mCRC in Cancer and Leukemia Group B (Alliance)/SWOG 80405, association of physical activity with OS was not statistically significant."
+    },
+    {
+     "source": "doi:10.1200/jco.19.01019",
+     "quote": "Compared with patients engaged in less than 3 MET hours per week of physical activity, patients engaged in 18 or more MET hours per week experienced an adjusted hazard ratio for OS of 0.85 (95% CI, 0.71 to 1.02; PTrend = .06) and for PFS of 0.83 (95% CI, 0.70 to 0.99; PTrend = .01)."
+    }
+   ],
+   "notes": "",
+   "gold_ids_match": "all",
+   "review": {
+    "by": "LLM self-check (Claude Opus 5.5) against verbatim source text",
+    "decision": "accept",
+    "notes": "Hazard ratios and the non-significant overall survival result match both abstracts. Seed release removed from gold_ids: the system may start from either paper."
+   },
+   "human_verified": false
+  },
+  {
+   "id": "Q06",
+   "question": "How did the share of overstated press-release statements change from 2018 to 2024?",
+   "path_type": "aggregate",
+   "template_id": "agg_rate_by_year",
+   "gold_answer": "It fluctuated rather than rising steadily: 14 of 130 (10.8%) scored statements were overstated in 2018, peaking at 46 of 173 (26.6%) in 2020, dropping to 28 of 193 (14.5%) in 2022, and 31 of 151 (20.5%) in 2024. The differences were not tested for significance.",
+   "gold_claims": [
+    "In 2018, 14 of 130 (10.8%) scored statements were overstated; in 2024, 31 of 151 (20.5%).",
+    "The highest year was 2020 with 46 of 173 (26.6%).",
+    "The rate fell to 28 of 193 (14.5%) in 2022, so the change was not a steady rise."
+   ],
+   "gold_ids": [
+    "release:1031976",
+    "release:1035705",
+    "release:1037094",
+    "release:1038128",
+    "release:1038565",
+    "release:1042118",
+    "release:1044316",
+    "release:1046041",
+    "release:1046286",
+    "release:1049005",
+    "release:1049532",
+    "release:1056482",
+    "release:1065857",
+    "release:1068602",
+    "release:1069536",
+    "release:1071854",
+    "release:1072559",
+    "release:462222",
+    "release:496427",
+    "release:508163",
+    "release:525585",
+    "release:528866",
+    "release:549722",
+    "release:574862",
+    "release:577284",
+    "release:602277",
+    "release:620312",
+    "release:633532",
+    "release:663131",
+    "release:667837",
+    "release:681242",
+    "release:689395",
+    "release:744455",
+    "release:745912",
+    "release:750729",
+    "release:752940",
+    "release:761446",
+    "release:778151",
+    "release:797180",
+    "release:808968",
+    "release:817710",
+    "release:831823",
+    "release:832675",
+    "release:837240",
+    "release:837262",
+    "release:841822",
+    "release:842075",
+    "release:857454",
+    "release:858710",
+    "release:877611",
+    "release:878763",
+    "release:895271",
+    "release:941014",
+    "release:941967",
+    "release:942387",
+    "release:942455",
+    "release:945365",
+    "release:947685",
+    "release:948771",
+    "release:951701",
+    "release:954244",
+    "release:954842",
+    "release:962438",
+    "release:969523",
+    "release:969646",
+    "release:969847",
+    "release:970101",
+    "release:970320",
+    "release:970831",
+    "release:973753",
+    "release:978173"
+   ],
+   "evidence": [
+    {
+     "source": "sql",
+     "quote": "{\"2018\": {\"scored\": 130, \"overstated\": 14, \"overstated_rate\": 0.108}, \"2019\": {\"scored\": 181, \"overstated\": 30, \"overstated_rate\": 0.166}, \"2020\": {\"scored\": 173, \"overstated\": 46, \"overstated_rate\": 0.266}, \"2021\": {\"scored\": 128, \"overstated\": 29, \"overstated_rate\": 0.227}, \"2022\": {\"scored\": 193, \"overstated\": 28, \"overstated_rate\": 0.145}, \"2023\": {\"scored\": 168, \"overstated\": 38, \"overstated_rate\": 0.226}, \"2024\": {\"scored\": 151, \"overstated\": 31, \"overstated_rate\": 0.205}}"
+    }
+   ],
+   "notes": "",
+   "gold_ids_match": "any",
+   "review": {
+    "by": "LLM self-check (Claude Opus 5.5) against verbatim source text",
+    "decision": "accept",
+    "notes": "Counts come from SQL; the 2019-2023 rows match your earlier Cypher output exactly. Citations: any overstated release from the retrieved rows counts."
+   },
+   "human_verified": false
+  },
+  {
+   "id": "Q07",
+   "question": "Among institutions with at least 3 press releases, which overstate most often?",
+   "path_type": "aggregate",
+   "template_id": "agg_institution_rank",
+   "gold_answer": "University of Miami (3 of 6 (50.0%)) and University of Iowa (2 of 4 (50.0%)) have the highest overstated rates, followed by Pennsylvania State University (3 of 7 (42.9%)). The denominators are small, so the ranking is not reliable.",
+   "gold_claims": [
+    "University of Miami and University of Iowa have the highest overstated rate, 50% each (3 of 6 and 2 of 4 scored statements).",
+    "Pennsylvania State University is next with 3 of 7 (42.9%).",
+    "The rates rest on small numbers of scored statements."
+   ],
+   "gold_ids": [
+    "release:1044316",
+    "release:646148",
+    "release:752940",
+    "release:917638",
+    "release:973753"
+   ],
+   "evidence": [
+    {
+     "source": "sql",
+     "quote": "[{\"institution\": \"University of Miami\", \"releases\": 3, \"scored\": 6, \"overstated\": 3, \"overstated_rate\": 0.5}, {\"institution\": \"University of Iowa\", \"releases\": 3, \"scored\": 4, \"overstated\": 2, \"overstated_rate\": 0.5}, {\"institution\": \"Pennsylvania State University\", \"releases\": 3, \"scored\": 7, \"overstated\": 3, \"overstated_rate\": 0.429}, {\"institution\": \"University of Helsinki\", \"releases\": 3, \"scored\": 14, \"overstated\": 5, \"overstated_rate\": 0.357}, {\"institution\": \"University of Arizona\", \"releases\": 4, \"scored\": 17, \"overstated\": 6, \"overstated_rate\": 0.353}]"
+    }
+   ],
+   "notes": "",
+   "gold_ids_match": "any",
+   "review": {
+    "by": "LLM self-check (Claude Opus 5.5) against verbatim source text",
+    "decision": "accept",
+    "notes": "Counts match the earlier Cypher ranking exactly (Miami 3/6, Iowa 2/4, Penn State 3/7). Citations: any listed release counts."
+   },
+   "human_verified": false
+  },
+  {
+   "id": "Q08",
+   "question": "How often are press-release statements with dementia as the outcome overstated?",
+   "path_type": "aggregate",
+   "template_id": "agg_by_entity",
+   "gold_answer": "3 of 16 scored statements with dementia as the outcome were overstated (18.8%); 12 were aligned and 1 understated. They come from 6 releases, 2 of which had an overstated statement.",
+   "gold_claims": [
+    "3 of 16 scored statements about dementia were overstated (18.8%).",
+    "12 were aligned and 1 understated.",
+    "The statements come from 6 press releases."
+   ],
+   "gold_ids": [
+    "release:489839",
+    "release:807871"
+   ],
+   "evidence": [
+    {
+     "source": "sql",
+     "quote": "{\"entity\": \"dementia\", \"role\": \"outcome\", \"releases\": 6, \"statements\": 22, \"scored\": 16, \"overstated\": 3, \"aligned\": 12, \"understated\": 1}"
+    }
+   ],
+   "notes": "Gold counts the canonical entity 'dementia' as an outcome only. The template's entity search may also return close names (e.g. Alzheimer's disease) as separate rows; judge the answer against the 'dementia' row and do not penalize correctly reported extra rows.",
+   "gold_ids_match": "any",
+   "review": {
+    "by": "LLM self-check (Claude Opus 5.5) against verbatim source text",
+    "decision": "edit",
+    "notes": "Question now says 'as the outcome', the only role the gold counts; note added on near-synonym entity rows."
+   },
+   "human_verified": false
+  },
+  {
+   "id": "Q09",
+   "question": "What do studies say overall about pregnancy exposures and adverse birth outcomes?",
+   "path_type": "global",
+   "template_id": "topic_overview",
+   "gold_answer": "Findings are mixed by exposure. Severe 2009 H1N1 influenza in pregnancy (ICU admission) was associated with higher risks of preterm birth, low birth weight and low Apgar scores, while women not admitted to intensive care had no significantly elevated risk. Conceiving within 12 months after a stillbirth was not associated with higher risk of adverse outcomes. Moving home in the first trimester was associated with higher risk of low birth weight and preterm birth.",
+   "gold_claims": [
+    "Pregnant women with 2009 H1N1 influenza admitted to intensive care were more likely to deliver preterm and low-birth-weight infants; women who were not hospitalized, or hospitalized but not in intensive care, had no significantly elevated risk.",
+    "Conception within 12 months of a stillbirth was not associated with increased risk of adverse outcomes.",
+    "Moving residence in the first trimester was associated with higher risk of low birth weight and preterm birth."
+   ],
+   "gold_ids": [
+    "doi:10.1002/bdr2.1445",
+    "doi:10.1016/s0140-6736(18)32266-9",
+    "doi:10.1136/jech-2018-211937"
+   ],
+   "evidence": [
+    {
+     "source": "doi:10.1002/bdr2.1445",
+     "quote": "Women with 2009 H1N1 influenza admitted to an intensive care unit (ICU; n = 64) were more likely to deliver preterm infants (<37 weeks), low birth weight infants, and infants with Apgar scores <=6 at 5 min than women in comparison groups (adjusted relative risk, aRR = 3.9 [2.7, 5.6], aRR = 4.6 [2.9, 7.5], and aRR = 8.7 [3.6, 21.2], for same year comparisons, respectively)."
+    },
+    {
+     "source": "doi:10.1016/s0140-6736(18)32266-9",
+     "quote": "Conception within 12 months of a stillbirth was common and was not associated with increased risk of adverse outcomes in the subsequent pregnancy."
+    },
+    {
+     "source": "doi:10.1136/jech-2018-211937",
+     "quote": "Moving in the first trimester was associated with an increased risk of low birth weight (6.4% vs 4.5%, adjusted risk ratio 1.37 (95% CI 1.29 to 1.45)) and preterm birth (9.1% vs 6.4%, adjusted risk ratio 1.42 (95% CI 1.36 to 1.49)) and a slight increased risk of small for gestational age (9.8% vs 8.7%, adjusted risk ratio 1.09 (95% CI 1.00 to 1.09))."
+    }
+   ],
+   "notes": "Gold covers the three papers of community 22. Correct statements drawn from other relevant papers in the collection are not counted against the answer.",
+   "gold_ids_match": "all",
+   "review": {
+    "by": "LLM self-check (Claude Opus 5.5) against verbatim source text",
+    "decision": "edit",
+    "notes": "'Milder cases' was an interpretation; replaced with the abstract's exact groups (not hospitalized, or hospitalized but not in intensive care). Scope note added."
+   },
+   "human_verified": false
+  },
+  {
+   "id": "Q10",
+   "question": "What do studies say overall about inducing autophagy?",
+   "path_type": "global",
+   "template_id": "topic_overview",
+   "gold_answer": "Three studies report benefits from raising autophagy: felodipine, a blood-pressure drug, induced autophagy and cleared mutant α-synuclein in mouse brains, which was associated with neuroprotection; TFE3 overexpression restored autophagy and protected dopaminergic neurons in a Parkinson's model; and spermidine restored autophagy and function in T cells from older donors, linked to vaccine responses.",
+   "gold_claims": [
+    "Felodipine induced autophagy and cleared mutant α-synuclein in mouse brains at human-relevant plasma concentrations, and this was associated with neuroprotection in mice.",
+    "TFE3 overexpression reversed impaired autophagy and protected dopaminergic neurons in a Parkinson's disease model.",
+    "Spermidine supplementation restored autophagy and function in T cells from older donors."
+   ],
+   "gold_ids": [
+    "doi:10.1038/s41467-019-09494-2",
+    "doi:10.1016/j.gendis.2024.101429",
+    "doi:10.7554/elife.57950"
+   ],
+   "evidence": [
+    {
+     "source": "doi:10.1038/s41467-019-09494-2",
+     "quote": "Felodipine can clear mutant α-synuclein in mouse brains at plasma concentrations similar to those that would be seen in humans taking the drug."
+    },
+    {
+     "source": "doi:10.1038/s41467-019-09494-2",
+     "quote": "This is associated with neuroprotection in mice, suggesting the promise of this compound for use in neurodegeneration."
+    },
+    {
+     "source": "doi:10.1016/j.gendis.2024.101429",
+     "quote": "Mechanistically, TFE3 overexpression reversed α-Syn-mediated impairment of autophagy, leading to enhanced α-Syn degradation and reduced aggregation."
+    },
+    {
+     "source": "doi:10.7554/elife.57950",
+     "quote": "Spermidine supplementation in T cells from old donors recovers their autophagy level and function, similar to young donors’ cells, in which spermidine biosynthesis has been inhibited."
+    }
+   ],
+   "notes": "Community 45 also holds an unrelated COVID-19 endemicity paper (10.1126/science.abe6522); a faithful answer leaves it out.",
+   "gold_ids_match": "all",
+   "review": {
+    "by": "LLM self-check (Claude Opus 5.5) against verbatim source text",
+    "decision": "edit",
+    "notes": "The felodipine abstract says neuroprotection was 'associated with' clearance; gold had stated it as an effect. Wording now matches the paper's strength."
+   },
+   "human_verified": false
+  }
+ ]
+}

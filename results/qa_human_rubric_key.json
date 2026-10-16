@@ -1,0 +1,42 @@
+{
+  "Q01": {
+    "A": "baseline",
+    "B": "graph"
+  },
+  "Q02": {
+    "A": "baseline",
+    "B": "graph"
+  },
+  "Q03": {
+    "A": "graph",
+    "B": "baseline"
+  },
+  "Q04": {
+    "A": "baseline",
+    "B": "graph"
+  },
+  "Q05": {
+    "A": "baseline",
+    "B": "graph"
+  },
+  "Q06": {
+    "A": "baseline",
+    "B": "graph"
+  },
+  "Q07": {
+    "A": "baseline",
+    "B": "graph"
+  },
+  "Q08": {
+    "A": "baseline",
+    "B": "graph"
+  },
+  "Q09": {
+    "A": "graph",
+    "B": "baseline"
+  },
+  "Q10": {
+    "A": "baseline",
+    "B": "graph"
+  }
+}

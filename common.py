@@ -20,15 +20,17 @@ class LLMStop(RuntimeError):
         self.reason, self.category = reason, category
 
 
-def llm_json(schema_model, system, user, tag, effort=EXTRACT_EFFORT, use_cache=True):
+def llm_json(schema_model, system, user, tag, effort=EXTRACT_EFFORT, use_cache=True, model=None):
     # Cache key = SHA-256(model ID + prompt version + tag + prompt text); re-runs are free and identical.
-    key = hashlib.sha256(f"{LLM_MODEL}|{PROMPT_VERSION}|{tag}|{system}|{user}".encode()).hexdigest()
+    # model: per-call override (GraphRAG generator); None = LLM_MODEL, so pipeline cache keys are unchanged.
+    model = model or LLM_MODEL
+    key = hashlib.sha256(f"{model}|{PROMPT_VERSION}|{tag}|{system}|{user}".encode()).hexdigest()
     with _lock:
         row = db.execute("SELECT response FROM llm_cache WHERE key=?", (key,)).fetchone()
     if row and use_cache:
         return row[0], True
     resp = client.messages.create(
-        model=LLM_MODEL, max_tokens=16000, system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
+        model=model, max_tokens=16000, system=[{"type": "text", "text": system, "cache_control": {"type": "ephemeral"}}],
         messages=[{"role": "user", "content": user}],
         output_config={"effort": effort, "format": {"type": "json_schema", "schema": anthropic.transform_schema(schema_model)}},
     )
@@ -37,7 +39,7 @@ def llm_json(schema_model, system, user, tag, effort=EXTRACT_EFFORT, use_cache=T
         raise LLMStop(resp.stop_reason, category)
     text = next(b.text for b in resp.content if b.type == "text")
     with _lock:
-        db.execute("INSERT OR REPLACE INTO llm_cache VALUES (?,?,?,?,?)", (key, LLM_MODEL, PROMPT_VERSION, tag, text))
+        db.execute("INSERT OR REPLACE INTO llm_cache VALUES (?,?,?,?,?)", (key, model, PROMPT_VERSION, tag, text))
         db.commit()
     return text, False
 

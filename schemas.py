@@ -134,3 +134,59 @@ class CommunitySummary(BaseModel):
             if known is not None and (missing := [r for r in k.claim_refs if r not in known]):
                 raise ValueError(f"claim_refs not in the input: {missing}")
         return self
+
+
+# ---------------- GraphRAG engine: router (FR-5 to FR-7) ----------------
+PathType = Literal["local", "cross_paper", "aggregate", "global", "unsupported"]
+TemplateId = Literal["statement_check", "claim_check", "release_check", "cross_paper",
+                     "agg_rate_by_year", "agg_institution_rank", "agg_by_entity", "topic_overview"]
+TEMPLATE_PATH = {  # which question type each Cypher template answers
+    "statement_check": "local", "claim_check": "local", "release_check": "local",
+    "cross_paper": "cross_paper",
+    "agg_rate_by_year": "aggregate", "agg_institution_rank": "aggregate", "agg_by_entity": "aggregate",
+    "topic_overview": "global",
+}
+
+
+class RouterParams(BaseModel):
+    text: str | None = Field(None, description="The statement or claim the question is about, restated as a plain sentence "
+                                               "without question words; null when the question names none")
+    entities: list[str] = Field(default_factory=list, description="Exposures, outcomes, drugs or conditions named in the "
+                                                                  "question, each as a short noun phrase")
+    euid: str | None = Field(None, description="Press release ID exactly as written in the question, else null")
+    doi: str | None = Field(None, description="DOI exactly as written in the question, else null")
+    year_from: int | None = Field(None, description="First release year of a requested range, else null")
+    year_to: int | None = Field(None, description="Last release year of a requested range, else null")
+    min_releases: int | None = Field(None, description="Minimum releases per institution if the question states one, else null")
+
+
+class RouterDecision(BaseModel):
+    reasoning: str = Field(description="One sentence: what the question asks and why that type and template fit")
+    path_type: PathType
+    template_id: TemplateId | None = Field(description="Template for the question type; null only when path_type is unsupported")
+    params: RouterParams
+
+    @model_validator(mode="after")
+    def template_matches_path(self):
+        if self.path_type == "unsupported":
+            if self.template_id is not None:
+                raise ValueError("template_id must be null when path_type is unsupported")
+        elif self.template_id is None:
+            raise ValueError(f"template_id is required when path_type is {self.path_type}")
+        elif TEMPLATE_PATH[self.template_id] != self.path_type:
+            raise ValueError(f"template {self.template_id} answers {TEMPLATE_PATH[self.template_id]} questions, not {self.path_type}")
+        return self
+
+
+# ---------------- GraphRAG engine: generator (FR-5, FR-8) ----------------
+class AnswerSentence(BaseModel):
+    text: str = Field(description="One sentence of the answer, without citation markers")
+    kind: Literal["finding", "limitation"] = Field(description="finding: states something from the context (must cite); "
+                                                                "limitation: says what the context cannot show (no citation needed)")
+    citations: list[str] = Field(description="IDs from the context that support the sentence, each written as doi:<DOI> or "
+                                             "release:<euid>; empty only for limitation sentences")
+
+
+class GeneratorOutput(BaseModel):
+    sentences: list[AnswerSentence] = Field(description="The answer: direct answer first, then the supporting evidence")
+    insufficient_context: bool = Field(description="True when the context does not contain what the question asks")

@@ -1,0 +1,1296 @@
+{
+ "seed": 42,
+ "counts": {
+  "local": 12,
+  "cross": 8,
+  "global": 5,
+  "cross_pairs_available": 287,
+  "cross_pairs_both_roles": 3
+ },
+ "local": [
+  {
+   "euid": "902425",
+   "doi": "10.1016/j.ajic.2017.08.036",
+   "release_title": "Hospital Acquired Pneumonia Prevention Initiative-2: Incidence of nonventilator hospital-acquired pneumonia in the United States",
+   "release_date": "2017-10-16",
+   "institution": "California State University, Sacramento",
+   "paper_title": "Hospital Acquired Pneumonia Prevention Initiative-2: Incidence of nonventilator hospital-acquired pneumonia in the United States",
+   "journal": "American Journal of Infection Control",
+   "press_text": "Arlington, VA, January 9, 2018 -- Hospital-acquired pneumonia has long been associated with the elderly and intensive care units (ICU). But according to a new multicenter nationwide study, nonventilator hospital-acquired pneumonia (NV-HAP) occurs across all units in all types and sizes of U.S. hospitals, putting every patient--the young included--at higher risk for developing the infection.\n\nThe findings, published in the January issue of the American Journal of Infection Control (AJIC), the journal of the Association for Professionals in Infection Control and Epidemiology (APIC), reviewed patient data across 21 US hospitals, retroactively pulling charts from January 1, 2014 through December 31, 2014 to identify NV-HAP cases, in addition to assessing demographic data, outcomes, and documented preventive interventions applied.\n\nThe research team flagged 1,300 patients who acquired NV-HAP, recording a NV-HAP incidence rate of 0.12-2.28 cases per 1,000 patient days. The study is one of the first to debunk the association that NV-HAP predominantly impacts the elderly, and reverses previously held notions that patients in the ICU are at greatest risk for contracting pneumonia.\n\n\"NV-HAP does not discriminate; all patients across all hospital floors face a risk for acquiring pneumonia,\" said Dian Baker, PhD, RN, the study's lead author and a school nurse program coordinator at the California State University School of Nursing. \"But from standardizing oral care protocols to tracking hospital-wide NV-HAP rates, providers can address gaps to identify new or reinforce existing preventive measures. We predict that with the right interventions to cut NV-HAP rates in half, hospitals could save roughly 10 thousand lives, 490,000 hospital days and $2.43 billion in costs per year.\"\n\nUp to 35.4 million US patients are at risk for NV-HAP annually--as compared to 3.9 million patients at risk for ventilator-associated pneumonia (VAP). And while both healthcare-associated infections (HAI) have a roughly 19 percent mortality rate, NV-HAP costs health systems some $156 million, in contrast to the $86 million attributed to VAP costs. Patients with NV-HAP are 8.4 times more likely to require intensive care and/or die during hospitalization; 8.0 times more likely to require mechanical ventilation and, on average, have a readmission rate of 19.3 percent.\n\n\"Healthcare-acquired pneumonia is an under-appreciated HAI, causing patient harm, deaths, and excess healthcare costs,\" said 2018 APIC President Janet Haas, PhD, RN, CIC, FSHEA, FAPIC. \"However, since this infection is often preventable through nursing care activities aimed at preventing aspiration, once we recognize this problem, we can improve. This study underscores the need to implement evidence-based practices known to prevent pneumonia throughout the hospital.\"",
+   "abstract": "Because nonventilator hospital-acquired pneumonia (NV-HAP) is understudied, our purpose was to determine the incidence, overall burden, and level of documented pneumonia preventive interventions of NV-HAP in 24 U.S. hospitals. This retrospective chart review extracted NV-HAP cases as per the 2014 ICD-9-CM codes for pneumonia not present on admission and the 2013 Centers for Disease Control and Prevention case definition. Patient demographic data, outcomes, and documented preventive interventions were also collected. We found 1,300 NV-HAP patients who acquired NV-HAP (rate, 0.12-2.28 per 1,000 patient days) across the 21 hospitals that completed the data collection. Most NV-HAP infections (70.8%) were acquired outside of intensive care units (ICUs); 18.8% required transfer into the ICU. In the 24 hours prior to diagnosis, most of the patients did not have fundamental hospital care associated with pneumonia prevention. This multicenter, nationwide study highlights the significant burden of NV-HAP in the U.S. acute care hospital setting. We found that NV-HAP occurred on every hospital unit, including in younger, healthy patients. This indicates that although some patients are clearly at higher risk, all patients carry some NV-HAP risk. Therapeutic interventions aimed at NV-HAP prevention are frequently not provided for patients in acute care hospitals."
+  },
+  {
+   "euid": "1048746",
+   "doi": "10.1038/s41746-024-01026-7",
+   "release_title": "Regular snoring is associated with uncontrolled hypertension",
+   "release_date": "2024-02-17",
+   "institution": "Flinders University",
+   "paper_title": "Regular snoring is associated with uncontrolled hypertension",
+   "journal": "npj Digital Medicine",
+   "press_text": "That loud snoring keeping you up at night could be more than a noisy annoyance - it could be an early warning sign of dangerous hypertension.\n\nNew research from Flinders University sleep experts found that people, particularly overweight middle-aged men, who regularly snore at night are more likely to have elevated blood pressure and uncontrolled hypertension.\n\nThe study, published in the prestigious Nature Digital Medicine journal is the largest objective study and the first to use multiple night home-based monitoring technologies over a prolonged period to explore the association between snoring and hypertension.\n\n“For the first time, we can objectively say that there is a significant connection between regular nighttime snoring and high blood pressure,” says lead author Dr Bastien Lechat from the College of Medicine and Public Health.\n\n“We found that 15 per cent of all participants in the study, who were primarily overweight men, snore for more than 20 per cent of the night on average and that this regular nightly snoring is associated with elevated blood pressure and uncontrolled hypertension,” says Dr Lechat.\n\n“These results emphasise the significance of considering snoring as a factor in healthcare and treatment for sleep-related issues, especially in the context of managing hypertension.”\n\nSnoring is a common occurrence, affecting a large percentage of the population, and is often underestimated in terms of its negative health implications. Snoring and sleep apnoea often overlap indicating shared common causes.\n\n“We observed that in those who snore regularly the risk of having uncontrolled hypertension was almost double. This risk almost doubled again in people who snored regularly and had sleep apnoea versus those who did not snore regularly,” says Professor Danny Eckert, Director of Sleep Health at Flinders University and senior author of the paper.\n\nSnoring alone may also serve as an early warning sign of high blood pressure, as poor sleep quality due to snoring may worsen the risk of hypertension.\n\nHypertension is the medical term for high blood pressure over a long period of time. It can lead to serious health problems such as heart failure, stroke, heart disease or kidney disease.\n\nThe study used sleep tracker data collected by an under-mattress sensor to detect snoring and sleep apnoea, along with an FDA-registered at home blood pressure monitor in more than 12,000 participants globally over a nine-month period.\n\n“This is the largest study to date investigating the potential relationships between snoring, sleep apnoea and hypertension using objective assessments in people’s homes, and it reveals important insights into the potential consequences of snoring on hypertension risk,” says Dr Lechat.\n\n“It also highlights the need to consider snoring as part of clinical care and management of sleep problems, particularly in the context of hypertension management.\n\n“The findings of this study pave the way to further investigate whether therapeutic interventions directed toward snoring can reduce hypertension and reduce the risks associated with it,” he adds.\n\nIf you experience snoring along with signs of inadequate sleep, excessive sleepiness or observed breathing issues during sleep, it's advisable to have a conversation with your doctor or a specialist who may recommend a sleep study.\n\nThe article, ‘Regular snoring is associated with uncontrolled hypertension’ by Bastien Lechat, Ganesh Naik, Sarah Appleton, Jack Manners, Hannah Scott, Duc Phuc Nguyen, Pierre Escourrou, Robert Adams, Peter Catcheside and Danny J. Eckert has been published in the journal Nature Digital Medicine DOI: 10.1038/s41746-024-01026-7\n\nAcknowledgments: Dr Lechat and Professor Eckert are supported by National Health and Medical Research Council (NHMRC) of Australia Fellowships.",
+   "abstract": "Snoring may be a risk factor for cardiovascular disease independent of other co-morbidities. However, most prior studies have relied on subjective, self-report, snoring evaluation. This study assessed snoring prevalence objectively over multiple months using in-home monitoring technology, and its association with hypertension prevalence. In this study, 12,287 participants were monitored nightly for approximately six months using under-the-mattress sensor technology to estimate the average percentage of sleep time spent snoring per night and the estimated apnea-hypopnea index (eAHI). Blood pressure cuff measurements from multiple daytime assessments were averaged to define uncontrolled hypertension based on mean systolic blood pressure≥140 mmHg and/or a mean diastolic blood pressure ≥90 mmHg. Associations between snoring and uncontrolled hypertension were examined using logistic regressions controlled for age, body mass index, sex, and eAHI. Participants were middle-aged (mean ± SD; 50 ± 12 y) and most were male (88%). There were 2467 cases (20%) with uncontrolled hypertension. Approximately 29, 14 and 7% of the study population snored for an average of >10, 20, and 30% per night, respectively. A higher proportion of time spent snoring (75th vs. 5th; 12% vs. 0.04%) was associated with a ~1.9-fold increase (OR [95%CI]; 1.87 [1.63, 2.15]) in uncontrolled hypertension independent of sleep apnea. Multi-night objective snoring assessments and repeat daytime blood pressure recordings in a large global consumer sample, indicate that snoring is common and positively associated with hypertension. These findings highlight the potential clinical utility of simple, objective, and noninvasive methods to detect snoring and its potential adverse health consequences."
+  },
+  {
+   "euid": "1007493",
+   "doi": "10.1136/jitc-2023-006677",
+   "release_title": "Tumor cell-induced macrophage senescence plays a pivotal role in tumor initiation followed by stable growth in immunocompetent condition",
+   "release_date": "2023-11-01",
+   "institution": "Hokkaido University",
+   "paper_title": "Tumor cell-induced macrophage senescence plays a pivotal role in tumor initiation followed by stable growth in immunocompetent condition",
+   "journal": "Journal for ImmunoTherapy of Cancer",
+   "press_text": "Cancer stem cells cause the aging of macrophages in mice with healthy immune systems, creating conditions for the formation of tumors.\n\nCancerous tumors consist of a mixture of cells, the most important of which are cancer stem cells. These cells are capable of establishing new cancerous tumors by evading the immune response. Research has focused on identifying biomarkers for cancer stem cells and developing therapies that target these cells. Unfortunately, candidate drugs developed from these efforts have so far not been very effective in clinical trials.\n\nA research team led by Associate Professor Haruka Wada at Hokkaido University’s Institute for Genetic Medicine examined the mechanisms by which cancer stem cells evade immune response in mice models. They showed that cancer stem cells induce senescence in macrophages—the immune cells which are responsible for the first step of the destruction of cancer cells. Their findings were published in the Journal for ImmunoTherapy of Cancer.\n\n“One of the biggest questions in the development of cancer is how cancer develops in individuals with a healthy immune system,” explains Wada. “The majority of studies on cancer stem cells have been carried out in vitro or in immunodeficient mice models, which do not account for a fully functioning immune response. The lack of effectiveness of cancer stem cell-targeting drugs indicates that the immune response or lack thereof is more important than previously considered.”\n\nThe team used two cell lines of glioblastoma tumor, one of which was capable of inducing tumor formation (cancer stem cell) and the other of which was not. In mice models, the cancer stem cells suppressed the proliferation of macrophages; further investigation showed that macrophages cultured with cancer stem cells exhibit senescence or cellular aging. Macrophages were not the only immune cells affected; while the proliferation of T cells was unchanged, their antitumor activity was suppressed due to the immunosuppressive factors produced by senescent macrophages. The team identified interleukin 6 (IL-6) produced by cancer stem cells as the molecule responsible for triggering these effects.\n\nThe team also demonstrated that supplementing the mice inoculated with cancer stem cells with a molecule called nicotinamide mononucleotide resulted in the proliferation of non-senescent macrophages and reduced the immunosuppressive factors produced by senescent macrophages, preventing tumor growth and leading to increased survival times in mice.\n\n“Our results indicate that drugs targeting senescent macrophages could be a treatment for cancer—an unprecedented development,” concluded Wada. “We believe that these drugs could be part of a treatment that prevents the new onset of tumors, as well as a therapy that prevents recurrence after cancer treatment.” Future work will focus on two avenues: confirming that this discovery holds true for cancers other than glioblastomas, and confirming that the findings apply to cancers in humans.",
+   "abstract": "The cancer stem cell theory proposes that tumor formation in vivo is driven only by specific tumor-initiating cells having stemness; however, clinical trials conducted to test drugs that target the tumor stemness provided unsatisfactory results thus far. Recent studies showed clear involvement of immunity in tumors; however, the requirements of tumor-initiation followed by stable growth in immunocompetent individuals remain largely unknown. To clarify this, we used two similarly induced glioblastoma lines, 8B and 9G. They were both established by overexpression of an oncogenic H-RasL61 in p53-deficient neural stem cells. In immunocompromised animals in an orthotopic transplantation model using 1000 cells, both show tumor-forming potential. On the other hand, although in immunocompetent animals, 8B shows similar tumor-forming potential but that of 9G’s are very poor. This suggests that 8B cells are tumor-initiating cells in immunocompetent animals. Therefore, we hypothesized that the differences in the interaction properties of 8B and 9G with immune cells could be used to identify the factors responsible for its tumor forming potential in immunocompetent animals and performed analysis. Different from 9G, 8B cells induced senescence-like state of macrophages around tumors. We investigated the senescence-inducing factor of macrophages by 8B cells and found that it was interleukin 6. Such senescence-like macrophages produced Arginase-1, an immunosuppressive molecule known to contribute to T-cell hyporesponsiveness. The senescence-like macrophages highly expressed CD38, a nicotinamide adenine dinucleotide (NAD) glycohydrolase associated with NAD shortage in senescent cells. The addition of nicotinamide mononucleotide (NMN), an NAD precursor, in vitro inhibited to the induction of macrophage senescence-like phenotype and inhibited Arginase-1 expression resulting in retaining T-cell function. Moreover, exogenous in vivo administration of NMN after tumor inoculation inhibited tumor-initiation followed by stable growth in the immunocompetent mouse tumor model. We identified one of the requirements for tumor-initiating cells in immunocompetent animals. In addition, we have shown that tumor growth can be inhibited by externally administered NMN against macrophage senescence-like state that occurs in the very early stages of tumor-initiating cell development. This therapy targeting the immunosuppressive environment formed by macrophage senescence-like state is expected to be a novel promising cancer therapeutic strategy."
+  },
+  {
+   "euid": "944592",
+   "doi": "10.1152/japplphysiol.00738.2021",
+   "release_title": "Evaluating the 35°C wet-bulb temperature adaptability threshold for young, healthy subjects (PSU HEAT Project)",
+   "release_date": "2021-12-16",
+   "institution": "Pennsylvania State University",
+   "paper_title": "Evaluating the 35°C wet-bulb temperature adaptability threshold for young, healthy subjects (PSU HEAT Project)",
+   "journal": "Journal of Applied Physiology",
+   "press_text": "UNIVERSITY PARK, Pa. – As climate change nudges the global temperature higher, there is rising interest in the maximum environmental conditions like heat and humidity to which humans can adapt. New Penn State research found that in humid climates, that temperature may be lower than previously thought.\n\nIt has been widely believed that a 35°C wet-bulb temperature (equal to 95°F at 100 percent humidity or 115°F at 50 percent humidity) was the maximum a human could endure before they could no longer adequately regulate their body temperature, potentially causing heat stroke or death over a prolonged exposure.\n\nWet-bulb temperature is read by a thermometer with a wet wick over its bulb and is affected by humidity and air movement. It represents a humid temperature at which the air is saturated and holds as much moisture as it can in the form of water vapor, and that a person’s sweat will not evaporate at that skin temperature.\n\nBut in their new study, the researchers found that the actual maximum wet-bulb temperature is lower – about 31°C wet-bulb or 87°F at 100 percent humidity – even for young, healthy subjects. The temperature for older populations, who are more vulnerable to heat, is likely even lower.\n\nW. Larry Kenney, professor of physiology and kinesiology and Marie Underhill Noll Chair in Human Performance, said the results could help people better plan for extreme heat events, which are occurring more frequently as the world warms.\n\n“If we know what those upper temperature and humidity limits are, we can better prepare people – especially those who are more vulnerable – ahead of a heat wave,” Kenney said. “That could mean prioritizing the sickest people who need care, setting up alerts to go out to a community when a heatwave is coming, or developing a chart that provides guidance for different temperature and humidity ranges.”\n\nKenney added that it’s important to note that using this temperature to assess risk only makes sense in humid climates. In drier climates sweat is able to evaporate from the skin, which helps cool body temperature. Unsafe dry heat environments rely more on the temperature and the ability to sweat, and less on the humidity.\n\nThe study was recently published in the Journal of Applied Physiology.\n\nAccording to the researchers, while previous studies have theorized that a 35°C wet-bulb temperature was the upper limit of human adaptability, that temperature was based on theory and modeling and not real-world data from humans.\n\nKenney said that he and the other researchers wanted to evaluate this theoretical temperature as part of the PSU H.E.A.T. (Human Environmental Age Thresholds) project, which is examining how hot and humid an environment has to be before older adults start to have problems tolerating heat stress.\n\n“If you look at heat wave statistics, most of the people who die during heat waves are older people,” Kenney said. “The climate is changing, so there are going to be more – and more severe -- heat waves. The population is also changing, so there are going to be more older adults. And so it's really important to study the confluence of those two shifts.”\n\nFor this study, the researchers recruited 24 participants between the ages of 18 and 34. While the researchers plan to also perform these experiments in older adults, they wanted to start with younger people.\n\n“Young, fit, healthy people tend to tolerate heat better, so they will have a temperature limit that can function as the ‘best case’ baseline,” Kenney said. “Older people, people on medications, and other vulnerable populations will likely have a tolerance limit below that.”\n\nPrior to the experiment, each participant swallowed a tiny radio telemetry device encased in a capsule that would then measure their core temperature throughout the experiment.\n\nThen, the participant entered a specialized environmental chamber that had adjustable temperature and humidity levels. While the participant performed light physical activity like light cycling or walking slowly on a treadmill, the chamber either gradually increased in temperature or in humidity until the participant reached a point at which their body could no longer maintain its core temperature.\n\nAfter analyzing their data, the researchers found that critical wet-bulb temperatures ranged from 25°C to 28°C in hot-dry environments and from 30°C to 31°C in warm-humid environments – all lower than 35°C wet-bulb.\n\n“Our results suggest that in humid parts of the world, we should start to get concerned -- even about young, healthy people -- when it's above 31 degrees wet bulb temperature,” Kenney said. “As we continue our research, we’re going to explore what that number is in older adults, as it will probably be even lower than that.”\n\nAdditionally, the researchers added that because humans adapt to heat differently depending on the humidity level, there is likely not a single cutoff limit that can be set as the “maximum” that humans can endure across all environments found on Earth.\n\nS. Tony Wolf, postdoctoral researcher in Kinesiology at Penn State; Daniel J. Vecellio, postdoctoral fellow at Penn State’s Center for Healthy Aging; and Rachel M. Cottle, graduate student in exercise physiology at Penn State, also participated in this work.\n\nThe National Institute on Aging at the National Institutes of Health helped support this research.",
+   "abstract": "A wet-bulb temperature of 35°C has been theorized to be the limit to human adaptability to extreme heat, a growing concern in the face of continued and predicted accelerated climate change. Although this theorized threshold is based in physiological principles, it has not been tested using empirical data. This study examined the critical wet-bulb temperature (Twb,crit) at which heat stress becomes uncompensable in young, healthy adults performing tasks at modest metabolic rates mimicking basic activities of daily life. Across six experimentally determined environmental limits, no subject’s Twb,crit reached the 35°C limit and all means were significantly lower than the theoretical 35°C threshold. Mean Twb,crit values were relatively constant across 36°C –40°C humid environments and averaged 30.55 ± 0.98°C but progressively decreased (higher deviation from 35°C) in hotter, dry ambient environments. Twb,crit was significantly associated with mean skin temperature (and a faster warming rate of the skin) due to larger increases in dry heat gain in the hot-dry environments. As sweat rates did not significantly differ among experimental environments, evaporative cooling was outpaced by dry heat gain in hot-dry conditions, causing larger deviations from the theoretical 35°C adaptability threshold. In summary, a wet-bulb temperature threshold cannot be applied to human adaptability across all climatic conditions and where appropriate (high humidity), that threshold is well below 35°C. NEW & NOTEWORTHY This study is the first to use empirical physiological observations to examine the well-publicized theoretical 35°C wet-bulb temperature limit for human to extreme environments. We find that uncompensable heat stress in humid environments occurs in young, healthy adults at wet-bulb temperatures significantly lower than 35°C. In addition, uncompensable heat stress occurs at widely different wet-bulb temperatures as a function of ambient vapor pressure."
+  },
+  {
+   "euid": "527009",
+   "doi": "10.1542/peds.2019-4104",
+   "release_title": "Clinical Features of E-cigarette, or Vaping, Product Use–Associated Lung Injury in Teenagers",
+   "release_date": "2020-05-11",
+   "institution": "Medical City Children's Hospital",
+   "paper_title": "Clinical Features of E-cigarette, or Vaping, Product Use–Associated Lung Injury in Teenagers",
+   "journal": "PEDIATRICS",
+   "press_text": "DALLAS – June 2, 2020 – A study of teens diagnosed with the vaping-linked respiratory disease EVALI revealed that most also had gastrointestinal symptoms and a history of psychosocial factors, including substance abuse, UT Southwestern researchers found in one of the first clinical reviews of its kind.\n\nThe investigation, published online by Pediatrics, described the treatment of 13 adolescents for vaping-related lung injury at Children’s Health in Dallas, UTSW’s pediatric teaching hospital. Vaping involves inhaling aerosol from a battery-powered device, also known as an electronic cigarette. Vaping marijuana has been linked to EVALI (e-cigarette, or vaping, product use-associated lung injury).\n\n“This is the first study on teens and EVALI from UT Southwestern, and one of the first in the country regarding clinical features of EVALI in the pediatric population,” says corresponding author Devika Rao, M.D., pediatric pulmonologist at Children’s Health and assistant professor of pediatrics in the division of respiratory medicine. “We found that teenagers often presented with GI symptoms, which were just as frequent as respiratory symptoms. In some cases, these teens had abdominal CT scans that ended up showing abnormalities in the lung, which was the first clue of lung injury.”\n\nClinicians found that the nature of lung injury varied from mild to severe, and that there was a much larger proportion of female and Hispanic patients hospitalized with EVALI compared with published adult studies, Rao says.\n\n“It may be that in the adolescent population these groups are more vulnerable to risky behaviors than what was previously thought. This serves as a reminder to clinicians that a teen with EVALI is not necessarily always going to be white and male,” she adds.\n\nIn January, the Food and Drug Administration moved to blunt vaping among teens by banning fruit- and mint-flavored products. Over the past two years, the country has experienced an alarming rise in vaping as well as a corresponding increase in associated lung injuries.\n\nIn early 2019, the Centers for Diseases Control and Prevention (CDC) reported that more than 1 in 4 high school students and about 1 in 14 middle school students had used nicotine-containing e-cigarettes in the past 30 days.\n\nLast summer, clinicians began seeing an uptick nationally in EVALI that was linked to products containing vitamin E acetate or tetrahydrocannabinol (THC). By early 2020, more than 2,800 hospitalized EVALI cases or deaths had been reported to the CDC. Despite these surges, however, the hallmarks of EVALI in adolescents are just beginning to be well characterized.\n\nIn the UTSW study, researchers from the pediatrics and emergency medicine departments studied 13 hospitalized adolescents diagnosed with confirmed or probable EVALI between December 2018 and November 2019. The majority (54 percent) were female, with a mean age of 15.9 years.\n\nBoth respiratory and gastrointestinal symptoms were reported in 85 percent of the teens. Vaping cannabinol products was reported in 92 percent of patients, and vaping nicotine was reported in 62 percent.\n\nThe analysis included sociodemographic characteristics, clinical presentation, laboratory and imaging results, pulmonary function testing, oxygen requirements, and clinic follow-up, Rao says. Many teens were originally believed to have pneumonia or viral gastroenteritis-like symptoms, but actually had EVALI, which was diagnosed based on eliciting a vaping history from the teens. Treatment with glucocorticoid led to an improvement both in symptoms and lung function.\n\nInvestigations also revealed that a large percentage of the patients had a history of psychosocial stressors, including substance abuse and mood disorders. In addition, almost half of the cohort was Hispanic, though it was unclear whether that simply reflected the sizable Hispanic population in North Texas.\n\nCharting each patient’s risk-associated behavior was challenging, she says, but worth the unified and ongoing effort.\n\n“In taking care of hospitalized teens with EVALI, we found that they were very hesitant to disclose their vaping habits,” Rao says. “A multidisciplinary effort – discussion among emergency medicine physicians, hospitalist medicine physicians, pulmonologists, toxicologists, behavioral medicine specialists, and intensivists – is key to successful treatment of these patients.\n\n“We know that teens can be vulnerable to lung injury from vaping, and we know there are many experience stressors that perhaps motivate them to engage in risky behavior. The next step is prevention – preventing teens from the desire to vape – and also helping teens who have been treated for EVALI so that they can stop vaping,” she adds. “Future plans for study are tracking the long-term effects of EVALI on lung function and studying current vaping habits of teens with a history of vaping and/or EVALI in the context of the novel coronavirus epidemic.”",
+   "abstract": "In the United States in 2019, there was an outbreak of electronic cigarette, or vaping, product use–associated lung injury (EVALI). The manifestations of EVALI in adolescents are not well characterized. We describe the diagnosis, evaluation, and management of EVALI in adolescents hospitalized at a tertiary care, university-affiliated children’s hospital. A multidisciplinary committee developed an EVALI algorithm on the basis of guidelines from the Centers for Disease Control and Prevention. A retrospective chart review was conducted on patients diagnosed with EVALI. Descriptive analyses included sociodemographic characteristics, clinical presentation, laboratory and imaging results, pulmonary function testing, oxygen requirements, and clinic follow-up. Thirteen hospitalized adolescents were diagnosed with confirmed or probable EVALI. The majority were female (54%) with a mean age of 15.9 years. Sixty-nine percent of patients presented with respiratory symptoms, whereas gastrointestinal symptoms were prominent in 85% of patients. Vaping Δ−9-tetrahydrocannabinol was reported in 92% of patients, and vaping nicotine was reported in 62% of patients. All had bilateral ground-glass opacities on the chest computed tomography (CT) scan. Treatment with glucocorticoids led to clinical improvement in 11 of 12 patients. Treatment with glucocorticoids led to improvement in both forced expiratory volume in 1 second and forced vital capacity (P < .05). Four patients required home oxygen on the basis of 6-minute walk test results. Diagnosis of EVALI should be suspected on the basis of vaping history and clinical presentation. Glucocorticoid treatment led to an improvement in symptoms and lung function. The 6-minute walk test may help determine oxygen needs at discharge."
+  },
+  {
+   "euid": "489839",
+   "doi": "10.1093/geronb/gbz087",
+   "release_title": "Marital Status and Dementia: Evidence from the Health and Retirement Study",
+   "release_date": "2019-06-26",
+   "institution": "Michigan State University",
+   "paper_title": "Marital Status and Dementia: Evidence from the Health and Retirement Study",
+   "journal": "The Journals of Gerontology Series B",
+   "press_text": "Dementia and marital status could be linked, according to a new Michigan State University study that found married people are less likely to experience dementia as they age.\n\nOn the other hand, divorcees are about twice as likely as married people to develop dementia, the study indicated, with divorced men showing a greater disadvantage than divorced women.\n\nIn one of the first studies of its kind, Hui Liu, professor of sociology, and colleagues analyzed four groups of unmarried individuals: divorced or separated; widowed; never married; and cohabiters. Among them, the divorced had the highest risk of dementia.\n\nThe study, published in The Journals of Gerontology: Series B, comes at a time when 5.8 million people in the U.S. are living with Alzheimer's disease and related dementias, costing $290 billion, according to the Alzheimer's Association. It's a serious public health concern, Liu said.\n\n\"This research is important because the number of unmarried older adults in the United States continues to grow, as people live longer and their marital histories become more complex,\" Liu said. \"Marital status is an important but overlooked social risk/protective factor for dementia.\"\n\nLiu and her follow researchers analyzed nationally representative data from the Health and Retirement Study, from 2000 to 2014. The sample included more than 15,000 respondents ages 52 and older in 2000, measuring their cognitive function every two years, in person or via telephone.\n\nThe researchers also found differing economic resources only partly account for higher dementia risk among divorced, widowed and never-married respondents, but couldn't account for higher risk in cohabiters. In addition, health-related factors, such as behaviors and chronic conditions, slightly influenced risk among the divorced and married, but didn't seem to affect other marital statuses.\n\n\"These findings will be helpful for health policy makers and practitioners who seek to better identify vulnerable populations and to design effective intervention strategies to reduce dementia risk,\" Liu said.",
+   "abstract": "We provide one of the first population-based studies of variation in dementia by marital status in the United States. We analyzed data from the Health and Retirement Study (2000–2014). The sample included 15,379 respondents (6,650 men and 8,729 women) aged 52 years and older in 2000 who showed no evidence of dementia at the baseline survey. Dementia was assessed using either the modified version of the Telephone Interview for Cognitive Status (TICS) or the proxy’s assessment. Discrete-time hazard regression models were estimated to predict odds of dementia. All unmarried groups, including the cohabiting, divorced/separated, widowed, and never married, had significantly higher odds of developing dementia over the study period than their married counterparts; economic resources and, to a lesser degree, health-related factors accounted for only part of the marital status variation in dementia. For divorced/separated and widowed respondents, the differences in the odds of dementia relative to married respondents were greater among men than among women. These findings will be helpful for health policy makers and practitioners who seek to better identify vulnerable subpopulations and to design effective intervention strategies to reduce dementia risk."
+  },
+  {
+   "euid": "473585",
+   "doi": "10.1038/s41598-019-39809-8",
+   "release_title": "Lifespan Changes of the Human Brain In Alzheimer’s Disease",
+   "release_date": "2019-03-08",
+   "institution": "Centre National de la Recherche Scientifique",
+   "paper_title": "Lifespan Changes of the Human Brain In Alzheimer’s Disease",
+   "journal": "Scientific Reports",
+   "press_text": "What changes in the brain are caused by Alzheimer's disease? How do these changes differ from those observed in the normal ageing process? Researchers from the CNRS, the École pratique des hautes études (EPHE) and the University of Valencia (Spain) explored these questions by analysing over 4,000 MRI scans of healthy and diseased brains using the \"volBrain\" platform. Their models, published in the March 8, 2019 edition of Scientific Reports, reveal an early atrophy of the amygdala and hippocampus at age 40 in patients with Alzheimer's disease.\n\nAlzheimer's disease is characterised by changes in the brain, some of which can be measured in the patient using biomarkers such as the size of different areas of the brain. Studying these biomarkers has shown that certain brain structures shrink in the presence of Alzheimer's well before the first signs of dementia appear. Key questions remained however: when and how did changes in these biomarkers differ between a healthy subject and one with Alzheimer's, for example?\n\nTo answer these questions, researchers at the Laboratoire bordelais de recherche en informatique (LaBRI) (CNRS/Bordeaux INP/Université de Bordeaux), at the Aquitaine Institute for Cognitive and Integrative Neuroscience (CNRS/Université de Bordeaux/EPHE) and the University of Valencia (Spain) created a model which traces brain changes and activity over an entire life span using a massive set of over 4,000 MRI scans processed with the volBrain[1] platform. Prior to this, scientists did not have images covering every period of an Alzheimer patient's life. Researchers suggested modelling the changes generally seen in the volumes of different structures using a vast quantity of samples in order to pinpoint where healthy brains diverged from diseased ones over time.\n\nBased on MRI scans from 2,944 healthy control subjects between the ages of 9 months to 94 years old, the team developed a 'normal' model of average brain changes, which they compared to a pathological model based on MRIs from 1,385 Alzheimer's patients aged over 55 and 1,877 young control subjects. Their results show an early divergence between the pathological models and the normal trajectory of ageing of the hippocampus before age 40, and of the amygdala around age 40. Both of these structures suffer atrophy in the presence of Alzheimer's disease. Also evident is an early enlargement, in patients with the disease, of an internal cavity in the brain known as the lateral ventricle. This enlargement is part of the ageing process in normal subjects too, however, thus limiting the pertinence of this measurement in subjects of an advanced age, and reaffirming the usefulness of studying biomarkers across an entire life span.",
+   "abstract": "Brain imaging studies have shown that slow and progressive cerebral atrophy characterized the development of Alzheimer’s Disease (AD). Despite a large number of studies dedicated to AD, key questions about the lifespan evolution of AD biomarkers remain open. When does the AD model diverge from the normal aging model? What is the lifespan trajectory of imaging biomarkers for AD? How do the trajectories of biomarkers in AD differ from normal aging? To answer these questions, we proposed an innovative way by inferring brain structure model across the entire lifespan using a massive number of MRI (N = 4329). We compared the normal model based on 2944 control subjects with the pathological model based on 3262 patients (AD + Mild cognitive Impaired subjects) older than 55 years and controls younger than 55 years. Our study provides evidences of early divergence of the AD models from the normal aging trajectory before 40 years for the hippocampus, followed by the lateral ventricles and the amygdala around 40 years. Moreover, our lifespan model reveals the evolution of these biomarkers and suggests close abnormality evolution for the hippocampus and the amygdala, whereas trajectory of ventricular enlargement appears to follow an inverted U-shape. Finally, our models indicate that medial temporal lobe atrophy and ventricular enlargement are two mid-life physiopathological events characterizing AD brain."
+  },
+  {
+   "euid": "1056842",
+   "doi": "10.1016/j.jid.2024.08.014",
+   "release_title": "Deep Hair Phenomics: Implications in Endocrinology, Development, and Aging",
+   "release_date": "2024-09-03",
+   "institution": "Washington State University",
+   "paper_title": "Deep Hair Phenomics: Implications in Endocrinology, Development, and Aging",
+   "journal": "Journal of Investigative Dermatology",
+   "press_text": "PULLMAN, Wash. — A new application that uses artificial intelligence may revolutionize the way scientists study hair and could lead to the development of health diagnostics based solely on hair.\n\nThe AI model speeds up and streamlines the hair quantification process, allowing a microscope to scan slides and collect images of hundreds of hairs at a time. In a matter of seconds, it can capture an abundance of high-resolution data that is then processed with a deep learning algorithm that collects the color, shape, width and length of each individual hair. Researchers tested it using mouse fur, but it could be applied to hair of any species including humans.\n\nResearch behind the application, conducted and developed by scientists at Washington State University’s College of Veterinary Medicine, was published in the Journal of Investigative Dermatology.\n\n“In many ways an individual’s hair is somewhat a reflection of health, and if you start separating them out with tweezers, which a lot of hair scientists do, you can make some really interesting discoveries, but you’re doing this manually, right underneath the microscope,” Ryan Driskell associate professor and principal investigator of the research said. “So, the idea was what happens if you can make a computer program do that for you?”\n\nThe concept for the application was dreamt up by Jasson Makkar, a molecular biosciences graduate student at WSU who was tasked with the monotonous job of manually separating thousands of hairs for various research projects focused on hair and skin in Driskell’s lab.\n\nTo bring that idea to life, Makkar trained an AI computer vision model to identify hair using WSU’s high-performance computing cluster, Kamiak. With the added help of the Aperio GT450 microscope at the Washington Animal Disease Diagnostic Laboratory, high resolution imaging of the hair fibers was automated.\n\nThe application has many implications, including in forensics and the hair product industry, but allowing scientists to assess the health of a person or animal through their hair is perhaps the greatest of all, Makkar said.\n\nBy determining longitudinal data points for what healthy hair looks like in each species, he said a scale could be created for human doctors and veterinarians to grade overall health based on hair. Different conditions, such as hormonal imbalances or nutritional deficiencies, alter hair growth in ways that can be detected and potentially used for diagnosis.\n\nThe new technology could not only identify the species a hair is derived from but also shed light on age, health, and ethnicity in humans, which could aid criminal investigations.\n\n“There’s this methodology in law enforcement agencies that utilizes hair fiber classification as a forensic tool in criminal investigations,” Driskell said. “This methodology has been somewhat controversial because much of this work was performed by forensic technicians visually identifying hair types found at a crime scene and then cross-referencing them against a limited database of hair types across all mammals.”\n\nDriskell added the technology allows scientists to not only perform highly accurate cross-referencing of hair fibers in an unbiased manner but also generate a large enough database to accurately quantify hair types from different individuals and possibly anatomical positions.\n\nUsing these same tools, Makkar said assessing the effects of various hair products on hair is another capability the application brings.\n\n“Take a swatch of hair, apply the cosmetic that you’re testing to it and then look at it with our deep hair phenomics tool and see how it changes,” Makkar said.\n\nThe data generated in this study is available through an interactive webtool at skinregeneration.org.",
+   "abstract": "Hair quality is an important indicator of health in humans and other animals. Current approaches to assess hair quality are generally non-quantitative or are low throughput due to technical limitations of ‘splitting hairs’. We developed a deep learning-based computer vision approach for the high throughput quantification of individual hair fibers at a high resolution. Our innovative computer vision tool can distinguish and extract overlapping fibers for quantification of multivariate features including length, width, and color to generate single-hair phenomes (shPhenome) of diverse conditions across the lifespan of mice. Using our tool, we explored the effects of hormone signaling, genetic modifications, and aging on hair follicle output. Our analyses revealed hair phenotypes resultant of endocrinological, developmental, and aging-related alterations in the fur coats of mice. These results demonstrate the efficacy of our deep hair phenomics tool for characterizing factors that modulate the hair follicle and developing new diagnostic methods for detecting disease through the hair fiber. Finally, we have generated a searchable, interactive web tool for the exploration of our hair fiber data at skinregeneration.org."
+  },
+  {
+   "euid": "942748",
+   "doi": "10.1073/pnas.2114886119",
+   "release_title": "Open reading frame correction using splice-switching antisense oligonucleotides for the treatment of cystic fibrosis",
+   "release_date": "2022-01-10",
+   "institution": "Rosalind Franklin University of Medicine and Science",
+   "paper_title": "Open reading frame correction using splice-switching antisense oligonucleotides for the treatment of cystic fibrosis",
+   "journal": "Proceedings of the National Academy of Sciences",
+   "press_text": "North Chicago, Illinois — A research team at Rosalind Franklin University of Medicine and Science has developed a promising new therapeutic approach for the treatment of cystic fibrosis, a devastating lung and multi-system disease caused by mutations in a gene called CFTR.\n\nA study led by Professor Michelle Hastings, PhD, and recently published in the Proceedings of the National Academy of Sciences, supports the use of short, RNA-like molecules, called antisense oligonucleotides (ASOs), in combination with approved CF modulators as an effective treatment option for CF patients with class I mutations in the disease-causing gene. The study was funded in part by the Cystic Fibrosis Foundation.\n\n“Our ASO treatment resulted in a recovery of CFTR activity in patient cells grown in the lab to recapitulate the lung environment,” said Dr. Hastings, director of the Center for Genetic Diseases. “The efficacy of the treatment in this cell model of the disease is a good indicator of potential clinical success, giving us hope that our ASO strategy will offer a potential treatment for patients with this particular CF mutation and similar types of mutations as well.”\n\nCF affects more than 30,000 children and adults in the United States and more than 70,000 worldwide. Some people with CF have “stop” mutations that have proven very difficult to treat in CF and other diseases because they result in a nearly complete loss of protein production from the gene. In CF, loss of CFTR causes cell malfunction, affecting a number of organs, most severely the lungs, which get clogged with mucus, leading to infections, respiratory failure and other complications.\n\nDr. Hastings’ team, including Professor Robert Bridges, PhD, and post-doctoral fellow Wren Michaels, PhD, developed the RNA-based strategy to help restore CFTR function by directing the cellular machinery to remove the stop mutation during an intermediate stage of production. This type of ASO-based RNA therapeutic has proven to be an effective drug for other diseases. The hope is that this strategy can be developed to treat CF and other diseases caused by stop mutations.\n\n“Because they produce very little CFTR protein, CF patients with these types of mutations do not usually respond to current therapeutics approved for the disease that work to increase CFTR function,” said Dr. Michaels, first author of the study. “There is an urgent need for more personalized therapies, like the approach we have developed, that target these specific mutations to increase CFTR abundance.”\n\nDr. Hastings’ patented ASO technology and therapeutic approach has demonstrated potential applications for genetic diseases that in addition to CF include Parkinson’s, Alzheimer’s, Batten disease and Usher Syndrome.\n\n“We’re inspired by Dr. Hastings’ leadership on this body of research,” said RFU Executive Vice President for Research Ronald Kaplan, PhD. “This latest publication will help advance the discovery of new therapies for CF patients and so many others who lack effective treatment options.”\n\nNamed for DNA-research pioneer Dr. Rosalind Franklin, RFU encompasses the Chicago Medical School, College of Health Professions, College of Nursing, College of Pharmacy, School of Graduate and Postdoctoral Studies and the Dr. William M. Scholl College of Podiatric Medicine. Learn more at rosalindfranklin.edu.",
+   "abstract": "Frameshift and nonsense mutations pose a major problem for disease therapeutic development. Eliminating these mutations from the messenger RNA by inducing exon skipping is a relatively unexplored treatment approach, though it has shown promise for some diseases. Here, we show that eliminating a common stop mutation associated with cystic fibrosis (CF), by inducing the skipping of the exon it is located in, results in a restoration of the open reading frame and recovers CFTR protein function in a manner expected to be therapeutic in CF patients who don’t currently have effective treatment options. These results are an important advancement for the CF community but also have implications for other diseases where terminating mutations are responsible for dysfunction."
+  },
+  {
+   "euid": "1046041",
+   "doi": "10.1001/jamanetworkopen.2024.12854",
+   "release_title": "Menarche and Time to Cycle Regularity Among Individuals Born Between 1950 and 2005 in the US",
+   "release_date": "2024-05-29",
+   "institution": "Harvard University",
+   "paper_title": "Menarche and Time to Cycle Regularity Among Individuals Born Between 1950 and 2005 in the US",
+   "journal": "JAMA Network Open",
+   "press_text": "Key takeaways:\n\nBoston, MA—The average age at menarche—the first menstrual period—has been decreasing among younger generations in the U.S., especially those belonging to racial minorities and lower socioeconomic statuses, according to a new study led by researchers at Harvard T.H. Chan School of Public Health. It also found that the average time it takes for the menstrual cycle to become regular is increasing.\n\nThe study will be published on May 29 in JAMA Network Open. It is the latest publication from the Apple Women’s Health Study, a longitudinal study of menstrual cycles, gynecological conditions, and overall women’s health conducted by Harvard Chan School, the National Institute of Environmental Health Sciences, and Apple.\n\n“Our findings can lead to a better understanding of menstrual health across the lifespan and how our lived environment impacts this critical vital sign,” said co-principal investigator Shruthi Mahalingaiah, assistant professor of environmental, reproductive, and women’s health at Harvard Chan School.\n\nWhile previous studies have shown trends towards earlier menarche over the past five decades, data has been limited on how these trends present within different racial groups and socioeconomic statuses. Additionally, few studies have had sufficient data to identify any trends regarding time to menstrual cycle regularity.\n\nThe researchers used the Apple Women’s Health Study’s large, diverse dataset to fill this research gap. Participants who enrolled in the study between November 2018 and March 2023—71,341 in total—self-reported the age at which they first began menstruating and their race and socioeconomic status. The researchers divided the participants into five age brackets: born between 1950-1969, 1970-1979, 1980-1989, 1990-1999, and 2000-2005. Ages of menarche were defined as early (younger than 11 years old), very early (younger than 9), and late (ages 16 and above). A subset of participants (61,932) self-reported the time it took for their menstrual cycle to become regular and were divided into five categories: up to two years, between three and four years, longer than five years, hasn’t become regular, or became regular with use of hormones. Another subset (9,865) provided their body mass index (BMI) at their age of menarche.\n\nThe study found that as birth year increased (meaning younger participants), average age at menarche decreased and time from menarche to menstrual cycle regularity increased. Among participants born from 1950-1969, the average age at menarche was 12.5 years, and the rates of early and very early menarche were 8.6% and 0.6%, respectively. Among participants born from 2000-2005, the average age of menarche was 11.9 years, and the rates of early and very early menarche were 15.5% and 1.4%, respectively. Across the two groups, the percentage of participants who reached menstrual cycle regularity within two years of menarche decreased from 76% to 56%. The researchers observed that these trends were present among all sociodemographic groups but were most pronounced among the participants who identified as Black, Hispanic, Asian, or mixed race, and who rated themselves as belonging to a low socioeconomic status.\n\nThe findings showed that BMI at age of menarche could explain part of the trend toward periods starting earlier—in other words, that childhood obesity, a risk factor for early puberty and a growing epidemic in the U.S., could be a contributing factor to earlier menarche. Other possible factors that might explain the trend include dietary patterns, psychological stress and adverse childhood experiences, and environmental factors such as endocrine-disrupting chemicals and air pollution.\n\n“Continuing to investigate early menarche and its drivers is critical,” said corresponding author Zifan Wang, postdoctoral research fellow in Harvard Chan School’s Department of Environmental Health. “Early menarche is associated with higher risk of adverse health outcomes, such as cardiovascular disease and cancer. To address these health concerns—which our findings suggest may begin to impact more people, with disproportionate impact on already disadvantaged populations—we need much more investment in menstrual health research.”\n\nThe authors noted some limitations to the study, including that it relies heavily on retrospective self-reporting.\n\nOther Harvard Chan School authors included Gowtham Asokan, Jukka-Pekka Onnela, Michelle Williams, Russ Hauser, and Brent Coull.\n\nThe study was made possible by funding from Apple, Inc. and the National Institutes of Health (grant Z01ES103333).\n\n“Menarche and time to cycle regularity among females born between 1950-2005 in the US,” Zifan Wang, Gowtham Asokan, Jukka-Pekka Onnela, Donna D. Baird, Anne Marie Z. Jukic, Allen J. Wilcox, Christine L. Curry, Tyler Fischer-Colbrie, Michelle A. Williams, Russ Hauser, Brent A. Coull, Shruthi Mahalingaiah, JAMA Network Open, May 29, 2024, doi: 10.1001/jamanetworkopen.2024.12854\n\nVisit the Harvard Chan School website for the latest news, press releases, and multimedia offerings.",
+   "abstract": "Early menarche is associated with adverse health outcomes. Trends toward earlier menarche have been observed in the US, but data remain limited on differences by sociodemographic factors and body mass index (BMI). Time from menarche to cycle regularity is another understudied early-life characteristic with health implications. To evaluate the temporal trends and disparities in menarche and time to regularity and explore early-life BMI as a mediator. This ongoing cohort study enrolled participants from an ongoing mobile application–based US cohort from November 14, 2019, to March 20, 2023. Birth year (categorized as 1950-1969, 1970-1979, 1980-1989, 1990-1999, and 2000-2005). Main outcomes were age at menarche and time to regularity, which were self-recalled at enrollment. In addition, early (aged <11 years), very early (aged <9 years), and late (aged ≥16 years) age at menarche was assessed. Among the 71 341 female individuals who were analyzed (mean [SD] age at menarche, 12.2 [1.6] years; 2228 [3.1%] Asian, 3665 [5.1%] non-Hispanic Black, 4918 [6.9%] Hispanic, 49 518 [69.4%] non-Hispanic White, and 8461 [11.9%] other or multiple races or ethnicities), 5223 were born in 1950 to 1969, 12 226 in 1970 to 1979, 22 086 in 1980 to 1989, 23 894 in 1990 to 1999, and 7912 in 2000 to 2005. The mean (SD) age at menarche decreased from 12.5 (1.6) years in 1950 to 1969 to 11.9 (1.5) years in 2000 to 2005. The number of individuals experiencing early menarche increased from 449 (8.6%) to 1223 (15.5%), the number of individuals experiencing very early menarche increased from 31 (0.6%) to 110 (1.4%), and the number of individuals experiencing late menarche decreased from 286 (5.5%) to 137 (1.7%). For 61 932 participants with reported time to regularity, the number reaching regularity within 2 years decreased from 3463 (76.3%) to 4075 (56.0%), and the number not yet in regular cycles increased from 153 (3.4%) to 1375 (18.9%). The magnitude of the trend toward earlier menarche was greater among participants who self-identified as Asian, non-Hispanic Black, or other or multiple races (vs non-Hispanic White) (P = .003 for interaction) and among participants self-rated with low (vs high) socioeconomic status (P < .001 for interaction). Within a subset of 9865 participants with data on BMI at menarche, exploratory mediation analysis estimated that 46% (95% CI, 35%-61%) of the temporal trend in age at menarche was explained by BMI. In this cohort study of 71 341 individuals in the US, as birth year increased, mean age at menarche decreased and time to regularity increased. The trends were stronger among racial and ethnic minority groups and individuals of low self-rated socioeconomic status. These trends may contribute to the increase in adverse health outcomes and disparities in the US."
+  },
+  {
+   "euid": "927783",
+   "doi": "10.1038/s41467-021-25624-1",
+   "release_title": "Single-cell ATAC and RNA sequencing reveal pre-existing and persistent cells associated with prostate cancer relapse",
+   "release_date": "2021-09-06",
+   "institution": "Tampere University",
+   "paper_title": "Single-cell ATAC and RNA sequencing reveal pre-existing and persistent cells associated with prostate cancer relapse",
+   "journal": "Nature Communications",
+   "press_text": "Prostate cancer is the most common male cancer and approximately 5,000 Finnish men are diagnosed with it each year. While most prostate cancers are not aggressive, some tumors develop into a deadly castration-resistant form of the disease. One of the most significant clinical challenges today is deciding which type of treatment will work best for different patient groups with aggressive disease.\n\nIn the study \"Single-cell ATAC and RNA sequencing reveal pre-existing and persistent cells associated with prostate cancer relapse” led by Professor Matti Nykter from Tampere University and Dr. Alfonso Urbanucci from Oslo University Hospital, the researchers identified a specific population of treatment-resistant cells that was present in the study samples prior to treatment and persisted when subjected to treatment. “By analyzing gene expression patterns and DNA organization in these cells, we were able to predict patient responses to treatment,” says Sinja Taavitsainen, who was responsible for the bioinformatic analysis in the project. “These cells showed stem cell-like and regenerative gene expression patterns,” she continues. The study utilized a combination of prostate cancer resistance models, some of which were developed at Tampere University by the research groups of Professor Teemu Murtola and Professor Teuvo Tammela, as well as bioinformatics methods to analyze the treatment response to the commonly used drug Xtandi (enzalutamide) at the single-cell level. The results suggest that the presence of treatment-persistent cells in cancer tissue may predict the risk of recurrence and disease development. Such information can help tailor treatment for different subgroups of prostate cancer patients.\n\n“Utilization of state-of-the-art methods including single-cell sequencing of RNA and chromatin state, spatial transcriptomics, and advanced bioinformatics analysis enabled us to analyze the development of treatment resistance in unprecedented detail,” Professor Matti Nykter comments.",
+   "abstract": "Prostate cancer is heterogeneous and patients would benefit from methods that stratify those who are likely to respond to systemic therapy. Here, we employ single-cell assays for transposase-accessible chromatin (ATAC) and RNA sequencing in models of early treatment response and resistance to enzalutamide. In doing so, we identify pre-existing and treatment-persistent cell subpopulations that possess regenerative potential when subjected to treatment. We find distinct chromatin landscapes associated with enzalutamide treatment and resistance that are linked to alternative transcriptional programs. Transcriptional profiles characteristic of persistent cells are able to stratify the treatment response of patients. Ultimately, we show that defining changes in chromatin and gene expression in single-cell populations from pre-clinical models can reveal as yet unrecognized molecular predictors of treatment response. This suggests that the application of single-cell methods with high analytical resolution in pre-clinical models may powerfully inform clinical decision-making."
+  },
+  {
+   "euid": "987631",
+   "doi": "10.1016/j.mcpro.2023.100542",
+   "release_title": "Integrated Proteomics to Understand the Role of Neuritin (NRN1) as a Mediator of Cognitive Resilience to Alzheimer’s Disease",
+   "release_date": "2023-04-05",
+   "institution": "Emory University",
+   "paper_title": "Integrated Proteomics to Understand the Role of Neuritin (NRN1) as a Mediator of Cognitive Resilience to Alzheimer’s Disease",
+   "journal": "Molecular & Cellular Proteomics",
+   "press_text": "A recent study revealed that a protein important for neuron communication is associated with patient resistance to Alzheimer’s disease and may delay cognitive decline.\n\nLike the cord that connects a telephone handset and the receiver, a neuron needs to make a physical connection with other neurons to communicate and transmit signals, which allow people to think and speak. The new study published in the journal Molecular & Cellular Proteomics suggests a protein, called neuritin, may allow some people to retain their neuronal connections even when toxic substances that cause Alzheimer’s attempt to break them down.\n\nAlzheimer’s is the most common cause of dementia and affects more than 5.8 million Americans. To diagnose it, physicians use mental competency tests, physical and neurological exams, brain imaging, spinal fluid tests and medical history. Most patients show both a cognitive decline as well as toxic protein accumulation in the brain, which causes neuron death and brain shrinkage. These abnormal protein aggregates, called amyloid beta plaques and tau tangles, can disrupt neuronal connections and communication, which leads to memory loss and confusion, the hallmark symptoms of Alzheimer’s.\n\nHowever, some patients show characteristic signs of Alzheimer’s pathology in their brains when examined but remain mentally competent. These individuals are known as “cognitively resilient” by the researchers who conducted the study.\n\n“How cognitively normal older individuals with Alzheimer’s disease pathology withstand dementia onset is one of the most pivotal, unanswered questions in the field,” said Jeremy Herskowitz, associate professor of neurology at the University of Alabama at Birmingham School of Medicine and co-supervisor of the project.\n\nTo tackle this question, Herskowitz and Nicholas Seyfried, a professor of biochemistry at Emory University School of Medicine and co-supervisor of the project, teamed up and combined their specialties in proteomics and basic neurology to examine proteins in human brain tissues.\n\nUnlike widely employed hypothesis-driven research, this team studies diseased humans and their tissues first to discover potential therapeutics.\n\n“That's quite different than traditional approaches, which try to make discoveries in experimental model systems,” Herskowitz said. “Our research collectively identifies differences in humans first. Then, after that discovery is made, we can ask questions in experimental model systems to work out what's going on at the molecular and cellular level.”\n\nThe researchers conducted a large mass spectrometry screen of the proteins found in the brains of healthy people, typical Alzheimer’s patients and cognitively resilient patients. Cheyenne Hurst, a graduate student at Emory and co-lead author on the study, used high-powered computer programming to determine that neuritin correlates with intact cognitive function over time.\n\n“The higher the amount of neuritin you have in your brain, the more likely you are to be cognitively intact,” Hurst said.\n\nThe researchers then wanted to test how the protein affects how neurons communicate. To do this, they isolated neurons from the hippocampus of rats and treated them with either neuritin, the pathogenic amyloid beta or both.\n\nDerian Pugh, a graduate student at UAB and co-lead author, noticed structural differences in the three groups.\n\n“The dendritic spines or synapses coming off healthy neurons kind of remind me of branches on a tree,” Pugh said.\n\nBut the structure of the neurons exposed to pathogenic amyloid beta was disrupted — and so were their connections with other neurons. Pugh said they “looked like a tree with no branches.”\n\nHowever, neuritin completely blocked the detrimental effects of amyloid beta on the neuron cultures.\n\n“With these experiments, we were able to recapitulate what happens in humans that display cognitive resilience and a possible mechanism,” Herskowitz said.\n\nThe team plans to focus on the basic biology of neuritin but also on how they can harness neuritin as a biomarker of Alzheimer’s or a therapeutic.\n\n“The ability to estimate the amount of amyloid beta pathology in an older person's brain using biomarkers is getting very advanced,” Seyfried said. “We can predict quite accurately the presence of amyloid beta is in someone's brain while they're still alive. If they have a large amount of amyloid beta, but they're still cognitively normal, they may want to one day get treated with neuritin or drugs that boost neuritin levels so that those symptoms don't develop into dementia.”",
+   "abstract": "The molecular mechanisms and pathways enabling certain individuals to remain cognitively normal despite high levels of Alzheimer’s disease (AD) pathology remain incompletely understood. These cognitively normal people with AD pathology are described as preclinical or asymptomatic AD (AsymAD) and appear to exhibit cognitive resilience to the clinical manifestations of AD dementia. Here we present a comprehensive network-based approach from cases clinically and pathologically defined as asymptomatic AD to map resilience-associated pathways and extend mechanistic validation. Multiplex tandem mass tag MS (TMT-MS) proteomic data (n = 7787 proteins) was generated on brain tissue from Brodmann area 6 and Brodmann area 37 (n = 109 cases, n = 218 total samples) and evaluated by consensus weighted gene correlation network analysis. Notably, neuritin (NRN1), a neurotrophic factor previously linked to cognitive resilience, was identified as a hub protein in a module associated with synaptic biology. To validate the function of NRN1 with regard to the neurobiology of AD, we conducted microscopy and physiology experiments in a cellular model of AD. NRN1 provided dendritic spine resilience against amyloid-β (Aβ) and blocked Aβ-induced neuronal hyperexcitability in cultured neurons. To better understand the molecular mechanisms of resilience to Aβ provided by NRN1, we assessed how exogenous NRN1 alters the proteome by TMT-MS (n = 8238 proteins) of cultured neurons and integrated the results with the AD brain network. This revealed overlapping synapse-related biology that linked NRN1-induced changes in cultured neurons with human pathways associated with cognitive resilience. Collectively, this highlights the utility of integrating the proteome from the human brain and model systems to advance our understanding of resilience-promoting mechanisms and prioritize therapeutic targets that mediate resilience to AD."
+  }
+ ],
+ "cross": [
+  {
+   "shared": [
+    {
+     "entity": "bariatric surgery",
+     "role": "exposure"
+    },
+    {
+     "entity": "Body Weight",
+     "role": "outcome"
+    }
+   ],
+   "both_roles": true,
+   "paper_a": {
+    "doi": "10.1001/jama.2022.9009",
+    "euid": "954842",
+    "paper_title": "Association of Bariatric Surgery With Cancer Risk and Mortality in Adults With Obesity",
+    "abstract": "Obesity increases the incidence and mortality from some types of cancer, but it remains uncertain whether intentional weight loss can decrease this risk. To investigate whether bariatric surgery is associated with lower cancer risk and mortality in patients with obesity. In the SPLENDID (Surgical Procedures and Long-term Effectiveness in Neoplastic Disease Incidence and Death) matched cohort study, adult patients with a body mass index of 35 or greater who underwent bariatric surgery at a US health system between 2004 and 2017 were included. Patients who underwent bariatric surgery were matched 1:5 to patients who did not undergo surgery for their obesity, resulting in a total of 30 318 patients. Follow-up ended in February 2021. Bariatric surgery (n = 5053), including Roux-en-Y gastric bypass and sleeve gastrectomy, vs nonsurgical care (n = 25 265). Multivariable Cox regression analysis estimated time to incident obesity-associated cancer (a composite of 13 cancer types as the primary end point) and cancer-related mortality. The study included 30 318 patients (median age, 46 years; median body mass index, 45; 77% female; and 73% White) with a median follow-up of 6.1 years (IQR, 3.8-8.9 years). The mean between-group difference in body weight at 10 years was 24.8 kg (95% CI, 24.6-25.1 kg) or a 19.2% (95% CI, 19.1%-19.4%) greater weight loss in the bariatric surgery group. During follow-up, 96 patients in the bariatric surgery group and 780 patients in the nonsurgical control group had an incident obesity-associated cancer (incidence rate of 3.0 events vs 4.6 events, respectively, per 1000 person-years). The cumulative incidence of the primary end point at 10 years was 2.9% (95% CI, 2.2%-3.6%) in the bariatric surgery group and 4.9% (95% CI, 4.5%-5.3%) in the nonsurgical control group (absolute risk difference, 2.0% [95% CI, 1.2%-2.7%]; adjusted hazard ratio, 0.68 [95% CI, 0.53-0.87], P = .002). Cancer-related mortality occurred in 21 patients in the bariatric surgery group and 205 patients in the nonsurgical control group (incidence rate of 0.6 events vs 1.2 events, respectively, per 1000 person-years). The cumulative incidence of cancer-related mortality at 10 years was 0.8% (95% CI, 0.4%-1.2%) in the bariatric surgery group and 1.4% (95% CI, 1.1%-1.6%) in the nonsurgical control group (absolute risk difference, 0.6% [95% CI, 0.1%-1.0%]; adjusted hazard ratio, 0.52 [95% CI, 0.31-0.88], P = .01). Among adults with obesity, bariatric surgery compared with no surgery was associated with a significantly lower incidence of obesity-associated cancer and cancer-related mortality.",
+    "press_text": "Friday, June 3, 2022, CLEVELAND: A Cleveland Clinic study shows that among adults with obesity, weight loss achieved with bariatric surgery was associated with a 32% lower risk of developing cancer and a 48% lower risk of cancer-related death compared with adults who did not have the surgery. The research is published by JAMA.\n\nApproximately 42% of American adults have obesity, according to the Centers for Disease Control and Prevention (CDC). Obesity increases the risk of developing 13 types of cancer that account for 40% of all cancers diagnosed every year in the United States, according to the CDC.\n\nAli Aminian, M.D., lead author of the study and director of Cleveland Clinic’s Bariatric & Metabolic Institute, said that bariatric surgery is currently the most effective treatment for obesity. “Patients can lose 20 to 40% of their body weight after surgery, and weight loss can be sustained over decades. The striking findings of this study indicate that the greater the weight loss, the lower the risk of cancer,” said Dr. Aminian.\n\nThe SPLENDID (Surgical Procedures and Long-term Effectiveness in Neoplastic Disease Incidence and Death) research is a matched-cohort study that included more than 30,000 Cleveland Clinic patients. A group of 5,053 adult patients with obesity who had bariatric surgery between 2004 and 2017 were matched 1:5 to a control group of 25,265 patients who did not have surgery for their obesity.\n\nAfter 10 years, 2.9% of patients in the bariatric surgery group and 4.9% of patients in the non-surgical group developed an obesity-associated cancer. The International Agency for Research on Cancer describes 13 types of cancer as obesity-associated cancers such as endometrial cancer, postmenopausal breast cancer, and cancers of the colon, liver, pancreas, ovary and thyroid.\n\nAfter 10 years, 0.8% of patients in the surgery group and 1.4% of patients in the non-surgical group died from cancer. Those findings indicate that bariatric surgery is associated with a 48% lower risk of dying from cancer.\n\nResearchers noted that the benefits of bariatric surgery were seen in a wide range of study participants, including both women and men, young and old, and Black and white patients. In addition, benefits were similarly observed after both gastric bypass and gastric sleeve operations.\n\n\"According to the American Cancer Society, obesity is second only to tobacco as a preventable cause of cancer in the United States,” said the study’s senior author, Steven Nissen, M.D., Chief Academic Officer of the Heart, Vascular and Thoracic Institute. “This study provides the best possible evidence on the value of intentional weight loss to reduce cancer risk and mortality.\"\n\nNumerous studies have shown the health benefits of bariatric or weight-loss surgery in patients with obesity. The Cleveland Clinic-led STAMPEDE study showed that following bariatric surgery, significant weight loss and control of type 2 diabetes last over time. The SPLENDOR study showed that in patients with fatty liver, bariatric surgery decreases the risk of the progression of liver disease and serious heart complications.\n\nThe SPLENDID study adds important findings to the literature focused on the link between obesity and cancer. Given the growing epidemic of obesity worldwide, these findings have considerable public health implications.\n\n\"Based on the magnitude of benefit shown in our study, weight loss surgery can be considered in addition to other interventions that can help prevent cancer and reduce mortality,” said Jame Abraham, M.D., chairman of the Hematology and Medical Oncology Department at Cleveland Clinic. “Further research needs to be done to understand the underlying mechanisms responsible for reduced cancer risk following bariatric surgery.”\n\nCleveland Clinic is a nonprofit multispecialty academic medical center that integrates clinical and hospital care with research and education. Located in Cleveland, Ohio, it was founded in 1921 by four renowned physicians with a vision of providing outstanding patient care based upon the principles of cooperation, compassion and innovation. Cleveland Clinic has pioneered many medical breakthroughs, including coronary artery bypass surgery and the first face transplant in the United States. U.S. News & World Report consistently names Cleveland Clinic as one of the nation’s best hospitals in its annual “America’s Best Hospitals” survey. Among Cleveland Clinic’s 72,500 employees worldwide are more than 5,050 salaried physicians and researchers, and 17,800 registered nurses and advanced practice providers, representing 140 medical specialties and subspecialties. Cleveland Clinic is a 6,500-bed health system that includes a 173-acre main campus near downtown Cleveland, 22 hospitals, more than 220 outpatient facilities, including locations in northeast Ohio; southeast Florida; Las Vegas, Nevada; Toronto, Canada; Abu Dhabi, UAE; and London, England. In 2021, there were 10.2 million total outpatient visits, 304,000 hospital admissions and observations, and 259,000 surgical cases throughout Cleveland Clinic’s health system. Patients came for treatment from every state and 185 countries. Visit us at clevelandclinic.org. Follow us at twitter.com/ClevelandClinic. News and resources available at newsroom.clevelandclinic.org.\n\nEditor’s Note: Cleveland Clinic News Service is available to provide broadcast-quality interviews and B-roll upon request."
+   },
+   "paper_b": {
+    "doi": "10.1001/jamapediatrics.2017.5763",
+    "euid": "462222",
+    "paper_title": "Comparison of Surgical and Medical Therapy for Type 2 Diabetes in Severely Obese Adolescents",
+    "abstract": "Because of the substantial increase in the occurrence of type 2 diabetes in the pediatric population and the medical complications of this condition, therapies are urgently needed that will achieve better glycemic control than standard medical management. To compare glycemic control in cohorts of severely obese adolescents with type 2 diabetes undergoing medical and surgical interventions. A secondary analysis of data collected by the Teen–Longitudinal Assessment of Bariatric Surgery (Teen-LABS) and Treatment Options of Type 2 Diabetes in Adolescents and Youth (TODAY) consortia was performed. Teen-LABS enrolled 242 adolescents (≤19 years of age) from March 1, 2007, through December 31, 2011. TODAY randomized 699 participants (aged 10-17 years) from July 24, 2004, through February 25, 2009. Data analysis was performed from July 6, 2015, to June 24, 2017. Anthropometric, clinical, and laboratory data from adolescents with severe obesity and type 2 diabetes who underwent treatment with metabolic or bariatric surgery in the Teen-LABS study or medical therapy in the TODAY study were compared. Teen-LABS participants underwent a primary bariatric surgical procedure; TODAY participants were randomized to receive metformin therapy alone or in combination with rosiglitazone or an intensive lifestyle intervention; insulin therapy was given in cases of progression of disease. Glycemic control, body mass index, prevalence of elevated blood pressure, dyslipidemia, abnormal kidney function, and clinical adverse events were measured. Data from 30 participants from Teen-LABS (mean [SD] age at baseline, 16.9 [1.3] years; 21 [70%] female; 18 [66%] white) and 63 from TODAY (mean [SD] age at baseline, 15.3 [1.3] years; 28 [44%] female; 45 [71%] white) were analyzed. During 2 years, mean hemoglobin A1c concentration decreased from 6.8% (95% CI, 6.4%-7.3%) to 5.5% (95% CI, 4.7% -6.3%) in Teen-LABS and increased from 6.4% (95% CI, 6.1%-6.7%) to 7.8% (95% CI, 7.2%-8.3%) in TODAY. Compared with baseline, the body mass index decreased by 29% (95% CI, 24%-34%) in Teen-LABS and increased by 3.7% (95% CI, 0.8%-6.7%) in TODAY. Twenty-three percent of Teen-LABS participants required a subsequent operation during the 2-year follow-up. Compared with medical therapy, surgical treatment of severely obese adolescents with type 2 diabetes was associated with better glycemic control, reduced weight, and improvement of other comorbidities. These data support the need for a well-designed, prospective controlled study to define the role of surgery for adolescents with type 2 diabetes, including health and surgical outcomes."
+   }
+  },
+  {
+   "shared": [
+    {
+     "entity": "female sex",
+     "role": "exposure"
+    },
+    {
+     "entity": "Fatigue",
+     "role": "outcome"
+    }
+   ],
+   "both_roles": true,
+   "paper_a": {
+    "doi": "10.1007/s13760-022-02036-6",
+    "euid": "962438",
+    "paper_title": "Investigation of non-motor symptoms in patients with amyotrophic lateral sclerosis",
+    "abstract": "[Objective] Few studies have comprehensively investigated the non-motor symptoms of amyotrophic lateral sclerosis (ALS). We aimed to investigate this aspect of ALS. [Methods] We held a nationwide webinar, titled “ALS Café,” and distributed self-report questionnaires to ALS patients. In addition to the frequency of non-motor symptoms such as fatigue, pain, sleep disorders, defecation disorders, sialorrhea, and sexual problems, we evaluated the quality of life (QoL), ALS Functional Rating Scale-Revised (ALSFRS-R), and Patient Health Questionnaire-9 (PHQ-9). [Results] The average age of the 33 respondents (19 male, 14 female) was 60.8 ± 11.2; 96.7% of respondents had some non-motor symptoms. The median ALSFRS-R was 32.0, and seven (21.2%) of the respondents had a PHQ-9 score of 10 or higher. Fatigue was the most common non-motor symptom (81.8%), followed by pain (60.6%), defecation disorders (57.6%), sleep disorders (48.5%), sialorrhea (48.5%), and sexual problems (24.2%). Fatigue was more frequent in females (P = 0.03). Among the non-motor symptoms, pain was the most common factor affecting QoL, followed by fatigue. More than 90% of ALS patients answered that they had never consulted a physician/counselor about sexual problems. Patients with pain had higher PHQ-9 scores than those without (P = 0.01). There was no correlation between the ALSFRS-R score and QoL and PHQ-9. [Conclusions] Most patients with amyotrophic lateral sclerosis had non-motor symptoms, and fatigue and pain were the most common. We showed that many non-motor symptoms affected QoL without correlating with ALSFRS-R score. Attention should be paid to those even if the motor symptoms of ALS are mild.",
+    "press_text": "Non-motor symptoms such as pain, fatigue, and sleep disorders, are observed in patients with ALS and reduce their QoL. Many of the non-motor symptoms are poorly defined with unexplained mechanisms, are underdiagnosed, and remain unreported during clinical consultation. Although the non-motor symptoms of ALS were partially known, there has been so far no comprehensive study on their frequency and characteristics. In addition, its impact on the QoL has not been fully investigated.\n\nProfessor Osamu Kano, M.D., Ph.D. and his colleagues investigated the frequency and characteristics of non-motor symptoms in ALS patients. In this regard, a cross-sectional questionnaire survey found that more than 90% of patients had some form of non-motor symptoms. Fatigue was the most common, followed by pain, defecation disorder, sleep disorder, sialorrhea, and sexual problems. In addition, 60–70% of patients declared that these symptoms reduced their QoL. Most importantly, in this study, the frequency of non-motor symptoms other than sialorrhea was not affected based on the ALS Functional Rating Scale-Revised, which assesses the severity of motor symptoms. Therefore, non-motor symptoms may lower QoL even if the motor symptoms of ALS are mild, and should always be considered.\n\n“Since ALS is a motor neuron disease, the focus is naturally on the severity of motor function. However, care should always be taken to keep in mind that even if the motor symptoms are mild, various non-motor symptoms may appear, which may cause distress and thus reduce the patient's QoL” said Prof. Kano, senior author of the study."
+   },
+   "paper_b": {
+    "doi": "10.1016/j.jns.2022.120487",
+    "euid": "970831",
+    "paper_title": "Life stressors significantly impact long-term outcomes and post-acute symptoms 12-months after COVID-19 hospitalization",
+    "abstract": "Limited data exists evaluating predictors of long-term outcomes after hospitalization for COVID-19. We conducted a prospective, longitudinal cohort study of patients hospitalized for COVID-19. The following outcomes were collected at 6 and 12-months post-diagnosis: disability using the modified Rankin Scale (mRS), activities of daily living assessed with the Barthel Index, cognition assessed with the telephone Montreal Cognitive Assessment (t-MoCA), Neuro-QoL batteries for anxiety, depression, fatigue and sleep, and post-acute symptoms of COVID-19. Predictors of these outcomes, including demographics, pre-COVID-19 comorbidities, index COVID-19 hospitalization metrics, and life stressors, were evaluated using multivariable logistic regression. Of 790 COVID-19 patients who survived hospitalization, 451(57%) completed 6-month (N = 383) and/or 12-month (N = 242) follow-up, and 77/451 (17%) died between discharge and 12-month follow-up. Significant life stressors were reported in 121/239 (51%) at 12-months. In multivariable analyses, life stressors including financial insecurity, food insecurity, death of a close contact and new disability were the strongest independent predictors of worse mRS, Barthel Index, depression, fatigue, and sleep scores, and prolonged symptoms, with adjusted odds ratios ranging from 2.5 to 20.8. Other predictors of poor outcome included older age (associated with worse mRS, Barthel, t-MoCA, depression scores), baseline disability (associated with worse mRS, fatigue, Barthel scores), female sex (associated with worse Barthel, anxiety scores) and index COVID-19 severity (associated with worse Barthel index, prolonged symptoms). Life stressors contribute substantially to worse functional, cognitive and neuropsychiatric outcomes 12-months after COVID-19 hospitalization. Other predictors of poor outcome include older age, female sex, baseline disability and severity of index COVID-19."
+   }
+  },
+  {
+   "shared": [
+    {
+     "entity": "female sex",
+     "role": "exposure"
+    },
+    {
+     "entity": "depressive disorder",
+     "role": "outcome"
+    },
+    {
+     "entity": "anxiety disorder",
+     "role": "outcome"
+    }
+   ],
+   "both_roles": true,
+   "paper_a": {
+    "doi": "10.1016/j.jns.2022.120487",
+    "euid": "970831",
+    "paper_title": "Life stressors significantly impact long-term outcomes and post-acute symptoms 12-months after COVID-19 hospitalization",
+    "abstract": "Limited data exists evaluating predictors of long-term outcomes after hospitalization for COVID-19. We conducted a prospective, longitudinal cohort study of patients hospitalized for COVID-19. The following outcomes were collected at 6 and 12-months post-diagnosis: disability using the modified Rankin Scale (mRS), activities of daily living assessed with the Barthel Index, cognition assessed with the telephone Montreal Cognitive Assessment (t-MoCA), Neuro-QoL batteries for anxiety, depression, fatigue and sleep, and post-acute symptoms of COVID-19. Predictors of these outcomes, including demographics, pre-COVID-19 comorbidities, index COVID-19 hospitalization metrics, and life stressors, were evaluated using multivariable logistic regression. Of 790 COVID-19 patients who survived hospitalization, 451(57%) completed 6-month (N = 383) and/or 12-month (N = 242) follow-up, and 77/451 (17%) died between discharge and 12-month follow-up. Significant life stressors were reported in 121/239 (51%) at 12-months. In multivariable analyses, life stressors including financial insecurity, food insecurity, death of a close contact and new disability were the strongest independent predictors of worse mRS, Barthel Index, depression, fatigue, and sleep scores, and prolonged symptoms, with adjusted odds ratios ranging from 2.5 to 20.8. Other predictors of poor outcome included older age (associated with worse mRS, Barthel, t-MoCA, depression scores), baseline disability (associated with worse mRS, fatigue, Barthel scores), female sex (associated with worse Barthel, anxiety scores) and index COVID-19 severity (associated with worse Barthel index, prolonged symptoms). Life stressors contribute substantially to worse functional, cognitive and neuropsychiatric outcomes 12-months after COVID-19 hospitalization. Other predictors of poor outcome include older age, female sex, baseline disability and severity of index COVID-19.",
+    "press_text": "The death of a loved one, financial or food insecurity, or a newly developed disability were some of the strongest predictors of whether a patient hospitalized for COVID-19 would experience symptoms of long COVID a year later, a new study finds.\n\nLed by researchers from NYU Grossman School of Medicine, the study found that adult patients with such “major life stressors” – present in more than 50% of those followed – were at least twice as likely to struggle with depression, brain fog, fatigue, sleep problems, and other long-term COVID-19 symptoms, say the study authors.\n\nPublished online this week in the Journal of the Neurological Sciences (JNS), the analysis also confirmed the contribution of traditional factors to greater long COVID risk as shown by past studies – older age, disability level to start with, and a more severe initial case of COVID-19.\n\n“Our study is unique in that it explores the impact of life stressors – along with demographic trends and neurological events – as predictors of long-term cognitive and functional disabilities that affected quality of life in a large population,” says lead study author Jennifer A. Frontera, MD, professor in the Department of Neurology at NYU Langone Health. “Therapies that lessen the trauma of the most stress-inducing life events need to be a central part of treatment for long COVID, with more research needed to validate the best approaches.”\n\nThe research used standard telephone survey tools in the field – the modified Rankin Scale (mRS), the Barthel Index, the Montreal Cognitive Assessment (t-MoCA), and the NIH/PROMIS Neurological Quality Of Life (NeuroQoL) batteries – to measure level of daily function, clear thinking (cognition), anxiety, depression, fatigue and sleep quality. The team attempted follow-up with each of 790 patients six months and a year after COVID-19 hospitalization within NYU Langone Health between March 10, 2020 and May 20, 2020.\n\nOf these surviving patients, 451(57%) completed 6-month and/or 12-month follow-up, and of them, 17% died between discharge and 12-month follow-up and 51% reported significant life stressors at 12-months.\n\nIn analyses that compared factors against each other for their contribution to worse outcomes, life stressors including financial insecurity, food insecurity, death of a close contact, and new disability were the strongest independent predictors of prolonged COVID-19 symptoms. These same stressors also best predicted worse functional status, depression, fatigue, sleep scores, and reduced ability to participate in activities of daily living such as feeding, dressing, and bathing.\n\nGender was also a contributor, as past studies have found that women are more susceptible in general to, for instance, autoimmune diseases that could have an impact on outcomes. Additionally, undiagnosed mood disorders may have been unmasked by pandemic-related stressors.\n\nNeurological Long COVID May Include More than One Condition\n\nA second study led by Frontera and colleagues, and published online September 29, 2022, in PLOS ONE, found that patients diagnosed as having long COVID neurological problems can divided into three symptom groups.\n\nBecause there is no current biological definition long COVID, many studies lump disparate symptoms into what is currently a blanket diagnosis, and without an assessment of clinical relevance, says Frontera. The resulting vagueness has made it “difficult to assess treatment strategies.”\n\nFor the PLOS One study, the research team collected data on symptoms, treatments received, and outcomes for 12 months after hospitalization with COVID-19, with treatment success measured again by standard metrics (modified Rankin Scale, Barthel Index, NIH NeuroQoL). The three newly identified disease groups were:\n\nThe most severely affected patients (symptom Cluster 2) had higher rates of disability, worse measures of anxiety, depression, fatigue and sleep disorders. The most severely affected patients had higher rates of disability, worse measures of anxiety, depression, fatigue and sleep disorders. All patients whose treatment included psychiatric therapies reported symptom improvement, compared to 97% who received primarily physical or occupational therapy, and 83% who received few interventions.\n\nThe Brookings Institution estimated in August 2022 that roughly 16 million working-age Americans (aged 18 to 65) have long COVID, out of which 2 to 4 million are out of work due to long COVID.\n\nAlong with Frontera, authors of the JNS study from the Department of Neurology at NYU Langone Health were Sakinah Sabadia, Ariane Lewis, Aaron Lord, MD; Kara Melmed, Sujata Thawani, Laura Balcer; Thomas Wisniewski, and Steven Galetta. Also authors were Dixon Yang of the Department of Neurology, at New York Presbyterian, Columbia Medical Center; Adam de Havenon in the Department of Neurology, Yale University School of Medicine; and Shadi Yaghi in Department of Neurology at Brown University School of Medicine."
+   },
+   "paper_b": {
+    "doi": "10.1093/europace/euad130",
+    "euid": "992839",
+    "paper_title": "Burden of mood symptoms and disorders in implantable cardioverter defibrillator patients: a systematic review and meta-analysis of 39 954 patients",
+    "abstract": "Implantable cardioverter defibrillators (ICDs) prevent sudden cardiac death. Anxiety, depression, and post-traumatic stress disorder (PTSD) are underappreciated symptoms. We aimed to systematically synthesize prevalence estimates of mood disorders and symptom severities, pre- and post-ICD insertions. Comparisons were made with control groups, as well as within ICD patients by indication (primary vs. secondary), sex, shock status, and over time. Databases (Medline, PsycINFO, PubMed, and Embase) were searched without limits from inception to 31 August 2022; 4661 articles were identified, 109 (39 954 patients) of which met criteria. Random-effects meta-analyses revealed clinically relevant anxiety in 22.58% (95%CI 18.26–26.91%) of ICD patients across all timepoints following insertion and depression in 15.42% (95%CI 11.90–18.94%). Post-traumatic stress disorder was seen in 12.43% (95%CI 6.90–17.96%). Rates did not vary relative to indication group. Clinically relevant anxiety and depression were more likely in ICD patients who experienced shocks [anxiety odds ratio (OR) = 3.92 (95%CI 1.67–9.19); depression OR = 1.87 (95%CI 1.34–2.59)]. Higher symptoms of anxiety were seen in females than males post-insertion [Hedges’ g = 0.39 (95%CI 0.15–0.62)]. Depression symptoms decreased in the first 5 months post-insertion [Hedges’ g = 0.13 (95%CI 0.03–0.23)] and anxiety symptoms after 6 months [Hedges’ g = 0.07 (95%CI 0–0.14)]. Depression and anxiety are highly prevalent in ICD patients, especially in those who experience shocks. Of particular concern is the prevalence of PTSD following ICD implantation. Psychological assessment, monitoring, and therapy should be offered to ICD patients and their partners as part of routine care."
+   }
+  },
+  {
+   "shared": [
+    {
+     "entity": "COVID-19",
+     "role": "outcome"
+    }
+   ],
+   "both_roles": false,
+   "paper_a": {
+    "doi": "10.15212/zoonoses-2023-0060",
+    "euid": "1045230",
+    "paper_title": "Long-Term Protection from SARS-CoV-2 Variants in Mice by a Phase II Clinically Evaluated Original mRNA Vaccine Booster",
+    "abstract": "The global coronavirus disease 2019 (COVID-19) pandemic was caused by SARS-CoV-2. The authors developed an mRNA vaccine (LVRNA009) that encoded the S protein of the Wuhan-Hu-1 strain and evaluated the long-term protection potential against SARS-CoV-2 variants. Mice were initially vaccinated with 2 doses of LVRNA009, then boosted 8 months later. The virus neutralization titers against SARS-CoV-2 variants and antigen-specific T cell responses of the mice were determined. These animals were also tested using viral challenge experiments. Moreover, a phase II clinical study was carried out in 420 healthy adults. LVRNA009 vaccination induced neutralization antibodies and protected mice from SARS-CoV-2 original and Omicron BA.1.1 challenge 8 months post-boosting. A second booster dose of LVRNA009 further enhanced VNTs against Omicron variants. Clinical studies showed that LVRNA009 has good safety and immunogenicity profiles in humans. LVRNA009 could provide long-term protection against SARS-CoV-2 variants and confer better protection with a booster dose. These findings indicate that LVRNA009, a vaccine designed based on the original virus, might be effective in management of the COVID-19 pandemic.",
+    "press_text": "Announcing a new article publication for Zoonoses journal. The global coronavirus disease 2019 (COVID-19) pandemic was caused by SARS-CoV-2. This article discussed the development of an mRNA vaccine (LVRNA009) that encoded the S protein of the Wuhan-Hu-1 strain and evaluated the long-term protection potential against SARS-CoV-2 variants.\n\nMice were initially vaccinated with 2 doses of LVRNA009, then boosted 8 months later. The virus neutralization titers against SARS-CoV-2 variants and antigen-specific T cell responses of the mice were determined. These animals were also tested using viral challenge experiments. Moreover, a phase II clinical study was carried out in 420 healthy adults.\n\nLVRNA009 vaccination induced neutralization antibodies and protected mice from SARS-CoV-2 original and Omicron BA.1.1 challenge 8 months post-boosting. A second booster dose of LVRNA009 further enhanced VNTs against Omicron variants. Clinical studies showed that LVRNA009 has good safety and immunogenicity profiles in humans.\n\nLVRNA009 could provide long-term protection against SARS-CoV-2 variants and confer better protection with a booster dose. These findings indicate that LVRNA009, a vaccine designed based on the original virus, might be effective in management of the COVID-19 pandemic.\n\nZoonoses is fully open access journal for research scientists, physicians, veterinarians, and public health professionals working on diverse disciplinaries of zoonotic diseases. Please visit https://zoonoses-journal.org/ to learn more about the journal.\n\nZoonoses is now open for submissions; articles can be submitted online at https://mc04.manuscriptcentral.com/zoonoses\n\nThere are no author submission or article processing fees.\n\nZoonoses is available on ScienceOpen (https://www.scienceopen.com/search#collection/839df240-327f-47dd-b636-9b728dff9700)."
+   },
+   "paper_b": {
+    "doi": "10.1681/asn.2021091262",
+    "euid": "945365",
+    "paper_title": "Vaccine Effectiveness Against SARS-CoV-2 Infection and Severe Outcomes in the Maintenance Dialysis Population in Ontario, Canada",
+    "abstract": "Vaccination studies in the hemodialysis population have demonstrated decreased antibody response compared with healthy controls, but vaccine effectiveness for preventing SARS-CoV-2 infection and severe disease is undetermined. We conducted a retrospective cohort study in the province of Ontario, Canada, between December 21, 2020, and June 30, 2021. Receipt of vaccine, SARS-CoV-2 infection, and related severe outcomes (hospitalization or death) were determined from provincial health administrative data. Receipt of one and two doses of vaccine were modeled in a time-varying cause-specific Cox proportional hazards model, adjusting for baseline characteristics, background community infection rates, and censoring for non-COVID death, recovered kidney function, transfer out of province, solid organ transplant, and withdrawal from dialysis. Among 13,759 individuals receiving maintenance dialysis, 2403 (17%) were unvaccinated and 11,356 (83%) had received at least one dose by June 30, 2021. Vaccine types were BNT162b2 (n=8455, 74%) and mRNA-1273 (n=2901, 26%); median time between the first and second dose was 36 days (IQR 28–51). The adjusted hazard ratio (HR) for SARS-CoV-2 infection and severe outcomes for one dose compared with unvaccinated was 0.59 (95% CI, 0.46 to 0.76) and 0.54 (95% CI, 0.37 to 0.77), respectively, and for two doses compared with unvaccinated was 0.31 (95% CI, 0.22 to 0.42) and 0.17 (95% CI, 0.1 to 0.3), respectively. There were no significant differences in vaccine effectiveness among age groups, dialysis modality, or vaccine type. COVID-19 vaccination is effective in the dialysis population to prevent SARS-CoV-2 infection and severe outcomes, despite concerns about suboptimal antibody responses."
+   }
+  },
+  {
+   "shared": [
+    {
+     "entity": "COVID-19",
+     "role": "outcome"
+    }
+   ],
+   "both_roles": false,
+   "paper_a": {
+    "doi": "10.1002/advs.202202556",
+    "euid": "968039",
+    "paper_title": "Rapid Generation of Circulating and Mucosal Decoy Human ACE2 using mRNA Nanotherapeutics for the Potential Treatment of SARS‐CoV‐2",
+    "abstract": "Severe acute respiratory syndrome coronavirus 2 (SARS‐CoV‐2) can cause lethal pulmonary damage in humans. It contains spike proteins on its envelope that bind to human angiotensin‐converting enzyme 2 (hACE2) expressed on airway cells, enabling entry of the virus, and causing infection. The soluble form of hACE2 binds SARS‐CoV‐2 spike protein, prevents viral entry into target cells, and ameliorates lung injury; however, its short half‐life limits therapeutic utilities. Here, synthetic mRNA is engineered to encode a soluble form of hACE2 (hsACE2) to prevent viral infection. A novel lipid nanoparticle (LNP) is used for packaging and delivering mRNA to cells to produce hsACE2 proteins. Intravenously administered LNP delivers mRNA to hepatocytes, leading to the production of circulatory hsACE2 initiated within 2 h and sustained over several days. Inhaled LNP results in lung transfection and secretion of mucosal hsACE2 to lung epithelia, the primary site of entry and pathogenesis for SARS‐CoV‐2. Furthermore, mRNA‐generated hsACE2 binds to the receptor‐binding domain of the viral spike protein. Finally, hsACE2 effectively inhibits SARS‐CoV‐2 and its pseudoviruses from infecting host cells. The proof of principle study shows that mRNA‐based nanotherapeutics can be potentially deployed to neutralize SARS‐CoV‐2 and open new treatment opportunities for coronavirus disease 2019 (COVID‐19).",
+    "press_text": "PORTLAND, Ore. – A study led by an Oregon State University pharmaceutical sciences researcher has produced a proof of principle for a new “universal” means of treating COVID-19.\n\nGaurav Sahay and collaborators at OSU and the Texas Biomedical Research Institute demonstrated in a mouse model that it’s possible to prompt the production of a protein that can block multiple variants of the SARS-CoV-2 virus from entering cells and causing respiratory disease.\n\n“Rather than messenger RNA as a vaccine, this shows that mRNA can be used as a universal therapy against different coronaviruses,” Sahay said. “Despite mass vaccination, there is an urgent need to develop effective treatment options to end this pandemic. Several therapies have shown some effectiveness, but the virus’ high mutation rate complicates the development of drugs that treat all variants of concern.”\n\nFindings were published in ACS Nano. Next steps involve showing that the protein prevents infection in mice, said Sahay, who added that the mRNA treatment is possibly “a couple of years” away from being available to human patients.\n\nBreathing in the virus is the primary way to contract COVID-19, blamed for 6 million deaths globally since the pandemic began in late 2019. The virus’ envelope is covered in spike proteins that bind to an enzyme produced by cells in the lungs.\n\nUsing messenger RNA packaged in lipid nanoparticles, the scientists showed in the mouse model that host cells can produce a “decoy” enzyme that binds to coronavirus spike proteins, meaning the virus shouldn’t be able to latch onto cells in the host’s airway and start the infection process.\n\nThe study, which involved messenger RNA that was administered intravenously and also through inhalation, which would be the preferred delivery method for humans, was published in Advanced Science.\n\n“Proteins are large, complex molecules that serve as the workhorses of cells, enabling all of the biological functions within a cell,” said Sahay, an associate professor in the OSU College of Pharmacy. “DNA holds the blueprints from which proteins get made after the code is first transcribed into messenger RNA.”\n\nAn enzyme is a type of protein that acts as a catalyst for biochemical reactions. HACE2 – short for human angiotensin-converting enzyme 2 – is an enzyme of the airway cells. It is also expressed in the heart, kidney and intestine, and has a hand in numerous physiological functions.\n\nSimply giving a COVID-19 patient hACE2 would have limited effectiveness in treating the disease, Sahay said, because the soluble form of the enzyme, the kind that can circulate throughout the body, has a short half-life – less than two hours, meaning it wouldn’t stay in a person’s system very long.\n\nBut lipid nanoparticles, often abbreviated to LNP, containing mRNA that orders production of the enzyme can help overcome that problem.\n\nIn this study, the researchers engineered synthetic mRNA to encode a soluble form of the enzyme, packaged the mRNA into lipid nanoparticles and delivered it to cells in the liver with an IV; within two hours, the enzyme was in the mice’s bloodstream, and it stayed there for days.\n\nThe scientists also delivered the loaded LNP via inhalation, prompting epithelial cells in the lungs to secrete soluble hACE2.\n\n“The soluble enzyme effectively inhibited live SARS-CoV-2 from infecting host cells,” said OSU postdoctoral researcher Jeonghwan Kim. “The synthesis of mRNA is fast, affordable and scalable, and LNP-delivered mRNA can be repeated as necessary to sustain protein production until the infection subsides. Once treatment stops, the no-longer-needed soluble hACE2 clears the system in a matter of days.”\n\nIn addition to Sahay, other Oregon State scientists contributing to the research were Jeonghwan Kim, Antony Jozic, Anindit Mukherjee and Dylan Nelson. The studies with the live virus were performed in collaboration with Texas Biomedical Research Institute scientists Kevin Chiem, Md Siddiqur Rahman Khan Jordi B. Torrelles, and Luis Martinez-Sobrido"
+   },
+   "paper_b": {
+    "doi": "10.14218/jctp.2022.00031",
+    "euid": "1062628",
+    "paper_title": "Androgen Drives the Expression of SARS-CoV-2 Entry Proteins in Sinonasal Tissue",
+    "abstract": "Men have higher morbidity and mortality from COVID-19 than women, possibly due to androgen receptor-regulated viral entry protein expression. This led to a clinical trial of androgen deprivation therapy (ADT), which has not shown a significant benefit in the outcomes among hospitalized male COVID-19 patients. The aim of this study was to explore biological explanations for the failure of ADT to mitigate clinical outcomes in men with severe COVID-19 by assessing the role of androgen in regulating viral entry protein expression in the upper and lower respiratory tract. Immunohistochemistry was used to assess the expression of transmembrane serine protease 2 (TMPRSS2) and angiotensin-converting enzyme 2 (ACE2) and how it correlated to androgen receptor expression in the sinonasal epithelium, minor salivary glands of the sinus, lacrimal glands, and lungs from mice pretreated with and without castration and ADT as well as the sinonasal epithelium obtained from healthy human donors and hospitalized COVID-19 patients. In murine models, castration and ADT treatment downregulated the expression of TMPRSS2 and ACE2 in the sinonasal epithelium, minor salivary glands of the sinus, and lacrimal glands, but not in the lungs. Correlative analyses using human tissue also showed a potential role of ADT in men during the early sinonasal phase but not in the later lung phase of SARS-CoV-2 infection. Our study suggests a potential benefit of ADT in male patients with early COVID-19 when the virus enters the nasopharynx, but not in those with advanced disease. The downregulation of viral entry proteins in the upper respiratory system following androgen blockade may be a key mechanism for this effect."
+   }
+  },
+  {
+   "shared": [
+    {
+     "entity": "physical activity",
+     "role": "exposure"
+    }
+   ],
+   "both_roles": false,
+   "paper_a": {
+    "doi": "10.1093/jnci/djaa046",
+    "euid": "577284",
+    "paper_title": "Physical Activity Before, During, and After Chemotherapy for High-Risk Breast Cancer: Relationships With Survival",
+    "abstract": "Although physical activity has been consistently associated with reduced breast cancer mortality, evidence is largely based on data collected at one occasion. We examined how pre- and postdiagnosis physical activity was associated with survival outcomes in high-risk breast cancer patients. Included were 1340 patients enrolled in the Diet, Exercise, Lifestyle and Cancer Prognosis (DELCaP) Study, a prospective study of lifestyle and prognosis ancillary to a SWOG clinical trial (S0221). Activity before diagnosis, during treatment, and at 1- and 2-year intervals after enrollment was collected. Patients were categorized according to the Physical Activity Guidelines for Americans as meeting the minimum guidelines (yes/no) and incrementally as inactive, low active, moderately active (meeting the guidelines), or high active. In joint-exposure analyses, patients meeting the guidelines before and 1 year after diagnosis experienced statistically significant reductions in hazards of recurrence (hazard ratio [HR] = 0.59, 95% confidence interval [CI] = 0.42 to 0.82) and mortality (HR = 0.51, 95% CI = 0.34–0.77); associations were stronger at 2-year follow-up for recurrence (HR = 0.45, 95% CI = 0.31 to 0.65) and mortality (HR = 0.32, 95% CI = 0.19 to 0.52). In time-dependent analyses, factoring in activity from all time points, we observed striking associations with mortality for low- (HR = 0.41, 95% CI = 0.24 to 0.68), moderate- (HR = 0.42, 95% CI = 0.23 to 0.76), and high-active patients (HR = 0.31, 95% CI = 0.18 to 0.53). Meeting the minimum guidelines for physical activity both before diagnosis and after treatment appears to be associated with statistically significantly reduced hazards of recurrence and mortality among breast cancer patients. When considering activity from all time points, including during treatment, lower volumes of regular activity were associated with similar overall survival advantages as meeting and exceeding the guidelines.",
+    "press_text": "Results of a comprehensive analysis of exercise and its protective role for high-risk breast cancer patients show that women who exercise not only live longer, but also are more likely to remain cancer-free after their treatment. What's more, the study suggests that even a modest amount of exercise can be beneficial.\n\n\"Aiming for as little as two and half hours a week of exercise - the minimum under federal guidelines - can have a big impact for women with high-risk breast cancer,\" said study lead Rikki Cannioto, PhD, EdD. \"Our research shows that some physical activity is far better, in terms of cancer survival, than no activity at all and it is just as beneficial as longer workouts.\"\n\nCannioto's study was part of a clinical trial run by SWOG Cancer Research Network, a cancer clinical trials network funded by the National Cancer Institute (NCI), part of the National Institutes of Health (NIH), and a member of the oldest and largest publicly-funded research network in the nation. Study results are published in the Journal of the National Cancer Institute, and featured in the most recent edition of the NCI's Cancer Currents blog.\n\nResearch has long shown a positive correlation between exercise and cancer survival. People who exercise more- before or after cancer treatment - appear to live longer. What makes the SWOG study unique is that it also showed, among the high-risk breast cancer patients it studied, those who exercised had a lower chance of their breast cancer returning after treatment. Another new twist is the time scale of the study. Patients were not only asked about their exercise before and after cancer treatment - but during chemotherapy, too.\n\nCannioto, an assistant professor of oncology in the Department of Cancer Prevention and Control at Roswell Park Comprehensive Cancer Center, wanted to determine the impact of the amount of exercise, and its timing, on women with breast cancers that are high-risk, or likely to return. She addressed this question in the context of the Diet, Exercise, Lifestyle and Cancer Prognosis Study (DELCaP), led by Christine Ambrosone, PhD, from Roswell Park and her SWOG collaborators. The DELCaP study was part of S0221, a randomized phase III SWOG trial determining the best dose and schedule for three chemotherapy drugs. S0221 included patients with stage II or III breast cancer, or high-risk stage I cancer, all of which have a higher rate of returning because, among other features, the primary tumor was large or the cancer had spread to the lymph nodes. S0221 enrolled 2,716 patients - and 1,607 consented to responding to the DELCaP questionnaire. It included questions about study subjects' habits, including exercise. They were asked about current habits, as well as routines prior to their breast cancer diagnosis. The questionnaire was administered when patients enrolled in the study, when they were undergoing chemotherapy, one year after their study treatment, and again two years after treatment, for a total of four responses. More than 80 percent responded in each round.\n\nFor exercise, patients were asked what type of physical activity they did, for how long, and how often. Responses were categorized based on the U.S. Department of Health and Human Services' Physical Activity Guidelines for Americans, which call for at least two and half hours of moderate-intensity activity a week or one and a quarter hours of vigorous activity per week. Cannioto and her team then looked at post-treatment outcomes for different groups.\n\n\"What these results suggest for doctors - and patients - is that even a modest exercise routine, taken up after cancer treatment, can help women with high-risk breast cancer live longer and healthier lives,\" Cannioto said. \"It's never too late to start walking, doing yoga, cycling, or swimming - and that activity certainly appears to pay off.\""
+   },
+   "paper_b": {
+    "doi": "10.1200/jco.19.01019",
+    "euid": "809466",
+    "paper_title": "Associations of Physical Activity With Survival and Progression in Metastatic Colorectal Cancer: Results From Cancer and Leukemia Group B (Alliance)/SWOG 80405",
+    "abstract": "Regular physical activity is associated with reduced risk of recurrence and mortality in patients with nonmetastatic colorectal cancer. Its influence on patients with advanced/metastatic colorectal cancer (mCRC) has been largely unexplored. We conducted a prospective cohort study nested in Cancer and Leukemia Group B (Alliance)/SWOG 80405 (ClinicalTrials.gov identifier: NCT00265850), a National Cancer Institute–sponsored phase III trial of systemic therapy for mCRC. Within 1 month after therapy initiation, patients were invited to complete a validated questionnaire that reported average physical activity over the previous 2 months. On the basis of responses, we calculated metabolic equivalent task (MET) hours per week to quantify physical activity. The primary end point of the clinical trial and this companion study was overall survival (OS). Secondary end points included progression-free survival (PFS) and first grade 3 or greater treatment-related adverse events. To minimize confounding by poor and declining health, we excluded patients who experienced progression or died within 60 days of activity assessment and used Cox proportional hazards regression analysis to adjust for known prognostic factors, comorbidities, and weight loss. The final cohort included 1,218 patients. Compared with patients engaged in less than 3 MET hours per week of physical activity, patients engaged in 18 or more MET hours per week experienced an adjusted hazard ratio for OS of 0.85 (95% CI, 0.71 to 1.02; PTrend = .06) and for PFS of 0.83 (95% CI, 0.70 to 0.99; PTrend = .01). Compared with patients engaging in less than 9 MET hours per week, patients engaging in 9 or more MET hours per week experienced an adjusted hazard ratio for grade 3 or greater treatment-related adverse events of 0.73 (95% CI, 0.62 to 0.86; PTrend < .001). Among patients with mCRC in Cancer and Leukemia Group B (Alliance)/SWOG 80405, association of physical activity with OS was not statistically significant. Greater physical activity was associated with longer PFS and lower adjusted risk for first grade 3 or greater treatment-related adverse events."
+   }
+  },
+  {
+   "shared": [
+    {
+     "entity": "female sex",
+     "role": "exposure"
+    }
+   ],
+   "both_roles": false,
+   "paper_a": {
+    "doi": "10.1001/jamanetworkopen.2023.1047",
+    "euid": "980922",
+    "paper_title": "Assessment of Sex Disparities in Nonacceptance of Statin Therapy and Low-Density Lipoprotein Cholesterol Levels Among Patients at High Cardiovascular Risk",
+    "abstract": "Many patients at high cardiovascular risk—women more commonly than men—are not receiving statins. Anecdotally, it is common for patients to not accept statin therapy recommendations by their clinicians. However, population-based data on nonacceptance of statin therapy by patients are lacking. To evaluate sex disparities in nonacceptance of statin therapy and assess their association with low-density lipoprotein (LDL) cholesterol control. A retrospective cohort study was conducted from January 1, 2019, to December 31, 2022, of statin-naive patients with atherosclerotic cardiovascular disease, diabetes, or LDL cholesterol levels of 190 mg/dL (to convert to millimoles per liter, multiply by 0.0259) or more who were treated at Mass General Brigham between January 1, 2000, and December 31, 2018. Recommendation of statin therapy by the patient’s clinician, ascertained from the combination of electronic health record prescription data and natural language processing of electronic clinician notes. Time to achieve an LDL cholesterol level of less than 100 mg/dL. Of 24 212 study patients (mean [SD] age, 58.8 [13.0] years; 12 294 women [50.8%]), 5308 (21.9%) did not accept the initial recommendation of statin therapy. Nonacceptance of statin therapy was more common among women than men (24.1% [2957 of 12 294] vs 19.7% [2351 of 11 918]; P < .001) and was similarly higher in every subgroup in the analysis stratified by comorbidities. In multivariable analysis, female sex was associated with lower odds of statin therapy acceptance (0.82 [95% CI, 0.78-0.88]). Patients who did vs did not accept a statin therapy recommendation achieved an LDL cholesterol level of less than 100 mg/dL over a median of 1.5 years (IQR, 0.4-5.5 years) vs 4.4 years (IQR, 1.3-11.1 years) (P < .001). In a multivariable analysis adjusted for demographic characteristics and comorbidities, nonacceptance of statin therapy was associated with a longer time to achieve an LDL cholesterol level of less than 100 mg/dL (hazard ratio, 0.57 [95% CI, 0.55-0.60]). This cohort study suggests that nonacceptance of a statin therapy recommendation was common among patients at high cardiovascular risk and was particularly common among women. It was associated with significantly higher LDL cholesterol levels, potentially increasing the risk for cardiovascular events. Further research is needed to understand the reasons for nonacceptance of statin therapy by patients and to develop methods to ensure that all patients receive optimal therapy in accordance with their preferences and priorities.",
+    "press_text": "Heart disease is the leading cause of death worldwide, killing someone in the United States every 34 seconds, according to the Centers for Disease Control and Prevention. A new study by investigators from Brigham and Women’s Hospital, a founding member of the Mass General Brigham healthcare system, conducted the first population-based study on patients’ nonacceptance of statin therapy recommendations.\n\nThe study found that in patients at high risk of developing cardiovascular disease, over 20 percent refused to take statin medications. They were particularly surprised to see that women were about 20 percent more likely than men to refuse statin therapy when it was first suggested by their physician, and 50 percent more likely than men to never accept the recommendation. The study also showed that all patients who refused statin therapy developed higher LDL (“bad”) cholesterol levels, likely increasing their risk even further. The results are published in JAMA Network Open.\n\n“Our study highlights the alarming number of patients who refuse statins and signals that physicians must have discussions with patients about why,” says Alex Turchin, MD, MS, an associate professor at Harvard Medical School and director of quality in the Brigham’s Division of Endocrinology, Diabetes, and Hypertension. “We need to better understand what our patients’ preferences are and to be able to provide more patient-centered care.”\n\nAfter Turchin began noticing that many of his patients with high cholesterol, including those with diabetes, were opting not to take safe and beneficial medications like statins that can lower cholesterol and bring down the risk of heart attack and stroke, he developed a system to more closely study the phenomenon by analyzing the text of provider notes.\n\nThe study focused on high-risk patients who either had coronary artery or vascular disease, diabetes, very high cholesterol, or had suffered a stroke. All were recommended statin medications by their physicians to reduce their risk of heart attack and stroke and reduce cholesterol levels. The retrospective study included more than 24,000 patients who were seen at Mass General Brigham between Jan. 1, 2000, and Dec. 31, 2018.\n\n“Even in this higher-risk patient population, so many people did not accept statin therapy,” Turchin said. The study found that while about two-thirds of the patients who were being recommended statin therapy eventually tried it, about one-third never did. And it took three times as long for people in the study who initially said no to taking statin medications to reduce their LDL cholesterol levels to less than 100, compared to people who initially said yes.\n\nThe study’s biggest surprise, however, was the much higher rate of refusal by women than men. Turchin and his colleagues wonder if this might be due in part to a false misconception that heart disease impacts men more than women, and plan to further research the reasons underlying these results.\n\n“Ultimately, we need to talk to our patients and find out in more detail why they would prefer not to take statins,” Turchin says. He is currently looking at the impacts of nonacceptance of statin therapy on outcomes that matter to most to patients including heart attacks, strokes, and death. “I think people underestimate how much of a difference modern medicine has made in extending people’s lives, and their quality of life, and medications can play a big role in that.”\n\nDisclosures: Dr. Chang reported receiving grants from Novo Nordisk, Eli Lilly, Boehringer Ingelheim, Applied Therapeutics, and Better Therapeutics outside the submitted work. Dr. Turchin reported receiving grants from AstraZeneca, Edwards, Eli Lilly, and Novo Nordisk; receiving personal fees from Covance and Proteomics International, and has equity in Brio Systems outside the submitted work. No other disclosures were reported. Funding: This study was funded in part by the Patient-Centered Outcomes Research Institute (contract ME-2019C1-15328)\n\nPaper cited: Brown, C. et al. “Association of Sex Disparities in Nonacceptance of Statin Therapy and Low-Density Lipoprotein Cholesterol Levels Among Patients at High Cardiovascular Risk.” JAMA Network Open, DOI: 10.1001/jamanetworkopen.2023.1047"
+   },
+   "paper_b": {
+    "doi": "10.1016/j.bone.2024.117176",
+    "euid": "1066397",
+    "paper_title": "AI-based opportunistic quantitative image analysis of lung cancer screening CTs to reduce disparities in osteoporosis screening",
+    "abstract": "Osteoporosis is underdiagnosed, especially in ethnic and racial minorities who are thought to be protected against bone loss, but often have worse outcomes after an osteoporotic fracture. We aimed to determine the prevalence of osteoporosis by opportunistic CT in patients who underwent lung cancer screening (LCS) using non-contrast CT in the Northeastern United States. Demographics including race and ethnicity were retrieved. We assessed trabecular bone and body composition using a fully-automated artificial intelligence algorithm. ROIs were placed at T12 vertebral body for attenuation measurements in Hounsfield Units (HU). Two validated thresholds were used to diagnose osteoporosis: high-sensitivity threshold (115–165 HU) and high specificity threshold (<115 HU). We performed descriptive statistics and ANOVA to compare differences across sex, race, ethnicity, and income class according to neighborhoods’ mean household incomes. Forward stepwise regression modeling was used to determine body composition predictors of trabecular attenuation. We included 3,708 patients (mean age 64±7 years, 54% males) who underwent LCS, had available demographic information and an evaluable CT for trabecular attenuation analysis. Using the high sensitivity threshold, osteoporosis was more prevalent in females (74% vs. 65% in males, p<0.0001) and Whites (72% vs 49% non-Whites, p<0.0001). However, osteoporosis was present across all races (38% Black, 55% Asian, 56% Hispanic) and affected all income classes (69%, 69%, and 91% in low, medium, and high-income class, respectively). High visceral/subcutaneous fat-ratio, aortic calcification, and hepatic steatosis were associated with low trabecular attenuation (p<0.01), whereas muscle mass was positively associated with trabecular attenuation (p <0.01). In conclusion, osteoporosis is prevalent across all races, income classes and both sexes in patients undergoing LCS. Opportunistic CT using a fully-automated algorithm and uniform imaging protocol is able to detect osteoporosis and body composition without additional testing or radiation. Early identification of patients traditionally thought to be at low risk for bone loss will allow for initiating appropriate treatment to prevent future fragility fractures."
+   }
+  },
+  {
+   "shared": [
+    {
+     "entity": "female sex",
+     "role": "exposure"
+    }
+   ],
+   "both_roles": false,
+   "paper_a": {
+    "doi": "10.1001/jamanetworkopen.2023.1047",
+    "euid": "980922",
+    "paper_title": "Assessment of Sex Disparities in Nonacceptance of Statin Therapy and Low-Density Lipoprotein Cholesterol Levels Among Patients at High Cardiovascular Risk",
+    "abstract": "Many patients at high cardiovascular risk—women more commonly than men—are not receiving statins. Anecdotally, it is common for patients to not accept statin therapy recommendations by their clinicians. However, population-based data on nonacceptance of statin therapy by patients are lacking. To evaluate sex disparities in nonacceptance of statin therapy and assess their association with low-density lipoprotein (LDL) cholesterol control. A retrospective cohort study was conducted from January 1, 2019, to December 31, 2022, of statin-naive patients with atherosclerotic cardiovascular disease, diabetes, or LDL cholesterol levels of 190 mg/dL (to convert to millimoles per liter, multiply by 0.0259) or more who were treated at Mass General Brigham between January 1, 2000, and December 31, 2018. Recommendation of statin therapy by the patient’s clinician, ascertained from the combination of electronic health record prescription data and natural language processing of electronic clinician notes. Time to achieve an LDL cholesterol level of less than 100 mg/dL. Of 24 212 study patients (mean [SD] age, 58.8 [13.0] years; 12 294 women [50.8%]), 5308 (21.9%) did not accept the initial recommendation of statin therapy. Nonacceptance of statin therapy was more common among women than men (24.1% [2957 of 12 294] vs 19.7% [2351 of 11 918]; P < .001) and was similarly higher in every subgroup in the analysis stratified by comorbidities. In multivariable analysis, female sex was associated with lower odds of statin therapy acceptance (0.82 [95% CI, 0.78-0.88]). Patients who did vs did not accept a statin therapy recommendation achieved an LDL cholesterol level of less than 100 mg/dL over a median of 1.5 years (IQR, 0.4-5.5 years) vs 4.4 years (IQR, 1.3-11.1 years) (P < .001). In a multivariable analysis adjusted for demographic characteristics and comorbidities, nonacceptance of statin therapy was associated with a longer time to achieve an LDL cholesterol level of less than 100 mg/dL (hazard ratio, 0.57 [95% CI, 0.55-0.60]). This cohort study suggests that nonacceptance of a statin therapy recommendation was common among patients at high cardiovascular risk and was particularly common among women. It was associated with significantly higher LDL cholesterol levels, potentially increasing the risk for cardiovascular events. Further research is needed to understand the reasons for nonacceptance of statin therapy by patients and to develop methods to ensure that all patients receive optimal therapy in accordance with their preferences and priorities.",
+    "press_text": "Heart disease is the leading cause of death worldwide, killing someone in the United States every 34 seconds, according to the Centers for Disease Control and Prevention. A new study by investigators from Brigham and Women’s Hospital, a founding member of the Mass General Brigham healthcare system, conducted the first population-based study on patients’ nonacceptance of statin therapy recommendations.\n\nThe study found that in patients at high risk of developing cardiovascular disease, over 20 percent refused to take statin medications. They were particularly surprised to see that women were about 20 percent more likely than men to refuse statin therapy when it was first suggested by their physician, and 50 percent more likely than men to never accept the recommendation. The study also showed that all patients who refused statin therapy developed higher LDL (“bad”) cholesterol levels, likely increasing their risk even further. The results are published in JAMA Network Open.\n\n“Our study highlights the alarming number of patients who refuse statins and signals that physicians must have discussions with patients about why,” says Alex Turchin, MD, MS, an associate professor at Harvard Medical School and director of quality in the Brigham’s Division of Endocrinology, Diabetes, and Hypertension. “We need to better understand what our patients’ preferences are and to be able to provide more patient-centered care.”\n\nAfter Turchin began noticing that many of his patients with high cholesterol, including those with diabetes, were opting not to take safe and beneficial medications like statins that can lower cholesterol and bring down the risk of heart attack and stroke, he developed a system to more closely study the phenomenon by analyzing the text of provider notes.\n\nThe study focused on high-risk patients who either had coronary artery or vascular disease, diabetes, very high cholesterol, or had suffered a stroke. All were recommended statin medications by their physicians to reduce their risk of heart attack and stroke and reduce cholesterol levels. The retrospective study included more than 24,000 patients who were seen at Mass General Brigham between Jan. 1, 2000, and Dec. 31, 2018.\n\n“Even in this higher-risk patient population, so many people did not accept statin therapy,” Turchin said. The study found that while about two-thirds of the patients who were being recommended statin therapy eventually tried it, about one-third never did. And it took three times as long for people in the study who initially said no to taking statin medications to reduce their LDL cholesterol levels to less than 100, compared to people who initially said yes.\n\nThe study’s biggest surprise, however, was the much higher rate of refusal by women than men. Turchin and his colleagues wonder if this might be due in part to a false misconception that heart disease impacts men more than women, and plan to further research the reasons underlying these results.\n\n“Ultimately, we need to talk to our patients and find out in more detail why they would prefer not to take statins,” Turchin says. He is currently looking at the impacts of nonacceptance of statin therapy on outcomes that matter to most to patients including heart attacks, strokes, and death. “I think people underestimate how much of a difference modern medicine has made in extending people’s lives, and their quality of life, and medications can play a big role in that.”\n\nDisclosures: Dr. Chang reported receiving grants from Novo Nordisk, Eli Lilly, Boehringer Ingelheim, Applied Therapeutics, and Better Therapeutics outside the submitted work. Dr. Turchin reported receiving grants from AstraZeneca, Edwards, Eli Lilly, and Novo Nordisk; receiving personal fees from Covance and Proteomics International, and has equity in Brio Systems outside the submitted work. No other disclosures were reported. Funding: This study was funded in part by the Patient-Centered Outcomes Research Institute (contract ME-2019C1-15328)\n\nPaper cited: Brown, C. et al. “Association of Sex Disparities in Nonacceptance of Statin Therapy and Low-Density Lipoprotein Cholesterol Levels Among Patients at High Cardiovascular Risk.” JAMA Network Open, DOI: 10.1001/jamanetworkopen.2023.1047"
+   },
+   "paper_b": {
+    "doi": "10.1007/s13760-022-02036-6",
+    "euid": "962438",
+    "paper_title": "Investigation of non-motor symptoms in patients with amyotrophic lateral sclerosis",
+    "abstract": "[Objective] Few studies have comprehensively investigated the non-motor symptoms of amyotrophic lateral sclerosis (ALS). We aimed to investigate this aspect of ALS. [Methods] We held a nationwide webinar, titled “ALS Café,” and distributed self-report questionnaires to ALS patients. In addition to the frequency of non-motor symptoms such as fatigue, pain, sleep disorders, defecation disorders, sialorrhea, and sexual problems, we evaluated the quality of life (QoL), ALS Functional Rating Scale-Revised (ALSFRS-R), and Patient Health Questionnaire-9 (PHQ-9). [Results] The average age of the 33 respondents (19 male, 14 female) was 60.8 ± 11.2; 96.7% of respondents had some non-motor symptoms. The median ALSFRS-R was 32.0, and seven (21.2%) of the respondents had a PHQ-9 score of 10 or higher. Fatigue was the most common non-motor symptom (81.8%), followed by pain (60.6%), defecation disorders (57.6%), sleep disorders (48.5%), sialorrhea (48.5%), and sexual problems (24.2%). Fatigue was more frequent in females (P = 0.03). Among the non-motor symptoms, pain was the most common factor affecting QoL, followed by fatigue. More than 90% of ALS patients answered that they had never consulted a physician/counselor about sexual problems. Patients with pain had higher PHQ-9 scores than those without (P = 0.01). There was no correlation between the ALSFRS-R score and QoL and PHQ-9. [Conclusions] Most patients with amyotrophic lateral sclerosis had non-motor symptoms, and fatigue and pain were the most common. We showed that many non-motor symptoms affected QoL without correlating with ALSFRS-R score. Attention should be paid to those even if the motor symptoms of ALS are mild."
+   }
+  }
+ ],
+ "aggregate": {
+  "note": "scored = statements matched to a paper finding; overstated_rate = overstated / scored",
+  "by_year": [
+   {
+    "year": 2017,
+    "releases": 1,
+    "statements": 5,
+    "scored": 0,
+    "overstated": 0,
+    "aligned": 0,
+    "understated": 0,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": null
+   },
+   {
+    "year": 2018,
+    "releases": 49,
+    "statements": 212,
+    "scored": 130,
+    "overstated": 14,
+    "aligned": 101,
+    "understated": 15,
+    "releases_with_overstatement": 12,
+    "overstated_euids": [
+     "462222",
+     "496427",
+     "549722",
+     "602277",
+     "681242",
+     "689395",
+     "745912",
+     "752940",
+     "778151",
+     "797180",
+     "817710",
+     "878763"
+    ],
+    "overstated_rate": 0.108
+   },
+   {
+    "year": 2019,
+    "releases": 55,
+    "statements": 247,
+    "scored": 181,
+    "overstated": 30,
+    "aligned": 131,
+    "understated": 20,
+    "releases_with_overstatement": 17,
+    "overstated_euids": [
+     "462256",
+     "473511",
+     "473585",
+     "489839",
+     "571460",
+     "586191",
+     "587976",
+     "603570",
+     "636328",
+     "646148",
+     "685900",
+     "790171",
+     "807871",
+     "809466",
+     "887457",
+     "890436",
+     "917638"
+    ],
+    "overstated_rate": 0.166
+   },
+   {
+    "year": 2020,
+    "releases": 66,
+    "statements": 319,
+    "scored": 173,
+    "overstated": 46,
+    "aligned": 120,
+    "understated": 7,
+    "releases_with_overstatement": 23,
+    "overstated_euids": [
+     "508163",
+     "525585",
+     "528866",
+     "574862",
+     "577284",
+     "620312",
+     "633532",
+     "663131",
+     "667837",
+     "744455",
+     "750729",
+     "761446",
+     "808968",
+     "831823",
+     "832675",
+     "837240",
+     "837262",
+     "841822",
+     "842075",
+     "857454",
+     "858710",
+     "877611",
+     "895271"
+    ],
+    "overstated_rate": 0.266
+   },
+   {
+    "year": 2021,
+    "releases": 61,
+    "statements": 256,
+    "scored": 128,
+    "overstated": 29,
+    "aligned": 77,
+    "understated": 22,
+    "releases_with_overstatement": 20,
+    "overstated_euids": [
+     "471527",
+     "494075",
+     "605356",
+     "616064",
+     "651897",
+     "697632",
+     "710051",
+     "751053",
+     "880731",
+     "914925",
+     "923782",
+     "924798",
+     "925852",
+     "931679",
+     "932890",
+     "933795",
+     "936086",
+     "936099",
+     "936593",
+     "937395"
+    ],
+    "overstated_rate": 0.227
+   },
+   {
+    "year": 2022,
+    "releases": 61,
+    "statements": 282,
+    "scored": 193,
+    "overstated": 28,
+    "aligned": 137,
+    "understated": 28,
+    "releases_with_overstatement": 19,
+    "overstated_euids": [
+     "941014",
+     "941967",
+     "942387",
+     "942455",
+     "945365",
+     "947685",
+     "948771",
+     "951701",
+     "954244",
+     "954842",
+     "962438",
+     "969523",
+     "969646",
+     "969847",
+     "970101",
+     "970320",
+     "970831",
+     "973753",
+     "978173"
+    ],
+    "overstated_rate": 0.145
+   },
+   {
+    "year": 2023,
+    "releases": 53,
+    "statements": 299,
+    "scored": 168,
+    "overstated": 38,
+    "aligned": 113,
+    "understated": 17,
+    "releases_with_overstatement": 23,
+    "overstated_euids": [
+     "1000761",
+     "1002265",
+     "1007493",
+     "1009321",
+     "1011478",
+     "1029810",
+     "1030943",
+     "979204",
+     "980922",
+     "982400",
+     "982926",
+     "983748",
+     "983862",
+     "984226",
+     "984416",
+     "984645",
+     "985623",
+     "987732",
+     "988352",
+     "989967",
+     "995019",
+     "998347",
+     "999978"
+    ],
+    "overstated_rate": 0.226
+   },
+   {
+    "year": 2024,
+    "releases": 53,
+    "statements": 273,
+    "scored": 151,
+    "overstated": 31,
+    "aligned": 108,
+    "understated": 12,
+    "releases_with_overstatement": 17,
+    "overstated_euids": [
+     "1031976",
+     "1035705",
+     "1037094",
+     "1038128",
+     "1038565",
+     "1042118",
+     "1044316",
+     "1046041",
+     "1046286",
+     "1049005",
+     "1049532",
+     "1056482",
+     "1065857",
+     "1068602",
+     "1069536",
+     "1071854",
+     "1072559"
+    ],
+    "overstated_rate": 0.205
+   },
+   {
+    "year": 2025,
+    "releases": 11,
+    "statements": 67,
+    "scored": 37,
+    "overstated": 9,
+    "aligned": 27,
+    "understated": 1,
+    "releases_with_overstatement": 6,
+    "overstated_euids": [
+     "1069900",
+     "1070284",
+     "1070360",
+     "1070588",
+     "1071815",
+     "1076185"
+    ],
+    "overstated_rate": 0.243
+   }
+  ],
+  "by_institution": [
+   {
+    "institution": "University of Miami",
+    "releases": 3,
+    "statements": 14,
+    "scored": 6,
+    "overstated": 3,
+    "aligned": 2,
+    "understated": 1,
+    "releases_with_overstatement": 2,
+    "overstated_euids": [
+     "1044316",
+     "646148"
+    ],
+    "overstated_rate": 0.5
+   },
+   {
+    "institution": "University of Iowa",
+    "releases": 3,
+    "statements": 13,
+    "scored": 4,
+    "overstated": 2,
+    "aligned": 2,
+    "understated": 0,
+    "releases_with_overstatement": 1,
+    "overstated_euids": [
+     "973753"
+    ],
+    "overstated_rate": 0.5
+   },
+   {
+    "institution": "Pennsylvania State University",
+    "releases": 3,
+    "statements": 12,
+    "scored": 7,
+    "overstated": 3,
+    "aligned": 3,
+    "understated": 1,
+    "releases_with_overstatement": 2,
+    "overstated_euids": [
+     "752940",
+     "917638"
+    ],
+    "overstated_rate": 0.429
+   },
+   {
+    "institution": "University of Helsinki",
+    "releases": 3,
+    "statements": 16,
+    "scored": 14,
+    "overstated": 5,
+    "aligned": 8,
+    "understated": 1,
+    "releases_with_overstatement": 2,
+    "overstated_euids": [
+     "983862",
+     "988352"
+    ],
+    "overstated_rate": 0.357
+   },
+   {
+    "institution": "University of Arizona",
+    "releases": 4,
+    "statements": 23,
+    "scored": 17,
+    "overstated": 6,
+    "aligned": 9,
+    "understated": 2,
+    "releases_with_overstatement": 3,
+    "overstated_euids": [
+     "1002265",
+     "1031976",
+     "745912"
+    ],
+    "overstated_rate": 0.353
+   },
+   {
+    "institution": "Osaka City University",
+    "releases": 3,
+    "statements": 17,
+    "scored": 8,
+    "overstated": 2,
+    "aligned": 5,
+    "understated": 1,
+    "releases_with_overstatement": 2,
+    "overstated_euids": [
+     "932890",
+     "947685"
+    ],
+    "overstated_rate": 0.25
+   },
+   {
+    "institution": "University of Copenhagen",
+    "releases": 3,
+    "statements": 15,
+    "scored": 4,
+    "overstated": 1,
+    "aligned": 3,
+    "understated": 0,
+    "releases_with_overstatement": 1,
+    "overstated_euids": [
+     "880731"
+    ],
+    "overstated_rate": 0.25
+   },
+   {
+    "institution": "Brigham and Women's Hospital",
+    "releases": 6,
+    "statements": 30,
+    "scored": 22,
+    "overstated": 5,
+    "aligned": 14,
+    "understated": 3,
+    "releases_with_overstatement": 4,
+    "overstated_euids": [
+     "1038128",
+     "809466",
+     "941014",
+     "980922"
+    ],
+    "overstated_rate": 0.227
+   },
+   {
+    "institution": "Linköping University",
+    "releases": 3,
+    "statements": 10,
+    "scored": 9,
+    "overstated": 2,
+    "aligned": 6,
+    "understated": 1,
+    "releases_with_overstatement": 2,
+    "overstated_euids": [
+     "969646",
+     "985623"
+    ],
+    "overstated_rate": 0.222
+   },
+   {
+    "institution": "Harvard University",
+    "releases": 6,
+    "statements": 35,
+    "scored": 17,
+    "overstated": 3,
+    "aligned": 13,
+    "understated": 1,
+    "releases_with_overstatement": 2,
+    "overstated_euids": [
+     "1046041",
+     "633532"
+    ],
+    "overstated_rate": 0.176
+   },
+   {
+    "institution": "Universitat Autònoma de Barcelona",
+    "releases": 3,
+    "statements": 19,
+    "scored": 6,
+    "overstated": 1,
+    "aligned": 3,
+    "understated": 2,
+    "releases_with_overstatement": 1,
+    "overstated_euids": [
+     "1070588"
+    ],
+    "overstated_rate": 0.167
+   },
+   {
+    "institution": "Rutgers, The State University of New Jersey",
+    "releases": 6,
+    "statements": 18,
+    "scored": 7,
+    "overstated": 1,
+    "aligned": 6,
+    "understated": 0,
+    "releases_with_overstatement": 1,
+    "overstated_euids": [
+     "1030943"
+    ],
+    "overstated_rate": 0.143
+   },
+   {
+    "institution": "Johns Hopkins University",
+    "releases": 5,
+    "statements": 16,
+    "scored": 8,
+    "overstated": 1,
+    "aligned": 5,
+    "understated": 2,
+    "releases_with_overstatement": 1,
+    "overstated_euids": [
+     "931679"
+    ],
+    "overstated_rate": 0.125
+   },
+   {
+    "institution": "New York University",
+    "releases": 3,
+    "statements": 22,
+    "scored": 17,
+    "overstated": 2,
+    "aligned": 14,
+    "understated": 1,
+    "releases_with_overstatement": 1,
+    "overstated_euids": [
+     "970831"
+    ],
+    "overstated_rate": 0.118
+   },
+   {
+    "institution": "University of California, Davis",
+    "releases": 4,
+    "statements": 13,
+    "scored": 10,
+    "overstated": 1,
+    "aligned": 9,
+    "understated": 0,
+    "releases_with_overstatement": 1,
+    "overstated_euids": [
+     "984416"
+    ],
+    "overstated_rate": 0.1
+   },
+   {
+    "institution": "University of California, Los Angeles",
+    "releases": 4,
+    "statements": 14,
+    "scored": 12,
+    "overstated": 1,
+    "aligned": 9,
+    "understated": 2,
+    "releases_with_overstatement": 1,
+    "overstated_euids": [
+     "1049005"
+    ],
+    "overstated_rate": 0.083
+   },
+   {
+    "institution": "Centre National de la Recherche Scientifique",
+    "releases": 3,
+    "statements": 15,
+    "scored": 13,
+    "overstated": 1,
+    "aligned": 10,
+    "understated": 2,
+    "releases_with_overstatement": 1,
+    "overstated_euids": [
+     "473585"
+    ],
+    "overstated_rate": 0.077
+   },
+   {
+    "institution": "University of Cambridge",
+    "releases": 4,
+    "statements": 19,
+    "scored": 13,
+    "overstated": 1,
+    "aligned": 9,
+    "understated": 3,
+    "releases_with_overstatement": 1,
+    "overstated_euids": [
+     "473511"
+    ],
+    "overstated_rate": 0.077
+   },
+   {
+    "institution": "University of Bonn",
+    "releases": 3,
+    "statements": 25,
+    "scored": 17,
+    "overstated": 1,
+    "aligned": 12,
+    "understated": 4,
+    "releases_with_overstatement": 1,
+    "overstated_euids": [
+     "1009321"
+    ],
+    "overstated_rate": 0.059
+   },
+   {
+    "institution": "University of Oxford",
+    "releases": 4,
+    "statements": 26,
+    "scored": 14,
+    "overstated": 0,
+    "aligned": 14,
+    "understated": 0,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   },
+   {
+    "institution": "University College London",
+    "releases": 3,
+    "statements": 13,
+    "scored": 9,
+    "overstated": 0,
+    "aligned": 8,
+    "understated": 1,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   },
+   {
+    "institution": "University of Washington",
+    "releases": 4,
+    "statements": 12,
+    "scored": 8,
+    "overstated": 0,
+    "aligned": 6,
+    "understated": 2,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   },
+   {
+    "institution": "National Institutes of Health",
+    "releases": 3,
+    "statements": 9,
+    "scored": 7,
+    "overstated": 0,
+    "aligned": 7,
+    "understated": 0,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   },
+   {
+    "institution": "Washington State University",
+    "releases": 3,
+    "statements": 11,
+    "scored": 7,
+    "overstated": 0,
+    "aligned": 2,
+    "understated": 5,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   },
+   {
+    "institution": "Emory University",
+    "releases": 4,
+    "statements": 9,
+    "scored": 4,
+    "overstated": 0,
+    "aligned": 3,
+    "understated": 1,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   },
+   {
+    "institution": "Oregon Health & Science University",
+    "releases": 3,
+    "statements": 7,
+    "scored": 4,
+    "overstated": 0,
+    "aligned": 4,
+    "understated": 0,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   },
+   {
+    "institution": "Lund University",
+    "releases": 3,
+    "statements": 9,
+    "scored": 2,
+    "overstated": 0,
+    "aligned": 2,
+    "understated": 0,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   }
+  ],
+  "by_entity": [
+   {
+    "entity": "COVID-19",
+    "role": "outcome",
+    "releases": 14,
+    "statements": 36,
+    "scored": 25,
+    "overstated": 4,
+    "aligned": 18,
+    "understated": 3,
+    "releases_with_overstatement": 2,
+    "overstated_euids": [
+     "697632",
+     "983862"
+    ],
+    "overstated_rate": 0.16
+   },
+   {
+    "entity": "COVID-19",
+    "role": "exposure",
+    "releases": 9,
+    "statements": 32,
+    "scored": 9,
+    "overstated": 0,
+    "aligned": 9,
+    "understated": 0,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   },
+   {
+    "entity": "dementia",
+    "role": "outcome",
+    "releases": 6,
+    "statements": 22,
+    "scored": 16,
+    "overstated": 3,
+    "aligned": 12,
+    "understated": 1,
+    "releases_with_overstatement": 2,
+    "overstated_euids": [
+     "489839",
+     "807871"
+    ],
+    "overstated_rate": 0.188
+   },
+   {
+    "entity": "obesity",
+    "role": "exposure",
+    "releases": 8,
+    "statements": 17,
+    "scored": 6,
+    "overstated": 0,
+    "aligned": 6,
+    "understated": 0,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   },
+   {
+    "entity": "type 2 diabetes mellitus",
+    "role": "outcome",
+    "releases": 4,
+    "statements": 17,
+    "scored": 5,
+    "overstated": 0,
+    "aligned": 4,
+    "understated": 1,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   },
+   {
+    "entity": "physical activity",
+    "role": "exposure",
+    "releases": 5,
+    "statements": 11,
+    "scored": 9,
+    "overstated": 3,
+    "aligned": 6,
+    "understated": 0,
+    "releases_with_overstatement": 2,
+    "overstated_euids": [
+     "577284",
+     "809466"
+    ],
+    "overstated_rate": 0.333
+   },
+   {
+    "entity": "intracranial meningioma",
+    "role": "outcome",
+    "releases": 1,
+    "statements": 11,
+    "scored": 10,
+    "overstated": 0,
+    "aligned": 9,
+    "understated": 1,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   },
+   {
+    "entity": "anakinra",
+    "role": "exposure",
+    "releases": 2,
+    "statements": 11,
+    "scored": 6,
+    "overstated": 2,
+    "aligned": 4,
+    "understated": 0,
+    "releases_with_overstatement": 2,
+    "overstated_euids": [
+     "1049005",
+     "663131"
+    ],
+    "overstated_rate": 0.333
+   },
+   {
+    "entity": "aspirin",
+    "role": "exposure",
+    "releases": 1,
+    "statements": 10,
+    "scored": 10,
+    "overstated": 3,
+    "aligned": 7,
+    "understated": 0,
+    "releases_with_overstatement": 1,
+    "overstated_euids": [
+     "808968"
+    ],
+    "overstated_rate": 0.3
+   },
+   {
+    "entity": "cancer",
+    "role": "outcome",
+    "releases": 6,
+    "statements": 10,
+    "scored": 6,
+    "overstated": 0,
+    "aligned": 5,
+    "understated": 1,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   },
+   {
+    "entity": "long COVID",
+    "role": "outcome",
+    "releases": 1,
+    "statements": 9,
+    "scored": 8,
+    "overstated": 2,
+    "aligned": 6,
+    "understated": 0,
+    "releases_with_overstatement": 1,
+    "overstated_euids": [
+     "970831"
+    ],
+    "overstated_rate": 0.25
+   },
+   {
+    "entity": "type 2 diabetes mellitus",
+    "role": "exposure",
+    "releases": 4,
+    "statements": 8,
+    "scored": 6,
+    "overstated": 2,
+    "aligned": 4,
+    "understated": 0,
+    "releases_with_overstatement": 1,
+    "overstated_euids": [
+     "1046286"
+    ],
+    "overstated_rate": 0.333
+   },
+   {
+    "entity": "long COVID",
+    "role": "exposure",
+    "releases": 1,
+    "statements": 6,
+    "scored": 5,
+    "overstated": 0,
+    "aligned": 5,
+    "understated": 0,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   },
+   {
+    "entity": "physical activity",
+    "role": "outcome",
+    "releases": 3,
+    "statements": 4,
+    "scored": 1,
+    "overstated": 0,
+    "aligned": 1,
+    "understated": 0,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   },
+   {
+    "entity": "cancer",
+    "role": "exposure",
+    "releases": 1,
+    "statements": 2,
+    "scored": 2,
+    "overstated": 0,
+    "aligned": 2,
+    "understated": 0,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   },
+   {
+    "entity": "obesity",
+    "role": "outcome",
+    "releases": 1,
+    "statements": 1,
+    "scored": 1,
+    "overstated": 0,
+    "aligned": 0,
+    "understated": 1,
+    "releases_with_overstatement": 0,
+    "overstated_euids": [],
+    "overstated_rate": 0.0
+   }
+  ]
+ },
+ "global": [
+  {
+   "community_id": 8,
+   "title": "Thigh fat and liver fibrosis stage versus cardiac events",
+   "papers": [
+    {
+     "doi": "10.1016/j.amjcard.2021.12.059",
+     "paper_title": "Thigh Intramuscular Fat on Prognosis of Patients With Nonischemic Cardiomyopathy",
+     "abstract": "Skeletal muscle atrophy is an independent prognostic predictor for patients with chronic heart failure, and the concept of sarcopenia is drawing attention. Furthermore, the importance of not only muscle mass but also ectopic fat has been pointed out. However, there is a lack of consensus on the implications of ectopic fat for the prognosis in patients with nonischemic cardiomyopathy. We investigated whether ectopic fat in the thigh affects the prognosis of nonischemic cardiomyopathy. This prospective study recruited 145 patients diagnosed with nonischemic cardiomyopathy between September 2017 and January 2020. Finally, 93 patients with a reduced ejection fraction were enrolled. The clinical end points were cardiovascular death or unexpected rehospitalization because of a cardiac event. Using computed tomography, the percentage of intramuscular fat (%IMF) in the thigh was measured in all patients. Patients were divided into 2 groups based on the median %IMF. The results of Spearman's correlation coefficient analysis revealed a correlation among %IMF and peak oxygen uptake (Spearman r = -0.221, p = 0.036). Kaplan-Meier analysis results showed significantly higher risk of adverse events in the high %IMF group (log-rank p = 0.013). Multivariate Cox regression analysis results revealed the %IMF as an independent factor for adverse events (hazard ratio 1.361; 95% confidence interval 1.043 to 1.745; p = 0.018). In conclusion, %IMF may have adverse consequences such as increased cardiac events in patients with nonischemic cardiomyopathy with a reduced ejection fraction."
+    },
+    {
+     "doi": "10.1056/nejmoa2029349",
+     "paper_title": "Prospective Study of Outcomes in Adults with Nonalcoholic Fatty Liver Disease",
+     "abstract": "The prognoses with respect to mortality and hepatic and nonhepatic outcomes across the histologic spectrum of nonalcoholic fatty liver disease (NAFLD) are not well defined. We prospectively followed a multicenter patient population that included the full histologic spectrum of NAFLD. The incidences of death and other outcomes were compared across baseline histologic characteristics. A total of 1773 adults with NAFLD were followed for a median of 4 years. All-cause mortality increased with increasing fibrosis stages (0.32 deaths per 100 person-years for stage F0 to F2 [no, mild, or moderate fibrosis], 0.89 deaths per 100 persons-years for stage F3 [bridging fibrosis], and 1.76 deaths per 100 person-years for stage F4 [cirrhosis]). The incidence of liver-related complications per 100 person-years increased with fibrosis stage (F0 to F2 vs. F3 vs. F4) as follows: variceal hemorrhage (0.00 vs. 0.06 vs. 0.70), ascites (0.04 vs. 0.52 vs. 1.20), encephalopathy (0.02 vs. 0.75 vs. 2.39), and hepatocellular cancer (0.04 vs. 0.34 vs. 0.14). As compared with patients with stage F0 to F2 fibrosis, patients with stage F4 fibrosis also had a higher incidence of type 2 diabetes (7.53 vs. 4.45 events per 100 person-years) and a decrease of more than 40% in the estimated glomerular filtration rate (2.98 vs. 0.97 events per 100 person-years). The incidence of cardiac events and nonhepatic cancers were similar across fibrosis stages. After adjustment for age, sex, race, diabetes status, and baseline histologic severity, the incidence of any hepatic decompensation event (variceal hemorrhage, ascites, or encephalopathy) was associated with increased all-cause mortality (adjusted hazard ratio, 6.8; 95% confidence interval, 2.2 to 21.3). In this prospective study involving patients with NAFLD, fibrosis stages F3 and F4 were associated with increased risks of liver-related complications and death. (Funded by the National Institute of Diabetes and Digestive and Kidney Diseases and others; NAFLD DB2 ClinicalTrials.gov number, NCT01030484.)"
+    }
+   ]
+  },
+  {
+   "community_id": 22,
+   "title": "Pregnancy exposures (influenza, interpregnancy interval, residence moves) and adverse birth outcomes",
+   "papers": [
+    {
+     "doi": "10.1002/bdr2.1445",
+     "paper_title": "Outcomes of infants born to women with influenza A(H1N1)pdm09",
+     "abstract": "Pregnant women with influenza are more likely to have complications, but information on infant outcomes is limited. Five state/local health departments collected data on outcomes of infants born to pregnant women with 2009 H1N1 influenza reported to the Centers for Disease Control and Prevention from April to December 2009. Collaborating sites linked information on pregnant women with confirmed 2009 H1N1 influenza, many who were severely ill, to their infants’ birth certificates. Collaborators also collected birth certificate data from two comparison groups that were matched with H1N1-affected pregnancies on month of conception, sex, and county of residence. 490 pregnant women with influenza, 1,451 women without reported influenza with pregnancies in the same year, and 1,446 pregnant women without reported influenza with prior year pregnancies were included. Women with 2009 H1N1 influenza admitted to an intensive care unit (ICU; n = 64) were more likely to deliver preterm infants (<37 weeks), low birth weight infants, and infants with Apgar scores <=6 at 5 min than women in comparison groups (adjusted relative risk, aRR = 3.9 [2.7, 5.6], aRR = 4.6 [2.9, 7.5], and aRR = 8.7 [3.6, 21.2], for same year comparisons, respectively). Women with influenza who were not hospitalized and hospitalized women not admitted to the ICU did not have significantly elevated risks for adverse infant outcomes. Severely ill women with 2009 H1N1 influenza during pregnancy were more likely to have adverse birth outcomes than women without influenza, providing more support for influenza vaccination during pregnancy."
+    },
+    {
+     "doi": "10.1016/s0140-6736(18)32266-9",
+     "paper_title": "Association between interpregnancy interval and adverse birth outcomes in women with a previous stillbirth: an international cohort study",
+     "abstract": "WHO recommends that women wait at least 2 years after a livebirth and at least 6 months after a miscarriage or induced abortion before conceiving again, to reduce the risk of adverse birth outcomes in the subsequent pregnancy. No recommendation exists for the optimal interval after a stillbirth. We investigated the association between interpregnancy interval after stillbirth and birth outcomes in the subsequent pregnancy. In this international cohort study, we used data from birth records from Finland (1987-2016), Norway (1980-2015), and Western Australia (1980-2015). Consecutive singleton pregnancies in women whose most recent pregnancy had ended in stillbirth of at least 22 weeks' gestation were included in the analysis. Interpregnancy interval was defined as the time between the end of pregnancy (delivery date) and the start of the next pregnancy (delivery date of next pregnancy minus gestational age at birth). We calculated odds ratios (ORs) for stillbirth, preterm birth, and small-for-gestational-age birth by interpregnancy interval by country, adjusted for maternal age, parity, decade of delivery, and gestational length of the previous pregnancy. A fixed-effects meta-analysis was used to estimate pooled ORs. We identified 14 452 births in women who had a stillbirth in the previous pregnancy; median interpregnancy interval after stillbirth was 9 months (IQR 4-19). 9109 (63%) women conceived within 12 months of the stillbirth. Of the 14 452 births, 228 (2%) were stillbirths, 2532 (18%) were preterm births, and 1284 (9%) were small-for-gestational-age births. Compared with an interpregnancy interval of 24-59 months, intervals shorter than 12 months were not associated with increased odds of subsequent stillbirth (pooled adjusted OR 1·09 [95% CI 0·63-1·91] for <6 months; 0·90 [0·47-1·71] for 6-11 months), preterm birth (0·91 [0·75-1·11] for <6 months; 0·91 [0·74-1·11] for 6-11 months), or small-for-gestational-age birth (0·66 [0·51-0·85] for <6 months; 0·64 [0·48-0·84] for 6-11 months). Further, we noted no difference in the association between interpregnancy interval and birth outcomes by gestational length of the previous stillbirth. Conception within 12 months of a stillbirth was common and was not associated with increased risk of adverse outcomes in the subsequent pregnancy. These findings could be used when counselling women who are planning future pregnancies after a stillbirth and for informing future recommendations for pregnancy spacing in a high-income setting. National Health and Medical Research Council (Australia), and Research Council of Norway."
+    },
+    {
+     "doi": "10.1136/jech-2018-211937",
+     "paper_title": "Residence change during the first trimester of pregnancy and adverse birth outcomes",
+     "abstract": "There are few published studies evaluating the impact of perinatal residence change on infant outcomes and whether these associations differ by socioeconomic status. We conducted a population-based cohort study using Washington State birth certificate data from 2007 to 2014 to assess whether women who moved during the first trimester of pregnancy (n=28 011) had a higher risk of low birth weight, preterm birth and small for gestational age than women who did not move during the first trimester (n=112 367). 'Non-first-trimester movers' were frequency matched 4:1 to movers by year. We used generalised linear models to calculate risk ratios and risk differences adjusted for maternal age, race, marital status, parity, education, smoking, income and insurance payer for the birth. We also stratified analyses by variables related to socioeconomic status to see whether associations differed across socioeconomic strata. Moving in the first trimester was associated with an increased risk of low birth weight (6.4% vs 4.5%, adjusted risk ratio 1.37 (95% CI 1.29 to 1.45)) and preterm birth (9.1% vs 6.4%, adjusted risk ratio 1.42 (95% CI 1.36 to 1.49)) and a slight increased risk of small for gestational age (9.8% vs 8.7%, adjusted risk ratio 1.09 (95% CI 1.00 to 1.09)). Residence change was associated with low birth weight and preterm birth in all socioeconomic strata. Moving during the first trimester of pregnancy may be a risk factor for adverse birth outcomes in US women. Healthcare providers may want to consider screening for plans to move and offering support."
+    }
+   ]
+  },
+  {
+   "community_id": 24,
+   "title": "Race and ethnicity in menarche timing and SARS-CoV-2 antibody positivity",
+   "papers": [
+    {
+     "doi": "10.1001/jamanetworkopen.2024.12854",
+     "paper_title": "Menarche and Time to Cycle Regularity Among Individuals Born Between 1950 and 2005 in the US",
+     "abstract": "Early menarche is associated with adverse health outcomes. Trends toward earlier menarche have been observed in the US, but data remain limited on differences by sociodemographic factors and body mass index (BMI). Time from menarche to cycle regularity is another understudied early-life characteristic with health implications. To evaluate the temporal trends and disparities in menarche and time to regularity and explore early-life BMI as a mediator. This ongoing cohort study enrolled participants from an ongoing mobile application–based US cohort from November 14, 2019, to March 20, 2023. Birth year (categorized as 1950-1969, 1970-1979, 1980-1989, 1990-1999, and 2000-2005). Main outcomes were age at menarche and time to regularity, which were self-recalled at enrollment. In addition, early (aged <11 years), very early (aged <9 years), and late (aged ≥16 years) age at menarche was assessed. Among the 71 341 female individuals who were analyzed (mean [SD] age at menarche, 12.2 [1.6] years; 2228 [3.1%] Asian, 3665 [5.1%] non-Hispanic Black, 4918 [6.9%] Hispanic, 49 518 [69.4%] non-Hispanic White, and 8461 [11.9%] other or multiple races or ethnicities), 5223 were born in 1950 to 1969, 12 226 in 1970 to 1979, 22 086 in 1980 to 1989, 23 894 in 1990 to 1999, and 7912 in 2000 to 2005. The mean (SD) age at menarche decreased from 12.5 (1.6) years in 1950 to 1969 to 11.9 (1.5) years in 2000 to 2005. The number of individuals experiencing early menarche increased from 449 (8.6%) to 1223 (15.5%), the number of individuals experiencing very early menarche increased from 31 (0.6%) to 110 (1.4%), and the number of individuals experiencing late menarche decreased from 286 (5.5%) to 137 (1.7%). For 61 932 participants with reported time to regularity, the number reaching regularity within 2 years decreased from 3463 (76.3%) to 4075 (56.0%), and the number not yet in regular cycles increased from 153 (3.4%) to 1375 (18.9%). The magnitude of the trend toward earlier menarche was greater among participants who self-identified as Asian, non-Hispanic Black, or other or multiple races (vs non-Hispanic White) (P = .003 for interaction) and among participants self-rated with low (vs high) socioeconomic status (P < .001 for interaction). Within a subset of 9865 participants with data on BMI at menarche, exploratory mediation analysis estimated that 46% (95% CI, 35%-61%) of the temporal trend in age at menarche was explained by BMI. In this cohort study of 71 341 individuals in the US, as birth year increased, mean age at menarche decreased and time to regularity increased. The trends were stronger among racial and ethnic minority groups and individuals of low self-rated socioeconomic status. These trends may contribute to the increase in adverse health outcomes and disparities in the US."
+    },
+    {
+     "doi": "10.1007/s40615-021-01175-5",
+     "paper_title": "Prevalence and Correlates of SARS CoV-2 Among a Community-Based Sample Recruited Using Randomized Venue-Based Sampling. Essex County, NJ, 2020",
+     "abstract": "Disparities in morbidity and mortality related to COVID-19 based on race and ethnicity have been documented in the USA. However, it is unclear if these disparities also exist at the exposure stage. To determine this, studies are needed to document the underlying burden of disease, potential disparities through serologic surveillance. Additionally, such studies can help identify where along the disease spectrum (e.g., exposure, infection, diagnosis, treatment, death) and with regard to the structural factors that necessitate public health and/or clinical interventions. Our objectives in this study were to estimate the true burden of SARS CoV-2 in the community of Essex County, NJ, an early and hard hit area, to determine the correlates of SARS CoV-2 prevalence and to determine if COVID-19 disparities seen by race/ethnicity were also reflected in SARS CoV-2 burden. We utilized venue-based-sampling (VBS) to sample members of the community in Essex County. Participants completed a short electronic survey and provided finger stick blood samples for testing. We sampled 924 residents of Essex County, New Jersey. Testing conducted in this study identified 83 (9.0%) participants as positive for SARS-CoV-2 antibodies. Importantly, our findings suggest that the true burden of SARS-Cov-2 and the pool of persons potentially spreading the virus are slightly more than six times than that suggested by PCR testing Notably, there were no significant differences in odds of testing positive for SARS CoV-2 antibodies in terms of race/ethnicity where we compared Black and Latinx participants to other race participants. Our study suggests that disparities in COVID-19 outcomes stem from potential upstream issues such as underlying conditions, access to testing, and access to care rather than disparities in exposure to the virus."
+    }
+   ]
+  },
+  {
+   "community_id": 45,
+   "title": "Autophagy induction by spermidine, felodipine, TFE3 and vaccination",
+   "papers": [
+    {
+     "doi": "10.1016/j.gendis.2024.101429",
+     "paper_title": "TFE3-mediated neuroprotection: Clearance of aggregated α-synuclein and accumulated mitochondria in the AAV-α-synuclein model of Parkinson's disease",
+     "abstract": "Parkinson's disease (PD) is a neurodegenerative disorder characterized by fibrillar neuronal inclusions containing aggregated α-synuclein (α-Syn). While the pathology of PD is multifaceted, the aggregation of α-Syn and mitochondrial dysfunction are well-established hallmarks in its pathogenesis. Recently, TFE3, a transcription factor, has emerged as a regulator of autophagy and metabolic processes. However, it remains unclear whether TFE3 can facilitate the degradation of α-Syn and regulate mitochondrial metabolism specifically in dopaminergic neurons. In this study, we demonstrate that TFE3 overexpression significantly mitigates the loss of dopaminergic neurons and reduces the decline in tyrosine hydroxylase-positive fiber density, thereby restoring motor function in an α-Syn overexpression model of PD. Mechanistically, TFE3 overexpression reversed α-Syn-mediated impairment of autophagy, leading to enhanced α-Syn degradation and reduced aggregation. Additionally, TFE3 overexpression inhibited α-Syn propagation. TFE3 overexpression also reversed the down-regulation of Parkin, promoting the clearance of accumulated mitochondria, and restored the expression of PGC1-α and TFAM, thereby enhancing mitochondrial biogenesis in the adeno-associated virus-α-Syn model. These findings further underscore the neuroprotective role of TFE3 in PD and provide insights into its underlying mechanisms, suggesting TFE3 as a potential therapeutic target for PD."
+    },
+    {
+     "doi": "10.1038/s41467-019-09494-2",
+     "paper_title": "Felodipine induces autophagy in mouse brains with pharmacokinetics amenable to repurposing",
+     "abstract": "Neurodegenerative diseases like Alzheimer’s disease, Parkinson’s disease and Huntington’s disease manifest with the neuronal accumulation of toxic proteins. Since autophagy upregulation enhances the clearance of such proteins and ameliorates their toxicities in animal models, we and others have sought to re-position/re-profile existing compounds used in humans to identify those that may induce autophagy in the brain. A key challenge with this approach is to assess if any hits identified can induce neuronal autophagy at concentrations that would be seen in humans taking the drug for its conventional indication. Here we report that felodipine, an L-type calcium channel blocker and anti-hypertensive drug, induces autophagy and clears diverse aggregate-prone, neurodegenerative disease-associated proteins. Felodipine can clear mutant α-synuclein in mouse brains at plasma concentrations similar to those that would be seen in humans taking the drug. This is associated with neuroprotection in mice, suggesting the promise of this compound for use in neurodegeneration."
+    },
+    {
+     "doi": "10.1126/science.abe6522",
+     "paper_title": "Immunological characteristics govern the transition of COVID-19 to endemicity",
+     "abstract": "One year after its emergence, severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) has become so widespread that there is little hope of elimination. There are, however, several other human coronaviruses that are endemic and cause multiple reinfections that engender sufficient immunity to protect against severe adult disease. By making assumptions about acquired immunity from its already endemic relatives, Lavine et al. developed a model with which to analyze the trajectory of SARS-CoV-2 into endemicity. The model accounts for SARS-CoV-2's age-structured disease profile and assesses the impact of vaccination. The transition from epidemic to endemic dynamics is associated with a shift in the age distribution of primary infections to younger age groups, which in turn depends on how fast the virus spreads. Longer-lasting sterilizing immunity will slow the transition to endemicity. Depending on the type of immune response it engenders, a vaccine could accelerate establishment of a state of mild disease endemicity. Science, this issue p. 741"
+    },
+    {
+     "doi": "10.7554/elife.57950",
+     "paper_title": "Autophagy in T cells from aged donors is maintained by spermidine and correlates with function and vaccine responses",
+     "abstract": "Vaccines are powerful tools to develop immune memory to infectious diseases and prevent excess mortality. In older adults, however vaccines are generally less efficacious and the molecular mechanisms that underpin this remain largely unknown. Autophagy, a process known to prevent aging, is critical for the maintenance of immune memory in mice. Here, we show that autophagy is specifically induced in vaccine-induced antigen-specific CD8+ T cells in healthy human volunteers. In addition, reduced IFNγ secretion by RSV-induced T cells in older vaccinees correlates with low autophagy levels. We demonstrate that levels of the endogenous autophagy-inducing metabolite spermidine fall in human T cells with age. Spermidine supplementation in T cells from old donors recovers their autophagy level and function, similar to young donors’ cells, in which spermidine biosynthesis has been inhibited. Finally, our data show that endogenous spermidine maintains autophagy via the translation factor eIF5A and transcription factor TFEB. In summary, we have provided evidence for the importance of autophagy in vaccine immunogenicity in older humans and uncovered two novel drug targets that may increase vaccination efficiency in the aging context."
+    }
+   ]
+  },
+  {
+   "community_id": 51,
+   "title": "Physical activity, brain gray matter volume, and open classroom learning spaces",
+   "papers": [
+    {
+     "doi": "10.1212/wnl.0000000000200884",
+     "paper_title": "Association Between Accelerometer-Derived Physical Activity Measurements and Brain Structure",
+     "abstract": "While there is growing evidence that physical activity promotes neuronal health, studies examining the relation between physical activity and brain morphology remain inconclusive. We therefore examined whether objectively quantified physical activity is related to brain volume, cortical thickness, and gray matter density in a large cohort study. In addition, we assessed molecular pathways that may underlie the effects of physical activity on brain morphology. We used cross-sectional baseline data from 2,550 eligible participants (57.6% women; mean age: 54.7 years, range: 30–94 years) of a prospective cohort study. Physical activity dose (metabolic equivalent hours and step counts) and intensity (sedentary and light-intensity and moderate-to-vigorous intensity activities) were recorded with accelerometers. Brain volumetric, gray matter density, and cortical thickness measures were obtained from 3T MRI scans using FreeSurfer and Statistical Parametric Mapping. The relation of physical activity (independent variable) and brain structure (outcome) was examined with polynomial multivariable regression, while adjusting for age, sex, intracranial volume, education, and smoking. Using gene expression profiles from the Allen Brain Atlas, we extracted molecular signatures associated with the effects of physical activity on brain morphology. Physical activity dose and intensity were independently associated with larger brain volumes, gray matter density, and cortical thickness of several brain regions. The effects of physical activity on brain volume were most pronounced at low physical activity quantities and differed between men and women and across age. For example, more time spent in moderate-to-vigorous intensity activities was associated with greater total gray matter volume, but the relation leveled off with more activity (standardized β [95% CIs]: 1.37 [0.35–2.39] and −0.70 [−1.25 to −0.15] for the linear and quadratic terms, respectively). The strongest effects of physical activity were observed in motor regions and cortical regions enriched for genes involved in mitochondrial respiration. Our findings suggest that physical activity benefits brain health, with the strongest effects in motor regions and regions with a high oxidative demand. While young adults may particularly profit from additional high-intensity activities, older adults may already benefit from light-intensity activities. Physical activity and reduced sedentary time may be critical in the prevention of age-associated brain atrophy and neurodegenerative diseases."
+    },
+    {
+     "doi": "10.3389/fspor.2021.626282",
+     "paper_title": "Comparison of Classroom-Based Sedentary Time and Physical Activity in Conventional Classrooms and Open Learning Spaces Among Elementary School Students",
+     "abstract": "European children and adolescents spend most of their daily life and especially their school hours being sedentary which may increase their risk for chronic non-communicable diseases later in life. After the curriculum reform of Finnish basic education in 2014, most of the new or renovated comprehensive schools in Finland incorporate open and flexible classroom designs. Their open learning spaces may provide students opportunities to reduce sedentary behavior during school hours. Thus, waist-worn accelerometers were used to assess classroom-based sedentary time (ST), the number of breaks from sedentary time (BST), and physical activity (PA) among cross-sectional samples of 3rd and 5th grade students during two separate academic years in a school that underwent a renovation from conventional classrooms to open learning spaces. The cohort of 5th grade students before renovation had a smaller proportion of ST from total classroom time (56.97 ± 12.24%, n = 42 vs. 67.68 ± 5.61%, n = 28, mean difference = 10.71%-points, 95%CI = −15.65 to−5.77, p < 0.001), a greater number of BST per 60 min of classroom time (7.41 ± 1.16 breaks/h vs. 9.19 ± 1.59 breaks/h, mean difference = −1.78 breaks/h, 95%CI = −2.486 to −1.079, p < 0.001) and a greater proportion of light intensity PA (28.66 ± 9.99% vs. 22.56 ± 4.59%, mean difference = 6.10%, 95%CI = 2.56 to 9.64, p = 0.001) than the 5th grade cohort assessed after renovation. The cohort of 3rd grade student had a greater proportion of moderate-to-vigorous intensity PA (MVPA) after the renovation compared to the cohort assessed before the renovation [Mean Rank (Before) = 27.22, Mean Rank (After) = 37.58, U =524.0, p = 0.033]. Despite the greater ST found in 5th graders, schools with open learning spaces may facilitate BST or MVPA as observed in the 5th and 3rd grade cohorts in open learning spaces compared to the cohorts in conventional classrooms, respectively. Future studies should seek to investigate and develop teacher practices to capitalize the potential of open classrooms to reduce ST, since classroom renovation alone may not be a sufficient intervention as of itself. Longitudinal studies utilizing randomized controlled trials are warranted."
+    }
+   ]
+  }
+ ]
+}
